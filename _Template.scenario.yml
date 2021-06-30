@@ -1,0 +1,250 @@
+scenarioVersion: 0
+title: "<Scenario title here>"
+description: "<Scenario description here>"
+prompt: "<prompt>"
+tags: []
+context:
+    # Memory
+    -
+        text: ""
+        contextConfig:
+            prefix: ""
+            suffix: "\n"
+            tokenBudget: 2048
+            reservedTokens: 200
+            budgetPriority: -100
+            trimDirection: trimBottom
+            insertionType: newline
+            insertionPosition: -12
+    # Author's Note
+    -
+        text: ""
+        contextConfig:
+            prefix: ""
+            suffix: "\n"
+            tokenBudget: 2048
+            reservedTokens: 200
+            budgetPriority: -800
+            trimDirection: trimBottom
+            insertionType: newline
+            insertionPosition: -4
+placeholders: []
+settings:
+    parameters:
+        temperature: 0.725
+        max_length: 60
+        min_length: 20
+        top_k: 69
+        top_p: 0.85
+        tail_free_sampling: 2.1
+        repetition_penalty: 2.5
+        repetition_penalty_range: 800
+        repetition_penalty_slope: 2.52
+        bad_words_ids: []
+    trimResponses: true
+    banBrackets: true
+lorebook:
+    lorebookVersion: 1
+    entries:
+        -
+            text: 'LEXICON'
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 200
+                budgetPriority: -199
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -10
+            displayName: "Heading: LEXICON"
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+        # Concepts: Position -10, Priority -200, Reserve 200
+        -
+            text: "[ zen: a Japanese school of Mahayana Buddhism emphasizing the value of meditation and intuition.]"
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 200
+                budgetPriority: -200
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -10
+            displayName: "Concept: zen"
+            keys:
+                - zen
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        # END Concepts: Position -10, Priority -200, Reserve 200
+        -
+            text: 'RACES'
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 200
+                budgetPriority: -299
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -10
+            displayName: 'Heading: RACES'
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+        # Races: Position -10, Priority -300, Reserve 100
+        -
+            text: "[ human: relating to or characteristic of people or human beings.]"
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 200
+                budgetPriority: -300
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -10
+            displayName: "Race: human"
+            keys:
+                - human
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        # END Races: Position -10, Priority -300, Reserve 100
+        -
+            text: 'LOCATIONS'
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 200
+                budgetPriority: -399
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -10
+            displayName: 'Heading: LOCATIONS'
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+        # Places: Position -10, Priority -400, Reserve 100
+        -
+            text: "[ Atlanta: The capital of the state of Georgia.]"
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 200
+                budgetPriority: -400
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -10
+            displayName: "Location: Atlanta"
+            keys:
+                - /Atlanta/
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        # END Places: Position -10, Priority -400, Reserve 100
+        -
+            text: 'GROUPS'
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 200
+                budgetPriority: -499
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -10
+            displayName: 'Heading: GROUPS'
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+        # Factions: Position -10, Priority -500, Reserve 100
+        -
+            text: "[ Peachists: People dedicated to the prospect that peaches are the best fruit.]"
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 200
+                budgetPriority: -500
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -10
+            displayName: "Location: Atlanta"
+            keys:
+                - /[Pp]eachis[m|t]/
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        # END Factions: Position -10, Priority -500, Reserve 100
+        -
+            text: 'CHARACTERS'
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 5
+                budgetPriority: -699
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertinPostion: -7
+            displayName: 'Heading: CHARACTERS'
+            keys:
+                - ""
+            searchRange: 100
+            enabled: TRUE
+            forceActivation: true
+        # Characters: Position -6, Priority -700, Reserve 100
+        # REMOVE IRRELEVANT SECTIONS
+        -
+            text: "[ Name: ]\n[ Summary: ]\n[ Description: ]\n[ Mind: ]\n[ Abilities: ]"
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 100
+                budgetPriority: -700
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -6
+            lastUpdatedAt: 1624233133851
+            displayName: "Character: <Char Name>"
+            keys:
+                - "/Character Name/"
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        # END Characters: Position -6, Priority -700, Reserve 100
+        # Editor's Note: Position -8, Priority -600, Reserve 200, Force TRUE
+        -
+            text: "[ Editor's Note: Provide detailed descriptions of characters and locations; describe thoughts and motivations; Rated: R; Themes: adventure, intrigue]"
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 200
+                budgetPriority: -600
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -8
+            lastUpdatedAt: 1624233133851
+            displayName: "Editor's Note"
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+author: ""
