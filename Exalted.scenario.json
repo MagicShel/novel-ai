@@ -115,7 +115,7 @@
       {
         "text": "Exalt: Exalts are mortals chosen by the gods for their exceptional qualities and blessed with great power. After the enemies of the gods were defeated, Exalts were afflicted by The Great Curse, which manifests as character flaws. Solar Exalts are the chosen of The Unconquered Sun and are the most powerful Exalts; Solars were the Kings and Generals of the First Age. Slightly less powerful are the Lunar Exalts, shapeshifters chosen of Luna; and the Sidereal Exalts, guardians of fate chosen of the Five Maidens. Dragon-blooded are the least powerful, but vastly more numerous. Dragon-bloods are the chosen of the Five Elemental Dragons and rule Creation from their seat of power on The Blessed Isle. Even the least Dragon-blood is vastly more capable than any unexalted mortal. There is also a new type of Exalt, the Abyssal. Their masters are the ancient enemies of the gods and they are equal to Solars in every way.",
         "contextConfig": {
-          "prefix": "",
+          "prefix": "\n",
           "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 0,
