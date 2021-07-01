@@ -1,8 +1,8 @@
 {
   "scenarioVersion": 0,
-  "title": "Exalted: Shinju",
+  "title": "Exalted: Shinju (clean)",
   "description": "An Exalted scenario featuring Shinju, a young Night Caste Solar.",
-  "prompt": "The world of Exalted is a land of epic fantasy where demi-gods known as Exalts walk among mortals. Thousands of years ago, the most powerful of the gods, known as the Incarnae, created vessels of power call Exaltations that selected certain mortals of great potential and imbued them with great power and charged them with defeating the enemies of the gods. They were the Celestial Exalts: the unparalleled Solars chosen by The Unconquered Sun, the shapeshifting Lunars chosen by Luna, the prophetic Sidereal chosen by The Five Maidens. They were joined by the elementalist Terrestrials chosen by The Five Elemental Dragons. The enemies of the gods were defeated bringing about The First Age and the Exalts ruled Creation with the Solars as kings, the Lunars as their consorts and bodyguards, Sidereals as their advisors, and Terrestrials as their soldiers and guards.\nWhen a Celestial Exalt dies, their Exaltation passes on to a new mortal host. Terrestrial Exaltations are passed on through offspring rather than selecting a new host.\nThe First Age came to an end several hundred years ago with an event known as the Usurpation. The Solar kings had grown corrupt and given to vice, so the Sidereals manipulated the Terrestrials to rise up and slaughter the Solars and their Lunar allies. The Lunars were driven into exile and the Solars disappeared almost entirely, their Exaltations not chosing new hosts. The Terrestrials branded themselves Dragon-bloods to distance themselves from other Exalts and assumed rule of Creation from The Blessed Isle. Everything under their rule is called The Realm.\nIt is now hundreds of years later and Solar Exalts have started being chosen again, but now they are hunted by the Dragon-bloods.\n***\nShinju is an 18 year old Night Caste Solar Exalt - the caste of assassins and rogues - charged with infiltrating the port city of Cowpai in the Scavenger Lands, on a mission to gather leverage on the governor to make him an ally.",
+  "prompt": "The world of Exalted is a land of epic fantasy where demi-gods known as Exalts walk among mortals. Thousands of years ago, the most powerful of the gods, known as the Incarnae, created vessels of power call Exaltations that selected certain mortals of great potential and imbued them with great power and charged them with defeating the enemies of the gods. They were the Celestial Exalts: the unparalleled Solars chosen by The Unconquered Sun, the shapeshifting Lunars chosen by Luna, the prophetic Sidereal chosen by The Five Maidens. They were joined by the elementalist Terrestrials chosen by The Five Elemental Dragons. The enemies of the gods were defeated bringing about The First Age and the Exalts ruled Creation with the Solars as kings, the Lunars as their consorts and bodyguards, Sidereals as their advisors, and Terrestrials as their soldiers and guards.\nWhen a Celestial Exalt dies, their Exaltation passes on to a new mortal host. Terrestrial Exaltations are passed on through offspring rather than selecting a new host.\nThe First Age came to an end several hundred years ago with an event known as the Usurpation. The Solar kings had grown corrupt and given to vice, so the Sidereals manipulated the Terrestrials to rise up and slaughter the Solars and their Lunar allies. The Lunars were driven into exile and the Solars disappeared almost entirely, their Exaltations not choosing new hosts. The Terrestrials branded themselves Dragon-bloods to distance themselves from other Exalts and assumed rule of Creation from The Blessed Isle. Everything under their rule is called The Realm.\nIt is now hundreds of years later and Solar Exalts have started being chosen again, but now they are hunted by the Dragon-bloods.\n\nShinju is an 18 year old Night Caste Solar Exalt - the caste of assassins and rogues - charged with infiltrating the port city of Cowpai in the Scavenger Lands, on a mission to gather leverage on the governor to make him an ally.",
   "tags": [],
   "context": [
     {
@@ -53,7 +53,7 @@
     "lorebookVersion": 1,
     "entries": [
       {
-        "text": "[ anima: an aura surrounding all living things, it is normally invisible, but the anima of an Exalt channeling essence flares and can be seen ]",
+        "text": "[ anima: aura surrounding all living things it normally invisible yet anima of Exalt channeling essence flares and can be seen ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -73,7 +73,7 @@
         "forceActivation": false
       },
       {
-        "text": "[ essence: a current of energy moving through all things. Essence is the source of magic and wonder ]",
+        "text": "[ essence: current of energy moving through everything it source magic and wonder ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -93,7 +93,7 @@
         "forceActivation": false
       },
       {
-        "text": "[ spirit: a devine being of essence and will. Gods, elementals, demons, and ghosts ]",
+        "text": "[ spirit: divine being of essence and will; 4 spirit types: gods& elementals& demons& ghosts ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -113,7 +113,7 @@
         "forceActivation": false
       },
       {
-        "text": "Exalt: Exalts are mortals chosen by the gods for their exceptional qualities and blessed with great power. After the enemies of the gods were defeated, Exalts were afflicted by The Great Curse, which manifests as character flaws. Solar Exalts are the chosen of The Unconquered Sun and are the most powerful Exalts; Solars were the Kings and Generals of the First Age. Slightly less powerful are the Lunar Exalts, shapeshifters chosen of Luna; and the Sidereal Exalts, guardians of fate chosen of the Five Maidens. Dragon-blooded are the least powerful, but vastly more numerous. Dragon-bloods are the chosen of the Five Elemental Dragons and rule Creation from their seat of power on The Blessed Isle. Even the least Dragon-blood is vastly more capable than any unexalted mortal. There is also a new type of Exalt, the Abyssal. Their masters are the ancient enemies of the gods and they are equal to Solars in every way.",
+        "text": "Exalt: mortals chosen for their exceptional qualities blessed with great power to defeat titans; after titans defeated Exalts afflicted The Great Curse  manifests as character flaws; Exalt types: Solar& Lunar& Sidereal& Abyssal& Dragon-blooded",
         "contextConfig": {
           "prefix": "\n",
           "suffix": "\n",
@@ -133,7 +133,7 @@
         "forceActivation": false
       },
       {
-        "text": "[ Incarna: the greatest of gods and rulers of heaven. They are The Unconquered Sun, Luna, and The Five Maidens: Mercury & Venus & Mars & Jupiter & Saturn. ]",
+        "text": "[ Incarna (pl. Incarnae): seven greatest gods & rule heaven (The Unconquered Sun & Luna & Mercury & Venus & Mars & Jupiter & Saturn) ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -153,7 +153,30 @@
         "forceActivation": false
       },
       {
-        "text": "[ Dragon-blood: Exalts chosen of the Five Elemental Dragons; they most numerous and least powerful of Exalts; they betrayed and murdered the Solars and Lunars in an event known as the Usurpation, marking the end of the First Age; now they rule all of Creation from the Blessed Isle. ]\n[ Dragon-blood Castes: Fire & Earth & Air & Water & Wood ]",
+        "text": "[ Celestial Exalted: 3 types Exalt imbued by Incarna: Solar & Lunar & Sidereal ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 0,
+          "budgetPriority": 700,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -1
+        },
+        "displayName": "Faction: Incarna",
+        "keys": [
+          "celestial",
+          "/Solar/",
+          "/Lunar/",
+          "/Sidereal/"
+        ],
+        "searchRange": 5000,
+        "enabled": true,
+        "forceActivation": false
+      },
+      {
+        "text": "[ Dragon-blood AKA Terrestrial Exalt: Exalts imbued by Elemental Dragon they numerous least powerful Exalts they betrayed murdered Solars & Lunars hundreds of years ago now they rule Creation from the Blessed Isle ]\n[ Dragon-blood Castes: Fire & Earth & Air & Water & Wood ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -166,14 +189,15 @@
         },
         "displayName": "Faction: Dragon-Blooded",
         "keys": [
-          "/[Dd ]ragon-?[Bb ]lood/"
+          "/[Dd]ragon-?[Bb]lood/",
+          "terrestrial"
         ],
         "searchRange": 5000,
         "enabled": true,
         "forceActivation": false
       },
       {
-        "text": "[ Solar: Exalts chosen of The Unconquered Sun; they most powerful of Exalts; unseen for hundreds of years yet starting to return; betrayed by Dragon-Blooded in an event known as the Usurpation, marking the end of the First Age. ]\n[ Solar Castes: Dawn & Night & Eclipse & Zenith & Twilight ]",
+        "text": "[ Solar: Exalts imbued by The Unconquered Sun they most powerful Exalts unseen hundreds of years yet now returning they betrayed by Dragon-Blooded in Usurpation ]\n[ Solar Castes: Dawn & Night & Eclipse & Zenith & Twilight ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -186,14 +210,15 @@
         },
         "displayName": "Facton: Solars",
         "keys": [
-          "/Solar/"
+          "/Solar/",
+          "celestial"
         ],
         "searchRange": 5000,
         "enabled": true,
         "forceActivation": false
       },
       {
-        "text": "[ Deathlord: a hand-chosen servant of the neverborn, deathlords are the most powerful beings of the Second Age. They command undead legions and untold horrors beyond imagining. ]",
+        "text": "[ Deathlord: hand-chosen servant of the neverborn they most powerful beings command undead legions & untold horrors beyond imagining ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -213,7 +238,7 @@
         "forceActivation": false
       },
       {
-        "text": "[ Eclipse Caste: Solar Exalt / Archetypes: rangers & diplomats & bureaucrats / Abilities: oath-binding, negotiation ]",
+        "text": "[ Eclipse Caste: Solar Exalt, Archetypes: rangers & diplomats & bureaucrats, Abilities: oath-binding & negotiation ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -233,7 +258,7 @@
         "forceActivation": false
       },
       {
-        "text": "[ Night Caste: Solar Exalt / Archetypes: investigators & spies & assassins / Abilities: stealth ]",
+        "text": "[ Night Caste: Solar Exalt, Archetypes: investigators & spies & assassins, Abilities: stealth ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -286,7 +311,7 @@
         },
         "displayName": "Location: Cowpai Scarlet District",
         "keys": [
-          "/[Ss ]carlet [Dd ]istrict/",
+          "/[Ss]carlet [Dd]istrict/",
           "foreign",
           "governor",
           "official"
@@ -409,7 +434,7 @@
         "forceActivation": false
       },
       {
-        "text": "[ Shinju 18♀ Night Caste she short / wiry / hair black / eyes green she bold, defiant, adventurous ]",
+        "text": "[ Shinju 18 female Night Caste she short wiry hair black eyes green she bold & defiant & adventurous ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -432,7 +457,7 @@
         "text": "***",
         "contextConfig": {
           "prefix": "\n",
-          "suffix": "\n",
+          "suffix": "\n\n",
           "tokenBudget": 2048,
           "reservedTokens": 3,
           "budgetPriority": -1000,
@@ -449,7 +474,7 @@
         "forceActivation": true
       },
       {
-        "text": "[ Editor's Note: Provide detailed descriptions of characters and locations; describe thoughts and motivations; Rated: R; Themes: wuxia, adventure, intrigue ]",
+        "text": "[ Author: Robert Jordan; Tone: dark& gritty; Tag: epic& wuxia& heist& intrigue; Editor's Note: Provide detailed descriptions of characters and locations; describe thoughts and motivations; Rated: R ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",

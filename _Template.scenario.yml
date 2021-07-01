@@ -4,7 +4,7 @@ description: "<Scenario description here>"
 prompt: "<prompt>"
 tags: []
 context:
-    # Memory: Position -1, Priority -100, Reserve 512
+    # Memory: Position -1, Priority 100, Reserve 512
     -
         text: ""
         contextConfig:
