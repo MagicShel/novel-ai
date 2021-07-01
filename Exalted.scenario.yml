@@ -34,6 +34,8 @@ settings:
         temperature: 0.65
         max_length: 60
         min_length: 20
+        top_k: 0
+        top_p: 1
         tail_free_sampling: 0.8
         repetition_penalty: 2.8
         repetition_penalty_range: 512
