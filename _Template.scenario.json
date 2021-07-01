@@ -12,7 +12,7 @@
         "suffix": "\n",
         "tokenBudget": 2048,
         "reservedTokens": 512,
-        "budgetPriority": -100,
+        "budgetPriority": 100,
         "trimDirection": "doNotTrim",
         "insertionType": "newline",
         "insertionPosition": -1
@@ -159,7 +159,7 @@
           "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 3,
-          "budgetPriority": -700,
+          "budgetPriority": -1000,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
           "insertionPosition": -4

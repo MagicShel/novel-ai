@@ -12,7 +12,7 @@ context:
             suffix: "\n"
             tokenBudget: 2048
             reservedTokens: 512
-            budgetPriority: -100
+            budgetPriority: 100
             trimDirection: doNotTrim
             insertionType: newline
             insertionPosition: -1
@@ -146,7 +146,7 @@ lorebook:
         # END Emphasis: Position -8, Priority -400, Reserve 200
         # Pillar: Position -4, Priority -600, Reserve 200 (Crucial information to reinforce context)
         # END Pillar: Position -4, Priority -600, Reserve 200
-        # Signpost: Position -4, Priority -700, Reserve 3, Force TRUE, SINGLE
+        # Signpost: Position -4, Priority -1000, Reserve 3, Force TRUE, SINGLE
         -
             text: "***"
             contextConfig:
@@ -154,7 +154,7 @@ lorebook:
                 suffix: "\n"
                 tokenBudget: 2048
                 reservedTokens: 3
-                budgetPriority: -700
+                budgetPriority: -1000
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -4
@@ -164,7 +164,7 @@ lorebook:
             searchRange: 1000
             enabled: true
             forceActivation: true
-        # END Signpost: Position -4, Priority -700, Reserve 3, Force TRUE, SINGLE
+        # END Signpost: Position -4, Priority -1000, Reserve 3, Force TRUE, SINGLE
         # Synopsis: Position -8, Priority -500, Reserve 200, Force TRUE, SINGLE
         -
             text: "[ Editor's Note: Provide detailed descriptions of characters and locations; describe thoughts and motivations; Rated: R; Themes: adventure, intrigue]"
