@@ -1,34 +1,34 @@
 scenarioVersion: 0
 title: "Exalted: Shinju"
-description: 'An Exalted scenario featuring Shinju, a young Night Caste Solar.'
+description: "An Exalted scenario featuring Shinju, a young Night Caste Solar."
 prompt: "The world of Exalted is a land of epic fantasy where demi-gods known as Exalts walk among mortals. Thousands of years ago, the most powerful of the gods, known as the Incarnae, created vessels of power call Exaltations that selected certain mortals of great potential and imbued them with great power and charged them with defeating the enemies of the gods. They were the Celestial Exalts: the unparalleled Solars chosen by The Unconquered Sun, the shapeshifting Lunars chosen by Luna, the prophetic Sidereal chosen by The Five Maidens. They were joined by the elementalist Terrestrials chosen by The Five Elemental Dragons. The enemies of the gods were defeated bringing about The First Age and the Exalts ruled Creation with the Solars as kings, the Lunars as their consorts and bodyguards, Sidereals as their advisors, and Terrestrials as their soldiers and guards.\nWhen a Celestial Exalt dies, their Exaltation passes on to a new mortal host. Terrestrial Exaltations are passed on through offspring rather than selecting a new host.\nThe First Age came to an end several hundred years ago with an event known as the Usurpation. The Solar kings had grown corrupt and given to vice, so the Sidereals manipulated the Terrestrials to rise up and slaughter the Solars and their Lunar allies. The Lunars were driven into exile and the Solars disappeared almost entirely, their Exaltations not chosing new hosts. The Terrestrials branded themselves Dragon-bloods to distance themselves from other Exalts and assumed rule of Creation from The Blessed Isle. Everything under their rule is called The Realm.\nIt is now hundreds of years later and Solar Exalts have started being chosen again, but now they are hunted by the Dragonbloods.\n***\nShinju is an 18 year old Night Caste Solar Exalt - the caste of assassins and rogues - charged with infiltrating the port city of Cowpai in the Scavenger Lands, on a mission to gather leverage on the governor to make him an ally."
-tags: []
+tags: [ ]
 context:
     # Memory
     -
-        text: "[ Shinju is a Solar Exalt which grants extraordinary stealth and fighting abilities, though Shinju is still in training. Shinju can best any but the most capable mortal warriors, but to do so in public would almost certainly attract the attention of Dragon-bloods. Shinju can defeat most Dragon-bloods in single combat, but skilled opponents and groups are a grave threat.]\n[ Shinju's mission is to avoid any Dragon-Bloods in Cowpai and gain influence with the governor to change the allegiance of Cowpai from The Realm to the Solars.]"
+        text: "[ Shinju is a Solar Exalt which grants extraordinary stealth and fighting abilities, though Shinju is still in training. Shinju can best any but the most capable mortal warriors, but to do so in public would almost certainly attract the attention of Dragon-bloods. Shinju can defeat most Dragon-bloods in single combat, but skilled opponents and groups are a grave threat. ]\n[ Shinju's mission is to avoid any Dragon-Bloods in Cowpai and gain influence with the governor to change the allegiance of Cowpai from The Realm to the Solars. ]"
         contextConfig:
             prefix: ""
             suffix: "\n"
             tokenBudget: 2048
             reservedTokens: 512
             budgetPriority: -100
-            trimDirection: trimBottom
+            trimDirection: doNotTrim
             insertionType: newline
             insertionPosition: -1
     # Author's Note
     -
-        text: "[ Author's Note: In this scene Shinju is disguised as a consort from the Blessed Isle. She seeks access to the governor, but lacks the status to meet with him directly. She seeks allies and knowledge that will help her get close to the governor.]"
+        text: "[ Author's Note: In this scene Shinju is disguised as a consort from the Blessed Isle. She seeks access to the governor, but lacks the status to meet with him directly. She seeks allies and knowledge that will help her get close to the governor. ]"
         contextConfig:
             prefix: ""
             suffix: "\n"
             tokenBudget: 2048
             reservedTokens: 512
             budgetPriority: -800
-            trimDirection: trimBottom
+            trimDirection: doNotTrim
             insertionType: newline
             insertionPosition: -4
-placeholders: []
+placeholders: [ ]
 settings:
     parameters:
         temperature: 0.65
@@ -40,7 +40,7 @@ settings:
         repetition_penalty: 2.8
         repetition_penalty_range: 512
         repetition_penalty_slope: 3.33
-        bad_words_ids: []
+        bad_words_ids: [ ]
     trimResponses: true
     banBrackets: true
     trimResponses: true
@@ -50,7 +50,7 @@ lorebook:
     entries:
         # Concepts: Position -1, Priority 800, Reserve 0, Range 2000
         -
-            text: '[ anima: an aura surrounding all living things, it is normally invisible, but the anima of an Exalt channeling essence flares and can be seen.]'
+            text: "[ anima: an aura surrounding all living things, it is normally invisible, but the anima of an Exalt channeling essence flares and can be seen ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -60,14 +60,14 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Concept: Anima'
+            displayName: "Concept: Anima"
             keys:
                 - anima
             searchRange: 2000
             enabled: true
             forceActivation: false
         -
-            text: '[ essence: a current of energy moving through all things. Essence is the source of magic and wonder.]'
+            text: "[ essence: a current of energy moving through all things. Essence is the source of magic and wonder ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -77,14 +77,14 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Concept: Essence'
+            displayName: "Concept: Essence"
             keys:
                 - essence
             searchRange: 2000
             enabled: true
             forceActivation: false
         -
-            text: '[ spirit: a devine being of essence and will. Gods, elementals, demons, and ghosts.]'
+            text: "[ spirit: a devine being of essence and will. Gods, elementals, demons, and ghosts ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -94,14 +94,14 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Concept: Spirit'
+            displayName: "Concept: Spirit"
             keys:
                 - spirit
             searchRange: 2000
             enabled: true
             forceActivation: false
         -
-            text: '[ Exalt: Exalts are mortals chosen by the gods for their exceptional qualities and blessed with great power. After the enemies of the gods were defeated, Exalts were afflicted by The Great Curse, which manifests as character flaws. Solar Exalts are the chosen of The Unconquered Sun and are the most powerful Exalts; Solars were the Kings and Generals of the First Age. Slightly less powerful are the Lunar Exalts, shapeshifters chosen of Luna; and the Sidereal Exalts, guardians of fate chosen of the Five Maidens. Dragon-blooded are the least powerful, but vastly more numerous. Dragon-bloods are the chosen of the Five Elemental Dragons and rule Creation from their seat of power on The Blessed Isle. Even the least Dragon-blood is vastly more capable than any unexalted mortal. There is also a new type of Exalt, the Abyssal. Their masters are the ancient enemies of the gods and they are equal to Solars in every way.]'
+            text: "Exalt: Exalts are mortals chosen by the gods for their exceptional qualities and blessed with great power. After the enemies of the gods were defeated, Exalts were afflicted by The Great Curse, which manifests as character flaws. Solar Exalts are the chosen of The Unconquered Sun and are the most powerful Exalts; Solars were the Kings and Generals of the First Age. Slightly less powerful are the Lunar Exalts, shapeshifters chosen of Luna; and the Sidereal Exalts, guardians of fate chosen of the Five Maidens. Dragon-blooded are the least powerful, but vastly more numerous. Dragon-bloods are the chosen of the Five Elemental Dragons and rule Creation from their seat of power on The Blessed Isle. Even the least Dragon-blood is vastly more capable than any unexalted mortal. There is also a new type of Exalt, the Abyssal. Their masters are the ancient enemies of the gods and they are equal to Solars in every way."
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -111,7 +111,7 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Concept: Exalt'
+            displayName: "Concept: Exalt"
             keys:
                 - /Exalt/
             searchRange: 2000
@@ -120,7 +120,7 @@ lorebook:
         # END Concepts: Position -1, Priority 800, Reserve 0, Range 2000
         # Factions: Position -1, Priority 700, Reserve 0, Range 5000
         -
-            text: '[ Incarna: the greatest of gods and rulers of heaven. They are The Unconquered Sun, Luna, and The Five Maidens: Mercury, Venus, Mars, Jupiter, and Saturn.]'
+            text: "[ Incarna: the greatest of gods and rulers of heaven. They are The Unconquered Sun, Luna, and The Five Maidens: Mercury & Venus & Mars & Jupiter & Saturn. ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -130,14 +130,14 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Faction: Incarna'
+            displayName: "Faction: Incarna"
             keys:
                 - '/Incarnae?/'
             searchRange: 5000
             enabled: true
             forceActivation: false
         -
-            text: '[ Dragon-blood: Exalts chosen of the Five Elemental Dragons; they most numerous and least powerful of Exalts; they betrayed and murdered the Solars and Lunars in an event known as the Usurpation, marking the end of the First Age; now they rule all of Creation from the Blessed Isle.]\n[ Dragon-blood Castes: Fire, Earth, Air, Water, Wood]'
+            text: "[ Dragon-blood: Exalts chosen of the Five Elemental Dragons; they most numerous and least powerful of Exalts; they betrayed and murdered the Solars and Lunars in an event known as the Usurpation, marking the end of the First Age; now they rule all of Creation from the Blessed Isle. ]\n[ Dragon-blood Castes: Fire & Earth & Air & Water & Wood ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -147,14 +147,14 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Faction: Dragon-Blooded'
+            displayName: "Faction: Dragon-Blooded"
             keys:
-                - '/[Dd]ragon-?[Bb]lood/'
+                - '/[Dd ]ragon-?[Bb ]lood/'
             searchRange: 5000
             enabled: true
             forceActivation: false
         -
-            text: '[ Solar: Exalts chosen of The Unconquered Sun; they most powerful of Exalts; unseen for hundreds of years yet starting to return; betrayed by Dragon-Blooded in an event known as the Usurpation, marking the end of the First Age.]\n[ Solar Castes: Dawn, Night, Eclipse, Zenith, Twilight]'
+            text: "[ Solar: Exalts chosen of The Unconquered Sun; they most powerful of Exalts; unseen for hundreds of years yet starting to return; betrayed by Dragon-Blooded in an event known as the Usurpation, marking the end of the First Age. ]\n[ Solar Castes: Dawn & Night & Eclipse & Zenith & Twilight ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -164,7 +164,7 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Facton: Solars'
+            displayName: "Facton: Solars"
             keys:
                 - '/Solar/'
             searchRange: 5000
@@ -173,7 +173,7 @@ lorebook:
         # END Factions: Position -1, Priority 700, Reserve 0, Range 5000
         # Species: Position -1, Priority 600, Reserve 0, Range 2000
         -
-            text: '[ Deathlord: a hand-chosen servant of the neverborn, deathlords are the most powerful beings of the Second Age. The command undead legions and untold horrors beyond imagining.]'
+            text: "[ Deathlord: a hand-chosen servant of the neverborn, deathlords are the most powerful beings of the Second Age. They command undead legions and untold horrors beyond imagining. ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -183,14 +183,14 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Race: Deathlord'
+            displayName: "Race: Deathlord"
             keys:
                 - deathlord
             searchRange: 2000
             enabled: true
             forceActivation: false
         -
-            text: '[ Caste: Eclipse] [ Type: Solar Exalt] [ Archetypes: rangers, diplomats, bureaucrats] [ Abilities: oath-binding, negotiation]'
+            text: "[ Eclipse Caste: Solar Exalt / Archetypes: rangers & diplomats & bureaucrats / Abilities: oath-binding, negotiation ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -200,14 +200,14 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Race: Solar Eclipse Caste'
+            displayName: "Race: Solar Eclipse Caste"
             keys:
                 - /Eclipse/
             searchRange: 2000
             enabled: true
             forceActivation: false
         -
-            text: '[ Caste: Night] [Type: Solar Exalt] [ Archetypes: investigators, spies, assassins] [ Abilities: stealth]'
+            text: "[ Night Caste: Solar Exalt / Archetypes: investigators & spies & assassins / Abilities: stealth ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -217,7 +217,7 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Race: Solar Night Caste'
+            displayName: "Race: Solar Night Caste"
             keys:
                 - /Night/
             searchRange: 2000
@@ -226,7 +226,7 @@ lorebook:
         # END Species: Position -1, Priority 600, Reserve 0, Range 2000
         # Places: Position -1, Priority 500, Reserve 0, Range 3000
         -
-            text: '[ Cowpai: A port city on the threshold of the Great Sea.] [ Districts: Scarlet, Military, Dregs, Docks, Shacks, Silver]'
+            text: "[ Cowpai: A port city on the threshold of the Great Sea. Districts: Scarlet & Military & Dregs & Docks & Shacks & Silver ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -236,14 +236,14 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Location: Cowpai'
+            displayName: "Location: Cowpai"
             keys:
                 - /Cowpai/
             searchRange: 3000
             enabled: true
             forceActivation: false
         -
-            text: '[ Cowpai Scarlet District: Residences of officials and foreign dignitaries; exits to the dregs, Silver District, and Military District]'
+            text: "[ Cowpai Scarlet District: Residences of officials and foreign dignitaries; exits to the dregs, Silver District, and Military District ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -253,9 +253,9 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Location: Cowpai Scarlet District'
+            displayName: "Location: Cowpai Scarlet District"
             keys:
-                - '/[Ss]carlet [Dd]istrict/'
+                - "/[Ss ]carlet [Dd ]istrict/"
                 - foreign
                 - governor
                 - official
@@ -263,7 +263,7 @@ lorebook:
             enabled: true
             forceActivation: false
         -
-            text: '[ Cowpai Dregs: Seedy part of town with brothels, inns, taverns; occupies the city center with exits to all other districts]'
+            text: "[ Cowpai Dregs: Seedy part of town with brothels & inns & taverns; occupies the city center with exits to all other districts ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -273,7 +273,7 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Location: Cowpai Dregs'
+            displayName: "Location: Cowpai Dregs"
             keys:
                 - dregs
                 - tavern
@@ -285,7 +285,7 @@ lorebook:
             enabled: true
             forceActivation: false
         -
-            text: '[ Cowpai Docks: port area of town with piers and warehouses; west side of town with exits to shacks, dregs, and Silver District]'
+            text: "[ Cowpai Docks: port area of town with piers and warehouses; west side of town with exits to shacks, dregs, and Silver District ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -295,7 +295,7 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Location: Cowpai Docks'
+            displayName: "Location: Cowpai Docks"
             keys:
                 - dock
                 - pier
@@ -305,7 +305,7 @@ lorebook:
             enabled: true
             forceActivation: false
         -
-            text: '[ Cowpai Shacks: poor area of town with ramshackle houses where farmers, dock-workers, vendors, and prostitues live; exits to dregs, Military District, and docks]'
+            text: "[ Cowpai Shacks: poor area of town with ramshackle houses where farmers, dock-workers, vendors, and prostitues live; exits to dregs, Military District, and docks ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -315,7 +315,7 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Location: Cowpai Shacks'
+            displayName: "Location: Cowpai Shacks"
             keys:
                 - shacks
                 - poor
@@ -323,7 +323,7 @@ lorebook:
             enabled: true
             forceActivation: false
         -
-            text: '[ Cowpai Silver District: wealthy merchants with stores and high end products for wealthy clientelle; exits to the dregs, the Scarlet District, and the docks]'
+            text: "[ Cowpai Silver District: wealthy merchants with stores and high end products for wealthy clientelle; exits to the dregs, the Scarlet District, and the docks ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -333,16 +333,16 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Location: Cowpai Silver District'
+            displayName: "Location: Cowpai Silver District"
             keys:
-                - "/[Ss]ilver [Dd]istrict/"
+                - "/[Ss ]ilver [Dd ]istrict/"
                 - rich
                 - wealthy
             searchRange: 3000
             enabled: true
             forceActivation: false
         -
-            text: '[ Cowpai Military District: a camp full of tents and training grounds where guards and soldiers are housed and trained; exits to the shacks, dregs, and Scarlet District]'
+            text: "[ Cowpai Military District: a camp full of tents and training grounds where guards and soldiers are housed and trained; exits to the shacks, dregs, and Scarlet District ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -352,7 +352,7 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Location: Cowpai Military District'
+            displayName: "Location: Cowpai Military District"
             keys:
                 - military
                 - soldier
@@ -363,7 +363,7 @@ lorebook:
         # Characters: Position -1, Priority 400, Reserve 200, Range 2000
         # REMOVE IRRELEVANT SECTIONS
         -
-            text: '[ Name: Shinju] [ Summary: 18 year old female Night Caste Solar Exalt] [ Appearance: short, wiry, hair black, eyes green] [ Personality: bold, defiant, adventurous]'
+            text: "[ Shinju 18♀ Night Caste she short / wiry / hair black / eyes green she bold, defiant, adventurous ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -373,9 +373,9 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: 'Character: Shinju'
+            displayName: "Character: Shinju"
             keys:
-                - '/Shinju/'
+                - "/Shinju/"
             searchRange: 2000
             enabled: true
             forceActivation: false
@@ -405,7 +405,7 @@ lorebook:
         # END Signpost: Position -4, Priority -700, Reserve 3, Force TRUE, SINGLE
         # Synopsis: Position -8, Priority -500, Reserve 200, Force TRUE, SINGLE
         -
-            text: "[ Editor's Note: Provide detailed descriptions of characters and locations; describe thoughts and motivations; Rated: R; Themes: wuxia, adventure, intrigue]"
+            text: "[ Editor's Note: Provide detailed descriptions of characters and locations; describe thoughts and motivations; Rated: R; Themes: wuxia, adventure, intrigue ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"

@@ -13,7 +13,7 @@ context:
             tokenBudget: 2048
             reservedTokens: 512
             budgetPriority: -100
-            trimDirection: trimTop
+            trimDirection: doNotTrim
             insertionType: newline
             insertionPosition: -1
     # Author's Note: Position -4, Priority -800, Reserve 512
@@ -25,7 +25,7 @@ context:
             tokenBudget: 2048
             reservedTokens: 512
             budgetPriority: -800
-            trimDirection: trimBottom
+            trimDirection: doNotTrim
             insertionType: newline
             insertionPosition: -4
 placeholders: []
