@@ -11,11 +11,11 @@
         "prefix": "",
         "suffix": "\n",
         "tokenBudget": 2048,
-        "reservedTokens": 200,
+        "reservedTokens": 512,
         "budgetPriority": -100,
-        "trimDirection": "trimBottom",
+        "trimDirection": "trimTop",
         "insertionType": "newline",
-        "insertionPosition": -12
+        "insertionPosition": -1
       }
     },
     {
@@ -24,7 +24,7 @@
         "prefix": "",
         "suffix": "\n",
         "tokenBudget": 2048,
-        "reservedTokens": 200,
+        "reservedTokens": 512,
         "budgetPriority": -800,
         "trimDirection": "trimBottom",
         "insertionType": "newline",
@@ -35,15 +35,13 @@
   "placeholders": [],
   "settings": {
     "parameters": {
-      "temperature": 0.725,
+      "temperature": 0.65,
       "max_length": 60,
       "min_length": 20,
-      "top_k": 69,
-      "top_p": 0.85,
-      "tail_free_sampling": 2.1,
-      "repetition_penalty": 2.5,
-      "repetition_penalty_range": 800,
-      "repetition_penalty_slope": 2.52,
+      "tail_free_sampling": 0.8,
+      "repetition_penalty": 2.8,
+      "repetition_penalty_range": 512,
+      "repetition_penalty_slope": 3.33,
       "bad_words_ids": []
     },
     "trimResponses": true,
@@ -53,64 +51,44 @@
     "lorebookVersion": 1,
     "entries": [
       {
-        "text": "LEXICON",
-        "contextConfig": {
-          "prefix": "",
-          "suffix": "\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 200,
-          "budgetPriority": -199,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -10
-        },
-        "displayName": "Heading: LEXICON",
-        "keys": [
-          ""
-        ],
-        "searchRange": 1000,
-        "enabled": true,
-        "forceActivation": true
-      },
-      {
         "text": "[ zen: a Japanese school of Mahayana Buddhism emphasizing the value of meditation and intuition.]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
-          "reservedTokens": 200,
-          "budgetPriority": -200,
+          "reservedTokens": 0,
+          "budgetPriority": 800,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -10
+          "insertionPosition": -1
         },
         "displayName": "Concept: zen",
         "keys": [
           "zen"
         ],
-        "searchRange": 1000,
+        "searchRange": 2000,
         "enabled": true,
         "forceActivation": false
       },
       {
-        "text": "RACES",
+        "text": "[ Peachists: People dedicated to the prospect that peaches are the best fruit.]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
-          "reservedTokens": 200,
-          "budgetPriority": -299,
+          "reservedTokens": 0,
+          "budgetPriority": 700,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -10
+          "insertionPosition": -1
         },
-        "displayName": "Heading: RACES",
+        "displayName": "Location: Atlanta",
         "keys": [
-          ""
+          "/[Pp]eachis[m|t]/"
         ],
-        "searchRange": 1000,
+        "searchRange": 5000,
         "enabled": true,
-        "forceActivation": true
+        "forceActivation": false
       },
       {
         "text": "[ human: relating to or characteristic of people or human beings.]",
@@ -128,29 +106,9 @@
         "keys": [
           "human"
         ],
-        "searchRange": 1000,
+        "searchRange": 2000,
         "enabled": true,
         "forceActivation": false
-      },
-      {
-        "text": "LOCATIONS",
-        "contextConfig": {
-          "prefix": "",
-          "suffix": "\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 200,
-          "budgetPriority": -399,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -10
-        },
-        "displayName": "Heading: LOCATIONS",
-        "keys": [
-          ""
-        ],
-        "searchRange": 1000,
-        "enabled": true,
-        "forceActivation": true
       },
       {
         "text": "[ Atlanta: The capital of the state of Georgia.]",
@@ -158,100 +116,59 @@
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
-          "reservedTokens": 200,
-          "budgetPriority": -400,
+          "reservedTokens": 0,
+          "budgetPriority": 500,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -10
+          "insertionPosition": -1
         },
         "displayName": "Location: Atlanta",
         "keys": [
           "/Atlanta/"
         ],
-        "searchRange": 1000,
+        "searchRange": 3000,
         "enabled": true,
         "forceActivation": false
       },
       {
-        "text": "GROUPS",
+        "text": "[ Name: ]\n[ Summary: ]\n[ Description: ]\n[ Mind: ]\n[ Wear: ]\n[ Abilities: ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 200,
-          "budgetPriority": -499,
+          "budgetPriority": 400,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -10
+          "insertionPosition": -1
         },
-        "displayName": "Heading: GROUPS",
-        "keys": [
-          ""
-        ],
-        "searchRange": 1000,
-        "enabled": true,
-        "forceActivation": true
-      },
-      {
-        "text": "[ Peachists: People dedicated to the prospect that peaches are the best fruit.]",
-        "contextConfig": {
-          "prefix": "",
-          "suffix": "\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 200,
-          "budgetPriority": -500,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -10
-        },
-        "displayName": "Location: Atlanta",
-        "keys": [
-          "/[Pp]eachis[m|t]/"
-        ],
-        "searchRange": 1000,
-        "enabled": true,
-        "forceActivation": false
-      },
-      {
-        "text": "CHARACTERS",
-        "contextConfig": {
-          "prefix": "",
-          "suffix": "\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 5,
-          "budgetPriority": -699,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertinPostion": -7
-        },
-        "displayName": "Heading: CHARACTERS",
-        "keys": [
-          ""
-        ],
-        "searchRange": 100,
-        "enabled": true,
-        "forceActivation": true
-      },
-      {
-        "text": "[ Name: ]\n[ Summary: ]\n[ Description: ]\n[ Mind: ]\n[ Abilities: ]",
-        "contextConfig": {
-          "prefix": "",
-          "suffix": "\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 100,
-          "budgetPriority": -700,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -6
-        },
-        "lastUpdatedAt": 1624233133851,
         "displayName": "Character: <Char Name>",
         "keys": [
           "/Character Name/"
         ],
-        "searchRange": 1000,
+        "searchRange": 2000,
         "enabled": true,
         "forceActivation": false
+      },
+      {
+        "text": "***",
+        "contextConfig": {
+          "prefix": "\n",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 3,
+          "budgetPriority": -700,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -4
+        },
+        "displayName": "Editor's Note",
+        "keys": [
+          ""
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
       },
       {
         "text": "[ Editor's Note: Provide detailed descriptions of characters and locations; describe thoughts and motivations; Rated: R; Themes: adventure, intrigue]",
@@ -265,7 +182,6 @@
           "insertionType": "newline",
           "insertionPosition": -8
         },
-        "lastUpdatedAt": 1624233133851,
         "displayName": "Editor's Note",
         "keys": [
           ""
