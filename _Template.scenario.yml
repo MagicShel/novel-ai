@@ -123,9 +123,9 @@ lorebook:
             forceActivation: false
         # END Places: Position -1, Priority 500, Reserve 0, Range 3000
         # Characters: Position -1, Priority 400, Reserve 200, Range 2000
-        # REMOVE IRRELEVANT SECTIONS
+        # Keep each line to ~18 tokens, then close encapsulation and do a carriage return
         -
-            text: "[ Name: ]\n[ Summary: ]\n[ Description: ]\n[ Mind: ]\n[ Wear: ]\n[ Abilities: ]"
+            text: "[ John Doe: 25yo male accountant hight average weight average eyes blue hair brown ]\n[ John Doe: boring skull tattoo left shoulder drinks Pabst Blue Ribbon ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -135,9 +135,9 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: "Character: <Char Name>"
+            displayName: "Character: John Doe"
             keys:
-                - "/Character Name/"
+                - "John"
             searchRange: 2000
             enabled: true
             forceActivation: false
@@ -167,7 +167,7 @@ lorebook:
         # END Signpost: Position -4, Priority -1000, Reserve 3, Force TRUE, SINGLE
         # Synopsis: Position -8, Priority -500, Reserve 200, Force TRUE, SINGLE
         -
-            text: "[ Editor's Note: Provide detailed descriptions of characters and locations; describe thoughts and motivations; Rated: R; Themes: adventure, intrigue]"
+            text: "[ Author: Robert Jordan; Tone: fanciful& zany& sarcastic; Tag: sitcom& sfw; Editor's Note: intricate descriptions& flowery prose& introspective; Rated: R; Themes: happiness in small things]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -177,7 +177,7 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -8
-            displayName: "Editor's Note"
+            displayName: "Writing Style"
             keys:
                 - ""
             searchRange: 1000
