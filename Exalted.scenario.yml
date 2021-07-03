@@ -427,7 +427,7 @@ lorebook:
         # END Signpost: Position -4, Priority -1000, Reserve 3, Force TRUE, SINGLE
         # Synopsis: Position -8, Priority -500, Reserve 200, Force TRUE, SINGLE
         -
-            text: "[ Author: Robert Jordan; Tone: dark& gritty; Tag: epic& wuxia& heist& intrigue; Editor's Note: Provide detailed descriptions of characters and locations; describe thoughts and motivations; Rated: R ]"
+            text: "[ Author: Robert Jordan; Tone: dark& gritty; Tags: epic& wuxia& heist& intrigue; Editor's Note: Provide detailed descriptions of characters and locations; describe thoughts and motivations; Rated: R ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -443,4 +443,4 @@ lorebook:
             searchRange: 1000
             enabled: true
             forceActivation: true
-author: ""
+author: "Shel"

@@ -1,12 +1,12 @@
 {
   "scenarioVersion": 0,
-  "title": "<Scenario title here>",
-  "description": "<Scenario description here>",
-  "prompt": "<prompt>",
+  "title": "Indiana Jones v21.07.02a",
+  "description": "Indiana Jones test scenario",
+  "prompt": "Henry Jones is a professor of archeology and sometimes adventurer during the 1940's who crosses the globe recovering ancient artifacts for preservation in a museum. His adventuring alter ego is \"Indiana\" Jones. Some of his famous discoveries include the Ark of the Covenenant and the Holy Grail. His adventures have frequently brought him into conflict with Nazis. Recently, Dr. Jones has come into information that the ${What artifact are you seeking?} is being hunted in ${Where are you searching for the artifact?} and he means to recover the artifact before anyone else!\nIndiana hops aboard an airplane, bringing his trusty leather whip and hat. After landing and checking into a hotel, he immediately ",
   "tags": [],
   "context": [
     {
-      "text": "",
+      "text": "PROLOGUE\nThe year is 1947. Indiana Jones is seeking the ${What artifact are you seeking?} in ${Where are you searching for the artifact?}.",
       "contextConfig": {
         "prefix": "",
         "suffix": "\n",
@@ -19,7 +19,7 @@
       }
     },
     {
-      "text": "",
+      "text": "[ In this scene Dr. Jones is tired after his long trip; he is seeking local contacts to help him discover the location of the artifact. Hint that Dr. Jones is being followed. ]",
       "contextConfig": {
         "prefix": "",
         "suffix": "\n",
@@ -53,87 +53,7 @@
     "lorebookVersion": 1,
     "entries": [
       {
-        "text": "[ zen: a Japanese school of Mahayana Buddhism emphasizing the value of meditation and intuition.]",
-        "contextConfig": {
-          "prefix": "",
-          "suffix": "\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 0,
-          "budgetPriority": 800,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -1
-        },
-        "displayName": "Concept: zen",
-        "keys": [
-          "zen"
-        ],
-        "searchRange": 2000,
-        "enabled": true,
-        "forceActivation": false
-      },
-      {
-        "text": "[ Peachists: People dedicated to the prospect that peaches are the best fruit.]",
-        "contextConfig": {
-          "prefix": "",
-          "suffix": "\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 0,
-          "budgetPriority": 700,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -1
-        },
-        "displayName": "Location: Atlanta",
-        "keys": [
-          "/[Pp]eachis[m|t]/"
-        ],
-        "searchRange": 5000,
-        "enabled": true,
-        "forceActivation": false
-      },
-      {
-        "text": "[ human: relating to or characteristic of people or human beings.]",
-        "contextConfig": {
-          "prefix": "",
-          "suffix": "\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 200,
-          "budgetPriority": -300,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -10
-        },
-        "displayName": "Race: human",
-        "keys": [
-          "human"
-        ],
-        "searchRange": 2000,
-        "enabled": true,
-        "forceActivation": false
-      },
-      {
-        "text": "[ Atlanta: The capital of the state of Georgia.]",
-        "contextConfig": {
-          "prefix": "",
-          "suffix": "\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 0,
-          "budgetPriority": 500,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -1
-        },
-        "displayName": "Location: Atlanta",
-        "keys": [
-          "/Atlanta/"
-        ],
-        "searchRange": 3000,
-        "enabled": true,
-        "forceActivation": false
-      },
-      {
-        "text": "[ Name: ]\n[ Summary: ]\n[ Description: ]\n[ Mind: ]\n[ Wear: ]\n[ Abilities: ]",
+        "text": "[ Dr. Henry Jones AKA Indiana Jones: 48yo male professor adventurer; Dr. Jones appearance: tall, muscular, eyes blue, hair short& brown; Dr. Jones carries: whip leather& fedora leather; Dr. Jones skills: resourceful& boxing; Dr. Jones contacts: Marcus Brody& Sallah& Marion Ravenwood; Dr. Jones played by Harrison Ford ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -144,9 +64,72 @@
           "insertionType": "newline",
           "insertionPosition": -1
         },
-        "displayName": "Character: <Char Name>",
+        "displayName": "Character: Indiana Jones",
         "keys": [
-          "/Character Name/"
+          "Indiana",
+          "/[Dr.|Mr.|Henry] Jones/"
+        ],
+        "searchRange": 2000,
+        "enabled": true,
+        "forceActivation": false
+      },
+      {
+        "text": "[ Marcus Brody: 62yo male museum curator of the National Museum he height avg he expert on artifacts& lore he stuffy academic; Marcus played by Denholm Elliott ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 200,
+          "budgetPriority": 400,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -1
+        },
+        "displayName": "Character: Marcus",
+        "keys": [
+          "Marcus",
+          "Brody"
+        ],
+        "searchRange": 2000,
+        "enabled": true,
+        "forceActivation": false
+      },
+      {
+        "text": "[ Sallah: 45yo male Egyptian excavator very tall strong stocky his hair black beard black accent: Middle Eastern he fiercely loyal jovial; Sallah played by John Rhys-Davies ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 200,
+          "budgetPriority": 400,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -1
+        },
+        "displayName": "Character: Sallah",
+        "keys": [
+          "Sallah"
+        ],
+        "searchRange": 2000,
+        "enabled": true,
+        "forceActivation": false
+      },
+      {
+        "text": "[ Marion Ravenwood: 33yo female adventurer her hair long& black eyes brown beautiful she former lover of Indiana Jones she bitter& sarcastic her father Abner Ravenwood; Marion played by Karen Allen ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 200,
+          "budgetPriority": 400,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -1
+        },
+        "displayName": "Character: Marion",
+        "keys": [
+          "Marion",
+          "Ravenwood"
         ],
         "searchRange": 2000,
         "enabled": true,
@@ -173,7 +156,7 @@
         "forceActivation": true
       },
       {
-        "text": "[ Editor's Note: Provide detailed descriptions of characters and locations; describe thoughts and motivations; Rated: R; Themes: adventure, intrigue]",
+        "text": "[ Author: George Lucas; Tone: light& adventurous& humorous; Tags: ww2& historical; Editor's Note: intricate descriptions& flowery prose& introspective; Rated: R; Themes: historical preservation& friendship& reluctant hero ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -184,7 +167,7 @@
           "insertionType": "newline",
           "insertionPosition": -8
         },
-        "displayName": "Editor's Note",
+        "displayName": "Writing Style",
         "keys": [
           ""
         ],
@@ -194,5 +177,5 @@
       }
     ]
   },
-  "author": ""
+  "author": "Shel"
 }

@@ -1,0 +1,193 @@
+lorebookVersion: 1
+entries:
+    # Concepts: Position -1, Priority 800, Reserve 0, Range 2000
+    # -
+    #     text: "[ zen: a Japanese school of Mahayana Buddhism emphasizing the value of meditation and intuition.]"
+    #     contextConfig:
+    #         prefix: ""
+    #         suffix: "\n"
+    #         tokenBudget: 2048
+    #         reservedTokens: 0
+    #         budgetPriority: 800
+    #         trimDirection: doNotTrim
+    #         insertionType: newline
+    #         insertionPosition: -1
+    #     displayName: "Concept: zen"
+    #     keys:
+    #         - zen
+    #     searchRange: 2000
+    #     enabled: true
+    #     forceActivation: false
+    # END Concepts: Position -1, Priority 800, Reserve 0, Range 2000
+    # Factions: Position -1, Priority 700, Reserve 0, Range 5000
+    # -
+    #     text: "[ Peachists: People dedicated to the prospect that peaches are the best fruit.]"
+    #     contextConfig:
+    #         prefix: ""
+    #         suffix: "\n"
+    #         tokenBudget: 2048
+    #         reservedTokens: 0
+    #         budgetPriority: 700
+    #         trimDirection: doNotTrim
+    #         insertionType: newline
+    #         insertionPosition: -1
+    #     displayName: "Location: Atlanta"
+    #     keys:
+    #         - /[Pp]eachis[m|t]/
+    #     searchRange: 5000
+    #     enabled: true
+    #     forceActivation: false
+    # END Factions: Position -1, Priority 700, Reserve 0, Range 5000
+    # Species: Position -1, Priority 600, Reserve 0, Range 2000
+    # -
+    #     text: "[ human: relating to or characteristic of people or human beings.]"
+    #     contextConfig:
+    #         prefix: ""
+    #         suffix: "\n"
+    #         tokenBudget: 2048
+    #         reservedTokens: 200
+    #         budgetPriority: -300
+    #         trimDirection: doNotTrim
+    #         insertionType: newline
+    #         insertionPosition: -10
+    #     displayName: "Race: human"
+    #     keys:
+    #         - human
+    #     searchRange: 2000
+    #     enabled: true
+    #     forceActivation: false
+    # END Species: Position -1, Priority 600, Reserve 0, Range 2000
+    # Places: Position -1, Priority 500, Reserve 0, Range 3000
+    # -
+    #     text: "[ Atlanta: The capital of the state of Georgia.]"
+    #     contextConfig:
+    #         prefix: ""
+    #         suffix: "\n"
+    #         tokenBudget: 2048
+    #         reservedTokens: 0
+    #         budgetPriority: 500
+    #         trimDirection: doNotTrim
+    #         insertionType: newline
+    #         insertionPosition: -1
+    #     displayName: "Location: Atlanta"
+    #     keys:
+    #         - /Atlanta/
+    #     searchRange: 3000
+    #     enabled: true
+    #     forceActivation: false
+    # END Places: Position -1, Priority 500, Reserve 0, Range 3000
+    # Characters: Position -1, Priority 400, Reserve 200, Range 2000
+    # Keep each line to <= 18 tokens, then close encapsulation and do a carriage return
+    -
+        text: "[ Dr. Henry Jones AKA Indiana Jones: 48yo male professor adventurer; Dr. Jones appearance: tall, muscular, eyes blue, hair short& brown; Dr. Jones carries: whip leather& fedora leather; Dr. Jones skills: resourceful& boxing; Dr. Jones contacts: Marcus Brody& Sallah& Marion Ravenwood; Dr. Jones played by Harrison Ford ]"
+        contextConfig:
+            prefix: ""
+            suffix: "\n"
+            tokenBudget: 2048
+            reservedTokens: 200
+            budgetPriority: 400
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Character: Indiana Jones"
+        keys:
+            - Indiana
+            - /[Dr.|Mr.|Henry] Jones/
+        searchRange: 2000
+        enabled: true
+        forceActivation: false
+    -
+        text: "[ Marcus Brody: 62yo male museum curator of the National Museum he height avg he expert on artifacts& lore he stuffy academic; Marcus played by Denholm Elliott ]"
+        contextConfig:
+            prefix: ""
+            suffix: "\n"
+            tokenBudget: 2048
+            reservedTokens: 200
+            budgetPriority: 400
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Character: Marcus"
+        keys:
+            - Marcus
+            - Brody
+        searchRange: 2000
+        enabled: true
+        forceActivation: false
+    -
+        text: "[ Sallah: 45yo male Egyptian excavator very tall strong stocky his hair black beard black accent: Middle Eastern he fiercely loyal jovial; Sallah played by John Rhys-Davies ]"
+        contextConfig:
+            prefix: ""
+            suffix: "\n"
+            tokenBudget: 2048
+            reservedTokens: 200
+            budgetPriority: 400
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Character: Sallah"
+        keys:
+            - Sallah
+        searchRange: 2000
+        enabled: true
+        forceActivation: false
+    -
+        text: "[ Marion Ravenwood: 33yo female adventurer her hair long& black eyes brown beautiful she former lover of Indiana Jones she bitter& sarcastic her father Abner Ravenwood; Marion played by Karen Allen ]"
+        contextConfig:
+            prefix: ""
+            suffix: "\n"
+            tokenBudget: 2048
+            reservedTokens: 200
+            budgetPriority: 400
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Character: Marion"
+        keys:
+            - Marion
+            - Ravenwood
+        searchRange: 2000
+        enabled: true
+        forceActivation: false
+    # END Characters: Position -1, Priority 400, Reserve 200, Range 2000
+    # Emphasis: Position -8, Priority -400, Reserve 200 (Supporting information to reinforce difficult concepts)
+    # END Emphasis: Position -8, Priority -400, Reserve 200
+    # Pillar: Position -4, Priority -600, Reserve 200 (Crucial information to reinforce context)
+    # END Pillar: Position -4, Priority -600, Reserve 200
+    # Signpost: Position -4, Priority -1000, Reserve 3, Force TRUE, SINGLE
+    -
+        text: "***"
+        contextConfig:
+            prefix: "\n"
+            suffix: "\n"
+            tokenBudget: 2048
+            reservedTokens: 3
+            budgetPriority: -1000
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: -4
+        displayName: "Signpost"
+        keys:
+            - ""
+        searchRange: 1000
+        enabled: true
+        forceActivation: true
+    # END Signpost: Position -4, Priority -1000, Reserve 3, Force TRUE, SINGLE
+    # Synopsis: Position -8, Priority -500, Reserve 200, Force TRUE, SINGLE
+    -
+        text: "[ Author: George Lucas; Tone: light& adventurous& humorous; Tags: ww2& historical; Editor's Note: intricate descriptions& flowery prose& introspective; Rated: R; Themes: historical preservation& friendship& reluctant hero ]"
+        contextConfig:
+            prefix: ""
+            suffix: "\n"
+            tokenBudget: 2048
+            reservedTokens: 200
+            budgetPriority: -600
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: -8
+        displayName: "Writing Style"
+        keys:
+            - ""
+        searchRange: 1000
+        enabled: true
+        forceActivation: true

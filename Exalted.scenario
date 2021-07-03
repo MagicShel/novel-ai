@@ -474,7 +474,7 @@
         "forceActivation": true
       },
       {
-        "text": "[ Author: Robert Jordan; Tone: dark& gritty; Tag: epic& wuxia& heist& intrigue; Editor's Note: Provide detailed descriptions of characters and locations; describe thoughts and motivations; Rated: R ]",
+        "text": "[ Author: Robert Jordan; Tone: dark& gritty; Tags: epic& wuxia& heist& intrigue; Editor's Note: Provide detailed descriptions of characters and locations; describe thoughts and motivations; Rated: R ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -495,5 +495,5 @@
       }
     ]
   },
-  "author": ""
+  "author": "Shel"
 }

@@ -1,0 +1,98 @@
+{
+  "scenarioVersion": 0,
+  "title": "<Scenario title here>",
+  "description": "<Scenario description here>",
+  "prompt": "<prompt>",
+  "tags": [],
+  "context": [
+    {
+      "text": "",
+      "contextConfig": {
+        "prefix": "",
+        "suffix": "\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 512,
+        "budgetPriority": 100,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -1
+      }
+    },
+    {
+      "text": "",
+      "contextConfig": {
+        "prefix": "",
+        "suffix": "\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 512,
+        "budgetPriority": -800,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -4
+      }
+    }
+  ],
+  "placeholders": [],
+  "settings": {
+    "parameters": {
+      "temperature": 0.65,
+      "max_length": 60,
+      "min_length": 20,
+      "top_k": 0,
+      "top_p": 1,
+      "tail_free_sampling": 0.8,
+      "repetition_penalty": 2.8,
+      "repetition_penalty_range": 512,
+      "repetition_penalty_slope": 3.33,
+      "bad_words_ids": []
+    },
+    "trimResponses": true,
+    "banBrackets": true
+  },
+  "lorebook": {
+    "lorebookVersion": 1,
+    "entries": [
+      {
+        "text": "***",
+        "contextConfig": {
+          "prefix": "\n",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 3,
+          "budgetPriority": -1000,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -4
+        },
+        "displayName": "Signpost",
+        "keys": [
+          ""
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "[ Author: Robert Jordan; Tone: fanciful& zany& sarcastic; Tags: sitcom& sfw; Editor's Note: intricate descriptions& flowery prose& introspective; Rated: R; Themes: happiness in small things]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 200,
+          "budgetPriority": -600,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -8
+        },
+        "displayName": "Writing Style",
+        "keys": [
+          ""
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      }
+    ]
+  },
+  "author": ""
+}

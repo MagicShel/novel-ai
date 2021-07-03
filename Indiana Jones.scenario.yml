@@ -1,5 +1,5 @@
 scenarioVersion: 0
-title: "Indiana Jones v21.07.01b"
+title: "Indiana Jones v21.07.02a"
 description: "Indiana Jones test scenario"
 prompt: "Henry Jones is a professor of archeology and sometimes adventurer during the 1940's who crosses the globe recovering ancient artifacts for preservation in a museum. His adventuring alter ego is \"Indiana\" Jones. Some of his famous discoveries include the Ark of the Covenenant and the Holy Grail. His adventures have frequently brought him into conflict with Nazis. Recently, Dr. Jones has come into information that the ${What artifact are you seeking?} is being hunted in ${Where are you searching for the artifact?} and he means to recover the artifact before anyone else!\nIndiana hops aboard an airplane, bringing his trusty leather whip and hat. After landing and checking into a hotel, he immediately "
 tags: []
@@ -125,7 +125,7 @@ lorebook:
         # Characters: Position -1, Priority 400, Reserve 200, Range 2000
         # Keep each line to <= 18 tokens, then close encapsulation and do a carriage return
         -
-            text: "[ Dr. Henry Jones AKA Indiana Jones: 48yo male professor adventurer; Dr. Jones appearance: tall muscular his eyes blue hair brown; Dr. Jones carries: whip leather fedora leather; Dr. Jones skills: resourceful& boxing; Dr. Jones contacts: Marcus Brody& Sallah& Marion Ravenwood ]"
+            text: "[ Dr. Henry Jones AKA Indiana Jones: 48yo male professor adventurer; Dr. Jones appearance: tall, muscular, eyes blue, hair short& brown; Dr. Jones carries: whip leather& fedora leather; Dr. Jones skills: resourceful& boxing; Dr. Jones contacts: Marcus Brody& Sallah& Marion Ravenwood; Dr. Jones played by Harrison Ford ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -143,7 +143,7 @@ lorebook:
             enabled: true
             forceActivation: false
         -
-            text: "[ Marcus Brody: 62yo male museum curator of the National Museum he height avg he expert on artifacts& lore he stuffy academic ]"
+            text: "[ Marcus Brody: 62yo male museum curator of the National Museum he height avg he expert on artifacts& lore he stuffy academic; Marcus played by Denholm Elliott ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -161,7 +161,7 @@ lorebook:
             enabled: true
             forceActivation: false
         -
-            text: "[ Sallah: 45yo male Egyptian excavator very tall strong stocky his hair black beard black accent: Middle Eastern he fiercely loyal jovial ]"
+            text: "[ Sallah: 45yo male Egyptian excavator very tall strong stocky his hair black beard black accent: Middle Eastern he fiercely loyal jovial; Sallah played by John Rhys-Davies ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -178,7 +178,7 @@ lorebook:
             enabled: true
             forceActivation: false
         -
-            text: "[ Marion Ravenwood: 33yo female adventurer her hair long& black eyes brown beautiful she former lover of Indiana Jones she bitter& sarcastic her father Abner Ravenwood ]"
+            text: "[ Marion Ravenwood: 33yo female adventurer her hair long& black eyes brown beautiful she former lover of Indiana Jones she bitter& sarcastic her father Abner Ravenwood; Marion played by Karen Allen ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -221,7 +221,7 @@ lorebook:
         # END Signpost: Position -4, Priority -1000, Reserve 3, Force TRUE, SINGLE
         # Synopsis: Position -8, Priority -500, Reserve 200, Force TRUE, SINGLE
         -
-            text: "[ Author: George Lucas; Tone: light& adventurous& humorous; Tag: ww2& historical; Editor's Note: intricate descriptions& flowery prose& introspective; Rated: R; Themes: historical preservation& friendship& reluctant hero ]"
+            text: "[ Author: George Lucas; Tone: light& adventurous& humorous; Tags: ww2& historical; Editor's Note: intricate descriptions& flowery prose& introspective; Rated: R; Themes: historical preservation& friendship& reluctant hero ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -237,4 +237,4 @@ lorebook:
             searchRange: 1000
             enabled: true
             forceActivation: true
-author: ""
+author: "Shel"
