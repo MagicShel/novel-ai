@@ -1,7 +1,7 @@
 lorebookVersion: 1
 entries:
     -
-        text:: "[ sleeper :non-mage ]"
+        text: ":[ sleeper :non-mage ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -19,7 +19,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ marauder : insane mage ]"
+        text: ":[ marauder : insane mage ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -38,7 +38,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ nephandi AKA fallen one : corrupted servant of evil ]"
+        text: ":[ nephandi AKA fallen one : corrupted servant of evil ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -57,7 +57,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ quintessence : magical resource fuels magic  ]"
+        text: ":[ quintessence : magical resource fuels magic ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -75,7 +75,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ sanctum AKA chantry : mage safehouse & pocket reality & safe from paradox ]"
+        text: ":[ sanctum AKA chantry : mage safehouse & pocket reality & safe from paradox ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -93,7 +93,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ acolyte : non-mage servant of mage believes magic ]"
+        text: ":[ acolyte : non-mage servant of mage believes magic ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -111,7 +111,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ too much paradox : magical backlash consequence breaking reality it caused by vulgar spells subtle spell : safer to cast& magical yet appears mundanevulgar spell : creates paradox& obviously arcane/ bizarre/ unnatural ]"
+        text: ":[ paradox : magical backlash consequence breaking reality caused blatant magic ];\n:[ subtle spell : safer to cast& magical yet appears mundane ];\n:[ blatant spell : creates paradox& obviously arcane& bizarre& unnatural ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -130,7 +130,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ Technocracy : union of science based mage magic through science their goal conceal magic eliminate supernatural they 5 divisions : 1 Syndicate| 2 'Iteration X'| 3 'New World Order'| 4 Progenitors| 5 'Void Engineers' ]"
+        text: ":[ Technocracy : union of science based mage magic through science ];\n:[ Technocracy goal conceal magic eliminate supernatural ];\n:[ Technocracy 5 divisions : 1 Syndicate& 2 'Iteration X'& 3 'New World Order'& 4 Progenitors& 5 'Void Engineers' ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -147,7 +147,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ Syndicate : Technocratic division of businessmen / mobsters who manipulate reality through money & finance ]"
+        text: ":[ Syndicate : Technocratic division of businessmen / mobsters who manipulate reality through money & finance ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -164,7 +164,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ 'Iteration X' : Technocratic division of cyborg enforcers equipped future tech weapons ]"
+        text: ":[ 'Iteration X' : Technocratic division of cyborg enforcers equipped future tech weapons ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -181,7 +181,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ 'New World Order' AKA NWO : Technocratic division of leaders / visionaries can command mortal authorities mind control ]"
+        text: ":[ 'New World Order' AKA NWO : Technocratic division of leaders / visionaries can command mortal authorities mind control ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -199,7 +199,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ Progenitors : Technocratic division of magical biological science advanced medicine & mutation ]"
+        text: ":[ Progenitors : Technocratic division of magical biological science advanced medicine & mutation ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -216,7 +216,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ 'Void Engineers' : Technocratic division of space & dimensional exploration and protection ]"
+        text: ":[ 'Void Engineers' : Technocratic division of space & dimensional exploration and protection ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -233,7 +233,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ casting magic requires flourish using gadget/gesture/item/act/phrase/song/music  ]"
+        text: ":[ casting magic requires flourish using gadget/gesture/item/act/phrase/song/music ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -251,7 +251,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ 7 spheres of magical control : 1 Connection | 2 Entropy | 3 Energy | 4 Life | 5 Matter | 6 Mind | 7 Time  ]"
+        text: ":[ sphere is specialty magic influence physical world ];\n:[ 7 spheres: 1 Connection& 2 Entropy& 3 Energy& 4 Life& 5 Matter& 6 Mind& 7 Time ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -269,7 +269,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ 'The Traditions' : Alliance of 7 magical traditions devoted individualism& enlightenment they 7 traditions : 1 Chakravanti | 2 Mercurial | 3 Akashayana | 4 'Celestial Chorus' | 5 Sahajiya | 6 'Order of Hermes' | 7 Verbena  ]"
+        text: ":[ Traditions alliance of 7 magical traditions devoted individualism& enlightenment];\n:[ 7 Traditions : 1 Chakravanti& 2 Mercurial& 3 Akashayana& 4 'Celestial Chorus'& 5 Sahajiya& 6 'Order of Hermes'& 7 Verbena ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -286,7 +286,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ Chakravanti : assassin/death/chaos tradition mage primary sphere entropy ]"
+        text: ":[ Chakravanti : magical assassins& death cultists& chaos mages ];\n:[ Chakravanti mage Tradition primary sphere entropy ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -304,7 +304,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ Sahajiya AKA Ecstatic : tantric/transcendent/musican/altered state tradition mage primary sphere time  ]"
+        text: ":[ Sahajiya AKA Ecstatic : tantric/transcendent/musican/altered state tradition mage primary sphere time ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -322,7 +322,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ Choruster : member of 'Celestial Chorus' Abrahamic/religious tradition mage primary sphere matter  ]"
+        text: ":[ Choruster : member of 'Celestial Chorus' Abrahamic/religious tradition mage primary sphere matter ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -339,7 +339,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ Akashayana : martial artist/monk/ascetic tradition mage primary sphere mind ]"
+        text: ":[ Akashayana : martial artist/monk/ascetic tradition mage primary sphere mind ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -357,7 +357,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ hermetic : member 'Order of Hermes' occultist/achemist/prescriptive tradition mage primary sphere energy  ]"
+        text: ":[ hermetic : member 'Order of Hermes' occultist/achemist/prescriptive tradition mage primary sphere energy ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -374,7 +374,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ Verbena : wiccan/naturist/shamanic tradition mage primary sphere life  ]"
+        text: ":[ Verbena : wiccan/naturist/shamanic tradition mage primary sphere life ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -392,7 +392,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ Mercurial AKA Virtual Adept: reality hacker/gadgeteer tradition mage primary sphere connection  ]"
+        text: ":[ Mercurial AKA Virtual Adept: reality hacker/gadgeteer tradition mage primary sphere connection ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -410,7 +410,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ connection : sphere grants powers conjuration/distortion/scrying/teleportation/warding  ]"
+        text: ":[ connection : sphere grants powers conjuration/distortion/scrying/teleportation/warding ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -433,7 +433,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ entropy : sphere grants powers chaos/dissolution/fate/fortune/order  ]"
+        text: ":[ entropy : sphere grants powers chaos/dissolution/fate/fortune/order ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -454,7 +454,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ energy : sphere grants powers motion/fire/lightning/radiance/cold/physics/technology/weather  ]"
+        text: ":[ energy : sphere grants powers motion/fire/lightning/radiance/cold/physics/technology/weather ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -473,7 +473,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ life : sphere grants powers cloning/creation/disease/evolution/healing/improvement/shapeshifting/wounding  ]"
+        text: ":[ life : sphere grants powers cloning/creation/disease/evolution/healing/improvement/shapeshifting/wounding ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -495,7 +495,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ mind : sphere grants powers astral travel/communication/illusion/mind-shielding/self-empowerment  ]"
+        text: ":[ mind : sphere grants powers astral travel/communication/illusion/mind-shielding/self-empowerment ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -516,7 +516,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ time : sphere grants powers timelines/divination/time manipulation/travel  ]"
+        text: ":[ time : sphere grants powers timelines/divination/time manipulation/travel ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -536,7 +536,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ matter : sphere grants powers patterns/conjuration/shaping/transmutation  ]"
+        text: ":[ matter : sphere grants powers patterns/conjuration/shaping/transmutation ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -558,7 +558,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ 'Belnor Cern' : 65♂ Euthanatos master mage he leader Dessau chantry his hair gray eyes gray spry playful ]"
+        text: ":[ Belnor Cern 65 male master Chakravanti leader Dessau chantry ];\n:[ Belnor hair gray eyes gray spry playful ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -576,7 +576,7 @@ entries:
         enabled: true
         forceActivation: false
     -
-        text:: "[ Dessau dense city secretly ruled by vampires features mage chantry werewolves outskirts yet few in city ]"
+        text: ":[ Dessau dense city secretly ruled by vampires ];\n:[ Dessau features mage chantry werewolves outskirts yet few in city ];"
         contextConfig:
             prefix: ""
             suffix: "\n"
