@@ -12,10 +12,10 @@
         "suffix": "\n",
         "tokenBudget": 2048,
         "reservedTokens": 512,
-        "budgetPriority": 100,
-        "trimDirection": "doNotTrim",
+        "budgetPriority": -100,
+        "trimDirection": "trimTop",
         "insertionType": "newline",
-        "insertionPosition": -1
+        "insertionPosition": -4
       }
     },
     {
@@ -25,7 +25,7 @@
         "suffix": "\n",
         "tokenBudget": 2048,
         "reservedTokens": 512,
-        "budgetPriority": -800,
+        "budgetPriority": -500,
         "trimDirection": "doNotTrim",
         "insertionType": "newline",
         "insertionPosition": -4
@@ -53,18 +53,58 @@
     "lorebookVersion": 1,
     "entries": [
       {
-        "text": "***",
+        "text": "[  ]",
         "contextConfig": {
-          "prefix": "\n",
+          "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
-          "reservedTokens": 3,
-          "budgetPriority": -1000,
+          "reservedTokens": 0,
+          "budgetPriority": 500,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -1
+        },
+        "displayName": "Character: ",
+        "keys": [
+          ""
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": false
+      },
+      {
+        "text": "[  ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 200,
+          "budgetPriority": -200,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
           "insertionPosition": -4
         },
-        "displayName": "Signpost",
+        "displayName": "Emphasis: ",
+        "keys": [
+          ""
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": false
+      },
+      {
+        "text": "[ Genre: Fantasy ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 15,
+          "budgetPriority": -300,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -4
+        },
+        "displayName": "Genre",
         "keys": [
           ""
         ],
@@ -73,18 +113,118 @@
         "forceActivation": true
       },
       {
-        "text": "[ Author: Robert Jordan; Tone: fanciful& zany& sarcastic; Tags: sitcom& sfw; Editor's Note: intricate descriptions& flowery prose& introspective; Rated: R; Themes: happiness in small things]",
+        "text": "[ Author: Robert Jordan ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
-          "reservedTokens": 200,
-          "budgetPriority": -600,
+          "reservedTokens": 12,
+          "budgetPriority": -301,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -8
+          "insertionPosition": -4
+        },
+        "displayName": "Author",
+        "keys": [
+          ""
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "[ Tags: adventure ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 40,
+          "budgetPriority": -302,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -4
+        },
+        "displayName": "Tags",
+        "keys": [
+          ""
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "[ Rated: PG ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 8,
+          "budgetPriority": -303,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -4
+        },
+        "displayName": "Rating",
+        "keys": [
+          ""
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "[ writing style: descriptive& dialog ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 15,
+          "budgetPriority": -304,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -4
         },
         "displayName": "Writing Style",
+        "keys": [
+          ""
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "[  ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 100,
+          "budgetPriority": -400,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -4
+        },
+        "displayName": "Pillar: ",
+        "keys": [
+          ""
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": false
+      },
+      {
+        "text": "***",
+        "contextConfig": {
+          "prefix": "\n",
+          "suffix": "\n\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 3,
+          "budgetPriority": -501,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -4
+        },
+        "displayName": "Signpost",
         "keys": [
           ""
         ],
