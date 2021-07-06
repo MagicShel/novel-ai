@@ -474,7 +474,87 @@
         "forceActivation": true
       },
       {
-        "text": "[ Author: Robert Jordan; Tone: dark& gritty; Tags: epic& wuxia& heist& intrigue; Editor's Note: Provide detailed descriptions of characters and locations; describe thoughts and motivations; Rated: R ]",
+        "text": "[ Author: Robert Jordan ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 200,
+          "budgetPriority": -500,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -8
+        },
+        "displayName": "Synopsis",
+        "keys": [
+          ""
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "[ Tags: epic& wuxia& heist& intrigue ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 200,
+          "budgetPriority": -500,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -8
+        },
+        "displayName": "Synopsis",
+        "keys": [
+          ""
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "[ Editor's Note: Provide detailed descriptions of characters and locations; describe thoughts and motivations ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 200,
+          "budgetPriority": -500,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -8
+        },
+        "displayName": "Synopsis",
+        "keys": [
+          ""
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "[ Tone: dark& gritty ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 200,
+          "budgetPriority": -500,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -8
+        },
+        "displayName": "Synopsis",
+        "keys": [
+          ""
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "[ Rated: R ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
