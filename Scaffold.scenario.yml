@@ -1,6 +1,6 @@
 scenarioVersion: 0
-title: "Template"
-description: "Fill-in-the-blanks"
+title: "Scaffolding"
+description: "Fill-in-the-blanks scenario starter"
 prompt: ""
 tags: []
 context:
