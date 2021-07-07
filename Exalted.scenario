@@ -12,10 +12,10 @@
         "suffix": "\n",
         "tokenBudget": 2048,
         "reservedTokens": 512,
-        "budgetPriority": 100,
+        "budgetPriority": -100,
         "trimDirection": "doNotTrim",
         "insertionType": "newline",
-        "insertionPosition": -1
+        "insertionPosition": -4
       }
     },
     {
@@ -25,7 +25,7 @@
         "suffix": "\n",
         "tokenBudget": 2048,
         "reservedTokens": 512,
-        "budgetPriority": -800,
+        "budgetPriority": -500,
         "trimDirection": "doNotTrim",
         "insertionType": "newline",
         "insertionPosition": -4
@@ -53,22 +53,106 @@
     "lorebookVersion": 1,
     "entries": [
       {
+        "text": "[ Dragon-blood AKA Terrestrial Exalt: Exalts imbued by Elemental Dragon they numerous least powerful Exalts they betrayed murdered Solars & Lunars hundreds of years ago now they rule Creation from the Blessed Isle ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 75,
+          "budgetPriority": 301,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": 0
+        },
+        "displayName": "Faction: Dragon-Blooded",
+        "keys": [
+          "/[Dd]ragon-?[Bb]lood/",
+          "terrestrial"
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": false
+      },
+      {
+        "text": "[ Dragon-blood Castes: Fire & Earth & Air & Water & Wood ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 0,
+          "budgetPriority": 301,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": 0
+        },
+        "displayName": "Faction: Dragon-Blooded",
+        "keys": [
+          "/[Dd]ragon-?[Bb]lood/",
+          "terrestrial"
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": false
+      },
+      {
+        "text": "[ Solar: Exalts imbued by The Unconquered Sun they most powerful Exalts unseen hundreds of years yet now returning they betrayed by Dragon-Blooded in Usurpation ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 41,
+          "budgetPriority": 302,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": 0
+        },
+        "displayName": "Facton: Solars",
+        "keys": [
+          "/Solar/",
+          "celestial"
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": false
+      },
+      {
+        "text": "[ Solar Castes: Dawn & Night & Eclipse & Zenith & Twilight ]",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 0,
+          "budgetPriority": 302,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": 0
+        },
+        "displayName": "Facton: Solars",
+        "keys": [
+          "/Solar/",
+          "celestial"
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": false
+      },
+      {
         "text": "[ anima: aura surrounding all living things it normally invisible yet anima of Exalt channeling essence flares and can be seen ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 0,
-          "budgetPriority": 800,
+          "budgetPriority": 200,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Concept: Anima",
         "keys": [
           "anima"
         ],
-        "searchRange": 2000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
@@ -79,16 +163,16 @@
           "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 0,
-          "budgetPriority": 800,
+          "budgetPriority": 200,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Concept: Essence",
         "keys": [
           "essence"
         ],
-        "searchRange": 2000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
@@ -99,36 +183,36 @@
           "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 0,
-          "budgetPriority": 800,
+          "budgetPriority": 200,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Concept: Spirit",
         "keys": [
           "spirit"
         ],
-        "searchRange": 2000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
       {
-        "text": "Exalt: mortals chosen for their exceptional qualities blessed with great power to defeat titans; after titans defeated Exalts afflicted The Great Curse  manifests as character flaws; Exalt types: Solar& Lunar& Sidereal& Abyssal& Dragon-blooded",
+        "text": "[ Exalt: mortals chosen for their exceptional qualities blessed with great power to defeat titans; after titans defeated Exalts afflicted The Great Curse  manifests as character flaws; Exalt types: Solar& Lunar& Sidereal& Abyssal& Dragon-blooded ]",
         "contextConfig": {
           "prefix": "\n",
           "suffix": "\n",
           "tokenBudget": 2048,
-          "reservedTokens": 0,
-          "budgetPriority": 800,
+          "reservedTokens": 75,
+          "budgetPriority": 300,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Concept: Exalt",
         "keys": [
           "/Exalt/"
         ],
-        "searchRange": 2000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
@@ -138,17 +222,17 @@
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
-          "reservedTokens": 0,
-          "budgetPriority": 700,
+          "reservedTokens": 75,
+          "budgetPriority": 300,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Faction: Incarna",
         "keys": [
           "/Incarnae?/"
         ],
-        "searchRange": 5000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
@@ -159,10 +243,10 @@
           "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 0,
-          "budgetPriority": 700,
+          "budgetPriority": 200,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Faction: Incarna",
         "keys": [
@@ -171,49 +255,7 @@
           "/Lunar/",
           "/Sidereal/"
         ],
-        "searchRange": 5000,
-        "enabled": true,
-        "forceActivation": false
-      },
-      {
-        "text": "[ Dragon-blood AKA Terrestrial Exalt: Exalts imbued by Elemental Dragon they numerous least powerful Exalts they betrayed murdered Solars & Lunars hundreds of years ago now they rule Creation from the Blessed Isle ]\n[ Dragon-blood Castes: Fire & Earth & Air & Water & Wood ]",
-        "contextConfig": {
-          "prefix": "",
-          "suffix": "\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 0,
-          "budgetPriority": 700,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -1
-        },
-        "displayName": "Faction: Dragon-Blooded",
-        "keys": [
-          "/[Dd]ragon-?[Bb]lood/",
-          "terrestrial"
-        ],
-        "searchRange": 5000,
-        "enabled": true,
-        "forceActivation": false
-      },
-      {
-        "text": "[ Solar: Exalts imbued by The Unconquered Sun they most powerful Exalts unseen hundreds of years yet now returning they betrayed by Dragon-Blooded in Usurpation ]\n[ Solar Castes: Dawn & Night & Eclipse & Zenith & Twilight ]",
-        "contextConfig": {
-          "prefix": "",
-          "suffix": "\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 0,
-          "budgetPriority": 700,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -1
-        },
-        "displayName": "Facton: Solars",
-        "keys": [
-          "/Solar/",
-          "celestial"
-        ],
-        "searchRange": 5000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
@@ -224,16 +266,16 @@
           "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 0,
-          "budgetPriority": 600,
+          "budgetPriority": 300,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Race: Deathlord",
         "keys": [
           "deathlord"
         ],
-        "searchRange": 2000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
@@ -244,16 +286,16 @@
           "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 0,
-          "budgetPriority": 600,
+          "budgetPriority": 200,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Race: Solar Eclipse Caste",
         "keys": [
           "/Eclipse/"
         ],
-        "searchRange": 2000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
@@ -264,16 +306,16 @@
           "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 0,
-          "budgetPriority": 600,
+          "budgetPriority": 200,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Race: Solar Night Caste",
         "keys": [
           "/Night/"
         ],
-        "searchRange": 2000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
@@ -283,17 +325,17 @@
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
-          "reservedTokens": 0,
-          "budgetPriority": 500,
+          "reservedTokens": 100,
+          "budgetPriority": 300,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Location: Cowpai",
         "keys": [
           "/Cowpai/"
         ],
-        "searchRange": 3000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
@@ -303,11 +345,11 @@
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
-          "reservedTokens": 0,
-          "budgetPriority": 500,
+          "reservedTokens": 100,
+          "budgetPriority": 200,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Location: Cowpai Scarlet District",
         "keys": [
@@ -316,7 +358,7 @@
           "governor",
           "official"
         ],
-        "searchRange": 3000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
@@ -326,11 +368,11 @@
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
-          "reservedTokens": 0,
-          "budgetPriority": 500,
+          "reservedTokens": 100,
+          "budgetPriority": 200,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Location: Cowpai Dregs",
         "keys": [
@@ -341,7 +383,7 @@
           "brothel",
           "prostitute"
         ],
-        "searchRange": 3000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
@@ -351,11 +393,11 @@
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
-          "reservedTokens": 0,
-          "budgetPriority": 500,
+          "reservedTokens": 100,
+          "budgetPriority": 200,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Location: Cowpai Docks",
         "keys": [
@@ -364,7 +406,7 @@
           "sailor",
           "ship"
         ],
-        "searchRange": 3000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
@@ -374,18 +416,18 @@
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
-          "reservedTokens": 0,
-          "budgetPriority": 500,
+          "reservedTokens": 100,
+          "budgetPriority": 200,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Location: Cowpai Shacks",
         "keys": [
           "shacks",
           "poor"
         ],
-        "searchRange": 3000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
@@ -395,19 +437,19 @@
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
-          "reservedTokens": 0,
-          "budgetPriority": 500,
+          "reservedTokens": 100,
+          "budgetPriority": 200,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Location: Cowpai Silver District",
         "keys": [
-          "/[Ss ]ilver [Dd ]istrict/",
+          "/[Ss]ilver [Dd]istrict/",
           "rich",
           "wealthy"
         ],
-        "searchRange": 3000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
@@ -417,11 +459,11 @@
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
-          "reservedTokens": 0,
-          "budgetPriority": 500,
+          "reservedTokens": 100,
+          "budgetPriority": 200,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Location: Cowpai Military District",
         "keys": [
@@ -429,7 +471,7 @@
           "soldier",
           "guard"
         ],
-        "searchRange": 3000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
@@ -439,33 +481,33 @@
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
-          "reservedTokens": 200,
-          "budgetPriority": 400,
+          "reservedTokens": 100,
+          "budgetPriority": 300,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "insertionPosition": 0
         },
         "displayName": "Character: Shinju",
         "keys": [
           "/Shinju/"
         ],
-        "searchRange": 2000,
+        "searchRange": 1000,
         "enabled": true,
         "forceActivation": false
       },
       {
-        "text": "***",
+        "text": "[ Genre: Epic Dramatic Fantasy ]",
         "contextConfig": {
-          "prefix": "\n",
-          "suffix": "\n\n",
+          "prefix": "",
+          "suffix": "\n",
           "tokenBudget": 2048,
-          "reservedTokens": 3,
-          "budgetPriority": -1000,
+          "reservedTokens": 200,
+          "budgetPriority": -300,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
           "insertionPosition": -4
         },
-        "displayName": "Signpost",
+        "displayName": "Genre",
         "keys": [
           ""
         ],
@@ -480,12 +522,12 @@
           "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 200,
-          "budgetPriority": -500,
+          "budgetPriority": -301,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -8
+          "insertionPosition": -4
         },
-        "displayName": "Synopsis",
+        "displayName": "Author",
         "keys": [
           ""
         ],
@@ -494,18 +536,18 @@
         "forceActivation": true
       },
       {
-        "text": "[ Tags: epic& wuxia& heist& intrigue ]",
+        "text": "[ Tags: epic& fantasy& wuxia& heist& intrigue ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 200,
-          "budgetPriority": -500,
+          "budgetPriority": -302,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -8
+          "insertionPosition": -4
         },
-        "displayName": "Synopsis",
+        "displayName": "Tags",
         "keys": [
           ""
         ],
@@ -514,18 +556,18 @@
         "forceActivation": true
       },
       {
-        "text": "[ Editor's Note: Provide detailed descriptions of characters and locations; describe thoughts and motivations ]",
+        "text": "[ writing style: descriptive& creative ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 200,
-          "budgetPriority": -500,
+          "budgetPriority": -303,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
           "insertionPosition": -8
         },
-        "displayName": "Synopsis",
+        "displayName": "Writing Style",
         "keys": [
           ""
         ],
@@ -540,12 +582,12 @@
           "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 200,
-          "budgetPriority": -500,
+          "budgetPriority": -304,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -8
+          "insertionPosition": -4
         },
-        "displayName": "Synopsis",
+        "displayName": "Tone",
         "keys": [
           ""
         ],
@@ -560,12 +602,32 @@
           "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 200,
-          "budgetPriority": -500,
+          "budgetPriority": -305,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -8
+          "insertionPosition": -4
         },
-        "displayName": "Synopsis",
+        "displayName": "Rating",
+        "keys": [
+          ""
+        ],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "***",
+        "contextConfig": {
+          "prefix": "\n",
+          "suffix": "\n\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 3,
+          "budgetPriority": -501,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -4
+        },
+        "displayName": "Signpost",
         "keys": [
           ""
         ],

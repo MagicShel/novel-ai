@@ -12,10 +12,10 @@ context:
             suffix: "\n"
             tokenBudget: 2048
             reservedTokens: 512
-            budgetPriority: 100
+            budgetPriority: -100
             trimDirection: doNotTrim
             insertionType: newline
-            insertionPosition: -1
+            insertionPosition: -4
     # "Author's Note" - Used to give writing directives and drive home context updates (character lore describes a t-shirt, but they are wearing a swimsuit in the pool)
     -
         text: "[ Author's Note: In this scene Shinju is disguised as a consort from the Blessed Isle. She seeks access to the governor, but lacks the status to meet with him directly. She seeks allies and knowledge that will help her get close to the governor. ]"
@@ -24,7 +24,7 @@ context:
             suffix: "\n"
             tokenBudget: 2048
             reservedTokens: 512
-            budgetPriority: -800
+            budgetPriority: -500
             trimDirection: doNotTrim
             insertionType: newline
             insertionPosition: -4
@@ -485,7 +485,7 @@ lorebook:
             searchRange: 1000
             enabled: true
             forceActivation: true
-        # Editor's Note: Position -8, Priority -500, Reserve 200, Force TRUE, SINGLE
+        # Editor's Note
         -
             text: "[ writing style: descriptive& creative ]"
             contextConfig:
@@ -503,7 +503,7 @@ lorebook:
             searchRange: 1000
             enabled: true
             forceActivation: true
-        # Tone: Position -8, Priority -500, Reserve 200, Force TRUE, SINGLE
+        # Tone
         -
             text: "[ Tone: dark& gritty ]"
             contextConfig:
@@ -521,7 +521,7 @@ lorebook:
             searchRange: 1000
             enabled: true
             forceActivation: true
-        # Rating: Position -8, Priority -500, Reserve 200, Force TRUE, SINGLE
+        # Rating
         -
             text: "[ Rated: R ]"
             contextConfig:
@@ -539,7 +539,7 @@ lorebook:
             searchRange: 1000
             enabled: true
             forceActivation: true
-        # Signpost: Position -4, Priority -501, Reserve 3, Force TRUE, SINGLE
+        # Signpost
         -
             text: "***"
             contextConfig:

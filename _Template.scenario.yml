@@ -1,7 +1,7 @@
 scenarioVersion: 0
-title: "<Scenario title here>"
-description: "<Scenario description here>"
-prompt: "<prompt>"
+title: "Template"
+description: "Fill-in-the-blanks"
+prompt: ""
 tags: []
 context:
     # Memory
@@ -12,10 +12,10 @@ context:
             suffix: "\n"
             tokenBudget: 2048
             reservedTokens: 512
-            budgetPriority: -100 # Gets pushed up by lots of things.
+            budgetPriority: 100
             trimDirection: trimTop
             insertionType: newline
-            insertionPosition: -4
+            insertionPosition: 0
     # Author's Note
     -
         text: ""
@@ -27,7 +27,7 @@ context:
             budgetPriority: -500 # Immediately above signpost
             trimDirection: doNotTrim
             insertionType: newline
-            insertionPosition: -4
+            insertionPosition: -6
 placeholders: []
 settings:
     parameters:
@@ -47,44 +47,44 @@ lorebook:
     lorebookVersion: 1
     entries:
         # Background Lore: Anything needed for context. Increase priority and/or reserve tokens for particularly important things
-        -
-            text: "[  ]"
-            contextConfig:
-                prefix: ""
-                suffix: "\n"
-                tokenBudget: 2048
-                reservedTokens: 0 # Reserve sufficient tokens for entries that *must* be present if mentioned, otherwise leave at 0 
-                budgetPriority: 200 # Suggest 100-199 for least important, 200-299 for average importants, 300+ and reserved tokens for very important
-                trimDirection: doNotTrim
-                insertionType: newline
-                insertionPosition: -1
-            displayName: "Character: " # Concept / Faction / Character / Location / Race
-            keys:
-                - ""
-            searchRange: 1000
-            enabled: true
-            forceActivation: false
+        # -
+        #     text: "[  ]"
+        #     contextConfig:
+        #         prefix: ""
+        #         suffix: "\n"
+        #         tokenBudget: 2048
+        #         reservedTokens: 0 # Reserve sufficient tokens for entries that *must* be present if mentioned, otherwise leave at 0 
+        #         budgetPriority: 200 # Suggest 100-199 for least important, 200-299 for average importants, 300+ and reserved tokens for very important
+        #         trimDirection: doNotTrim
+        #         insertionType: newline
+        #         insertionPosition: -1
+        #     displayName: "Character: " # Concept / Faction / Character / Location / Race
+        #     keys:
+        #         - ""
+        #     searchRange: 1000
+        #     enabled: true
+        #     forceActivation: false
         # Emphasis: Supporting information to reinforce difficult concepts
-        -
-            text: "[  ]"
-            contextConfig:
-                prefix: ""
-                suffix: "\n"
-                tokenBudget: 2048
-                reservedTokens: 200
-                budgetPriority: -200 # to -299
-                trimDirection: doNotTrim
-                insertionType: newline
-                insertionPosition: -4 # Gets pushed up even further by everything below
-            displayName: "Emphasis: "
-            keys:
-                - ""
-            searchRange: 1000
-            enabled: true
-            forceActivation: false
+        # -
+        #     text: "[  ]"
+        #     contextConfig:
+        #         prefix: ""
+        #         suffix: "\n"
+        #         tokenBudget: 2048
+        #         reservedTokens: 200
+        #         budgetPriority: -200 # to -299
+        #         trimDirection: doNotTrim
+        #         insertionType: newline
+        #         insertionPosition: -4 # Gets pushed up even further by everything below
+        #     displayName: "Emphasis: "
+        #     keys:
+        #         - ""
+        #     searchRange: 1000
+        #     enabled: true
+        #     forceActivation: false
         # Genre
         -
-            text: "[ Genre: Fantasy ]"
+            text: "[ Genre: ${1#genre[Fantasy]:Genre} ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -93,7 +93,7 @@ lorebook:
                 budgetPriority: -300
                 trimDirection: doNotTrim
                 insertionType: newline
-                insertionPosition: -4
+                insertionPosition: -6
             displayName: "Genre"
             keys:
                 - ""
@@ -102,7 +102,7 @@ lorebook:
             forceActivation: true
         # Author
         -
-            text: "[ Author: Robert Jordan ]"
+            text: "[ Author: ${2#author[Robert Jordan]:Author} ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -111,7 +111,7 @@ lorebook:
                 budgetPriority: -301
                 trimDirection: doNotTrim
                 insertionType: newline
-                insertionPosition: -4
+                insertionPosition: -6
             displayName: "Author"
             keys:
                 - ""
@@ -120,7 +120,7 @@ lorebook:
             forceActivation: true
         # Tags
         -
-            text: "[ Tags: adventure ]"
+            text: "[ Tags: ${3#tags[adventure& romance]:Tags} ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -129,7 +129,7 @@ lorebook:
                 budgetPriority: -302
                 trimDirection: doNotTrim
                 insertionType: newline
-                insertionPosition: -4
+                insertionPosition: -6
             displayName: "Tags"
             keys:
                 - ""
@@ -138,7 +138,7 @@ lorebook:
             forceActivation: true
         # Rating
         -
-            text: "[ Rated: PG ]"
+            text: "[ Rated: ${4#rating[R]:Rating} ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -147,7 +147,7 @@ lorebook:
                 budgetPriority: -303
                 trimDirection: doNotTrim
                 insertionType: newline
-                insertionPosition: -4
+                insertionPosition: -6
             displayName: "Rating"
             keys:
                 - ""
@@ -156,7 +156,7 @@ lorebook:
             forceActivation: true
         # Writing Style
         -
-            text: "[ writing style: descriptive& dialog ]"
+            text: "[ writing style: ${5#writing[sesquipedalian& creative& descriptive& dialog]:Writing Style} ]"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
@@ -165,31 +165,31 @@ lorebook:
                 budgetPriority: -304
                 trimDirection: doNotTrim
                 insertionType: newline
-                insertionPosition: -4
+                insertionPosition: -6
             displayName: "Writing Style"
             keys:
                 - ""
             searchRange: 1000
             enabled: true
             forceActivation: true
-        # Pillar: Crucial information to reinforce context
-        -
-            text: "[  ]"
-            contextConfig:
-                prefix: ""
-                suffix: "\n"
-                tokenBudget: 2048
-                reservedTokens: 100
-                budgetPriority: -400 # -400 to -499
-                trimDirection: doNotTrim
-                insertionType: newline
-                insertionPosition: -4
-            displayName: "Pillar: "
-            keys:
-                - ""
-            searchRange: 1000
-            enabled: true
-            forceActivation: false
+        # # Pillar: Crucial information to reinforce context
+        # -
+        #     text: "[  ]"
+        #     contextConfig:
+        #         prefix: ""
+        #         suffix: "\n"
+        #         tokenBudget: 2048
+        #         reservedTokens: 100
+        #         budgetPriority: -400 # -400 to -499
+        #         trimDirection: doNotTrim
+        #         insertionType: newline
+        #         insertionPosition: -4
+        #     displayName: "Pillar: "
+        #     keys:
+        #         - ""
+        #     searchRange: 1000
+        #     enabled: true
+        #     forceActivation: false
         # Signpost
         -
             text: "***"
@@ -201,7 +201,7 @@ lorebook:
                 budgetPriority: -501 #insert this last of all
                 trimDirection: doNotTrim
                 insertionType: newline
-                insertionPosition: -4
+                insertionPosition: -6
             displayName: "Signpost"
             keys:
                 - ""

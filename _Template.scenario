@@ -1,8 +1,8 @@
 {
   "scenarioVersion": 0,
-  "title": "<Scenario title here>",
-  "description": "<Scenario description here>",
-  "prompt": "<prompt>",
+  "title": "Template",
+  "description": "Fill-in-the-blanks",
+  "prompt": "",
   "tags": [],
   "context": [
     {
@@ -12,10 +12,10 @@
         "suffix": "\n",
         "tokenBudget": 2048,
         "reservedTokens": 512,
-        "budgetPriority": -100,
+        "budgetPriority": 100,
         "trimDirection": "trimTop",
         "insertionType": "newline",
-        "insertionPosition": -4
+        "insertionPosition": 0
       }
     },
     {
@@ -28,7 +28,7 @@
         "budgetPriority": -500,
         "trimDirection": "doNotTrim",
         "insertionType": "newline",
-        "insertionPosition": -4
+        "insertionPosition": -6
       }
     }
   ],
@@ -53,47 +53,7 @@
     "lorebookVersion": 1,
     "entries": [
       {
-        "text": "[  ]",
-        "contextConfig": {
-          "prefix": "",
-          "suffix": "\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 0,
-          "budgetPriority": 500,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -1
-        },
-        "displayName": "Character: ",
-        "keys": [
-          ""
-        ],
-        "searchRange": 1000,
-        "enabled": true,
-        "forceActivation": false
-      },
-      {
-        "text": "[  ]",
-        "contextConfig": {
-          "prefix": "",
-          "suffix": "\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 200,
-          "budgetPriority": -200,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -4
-        },
-        "displayName": "Emphasis: ",
-        "keys": [
-          ""
-        ],
-        "searchRange": 1000,
-        "enabled": true,
-        "forceActivation": false
-      },
-      {
-        "text": "[ Genre: Fantasy ]",
+        "text": "[ Genre: ${1#genre[Fantasy]:Genre} ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -102,7 +62,7 @@
           "budgetPriority": -300,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -4
+          "insertionPosition": -6
         },
         "displayName": "Genre",
         "keys": [
@@ -113,7 +73,7 @@
         "forceActivation": true
       },
       {
-        "text": "[ Author: Robert Jordan ]",
+        "text": "[ Author: ${2#author[Robert Jordan]:Author} ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -122,7 +82,7 @@
           "budgetPriority": -301,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -4
+          "insertionPosition": -6
         },
         "displayName": "Author",
         "keys": [
@@ -133,7 +93,7 @@
         "forceActivation": true
       },
       {
-        "text": "[ Tags: adventure ]",
+        "text": "[ Tags: ${3#tags[adventure& romance]:Tags} ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -142,7 +102,7 @@
           "budgetPriority": -302,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -4
+          "insertionPosition": -6
         },
         "displayName": "Tags",
         "keys": [
@@ -153,7 +113,7 @@
         "forceActivation": true
       },
       {
-        "text": "[ Rated: PG ]",
+        "text": "[ Rated: ${4#rating[R]:Rating} ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -162,7 +122,7 @@
           "budgetPriority": -303,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -4
+          "insertionPosition": -6
         },
         "displayName": "Rating",
         "keys": [
@@ -173,7 +133,7 @@
         "forceActivation": true
       },
       {
-        "text": "[ writing style: descriptive& dialog ]",
+        "text": "[ writing style: ${5#writing[sesquipedalian& creative& descriptive& dialog]:Writing Style} ]",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
@@ -182,7 +142,7 @@
           "budgetPriority": -304,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -4
+          "insertionPosition": -6
         },
         "displayName": "Writing Style",
         "keys": [
@@ -191,26 +151,6 @@
         "searchRange": 1000,
         "enabled": true,
         "forceActivation": true
-      },
-      {
-        "text": "[  ]",
-        "contextConfig": {
-          "prefix": "",
-          "suffix": "\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 100,
-          "budgetPriority": -400,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -4
-        },
-        "displayName": "Pillar: ",
-        "keys": [
-          ""
-        ],
-        "searchRange": 1000,
-        "enabled": true,
-        "forceActivation": false
       },
       {
         "text": "***",
@@ -222,7 +162,7 @@
           "budgetPriority": -501,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -4
+          "insertionPosition": -6
         },
         "displayName": "Signpost",
         "keys": [
