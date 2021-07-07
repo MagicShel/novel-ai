@@ -1,0 +1,211 @@
+scenarioVersion: 0
+title: "Template"
+description: "Fill-in-the-blanks"
+prompt: ""
+tags: []
+context:
+    # Memory
+    -
+        text: ""
+        contextConfig:
+            prefix: ""
+            suffix: "\n"
+            tokenBudget: 2048
+            reservedTokens: 512
+            budgetPriority: 100
+            trimDirection: trimTop
+            insertionType: newline
+            insertionPosition: 0
+    # Author's Note
+    -
+        text: ""
+        contextConfig:
+            prefix: ""
+            suffix: "\n"
+            tokenBudget: 2048
+            reservedTokens: 512
+            budgetPriority: -500 # Immediately above signpost
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: -6
+placeholders: []
+settings:
+    parameters:
+        temperature: 0.65
+        max_length: 60
+        min_length: 20
+        top_k: 0
+        top_p: 1
+        tail_free_sampling: 0.8
+        repetition_penalty: 2.8
+        repetition_penalty_range: 512
+        repetition_penalty_slope: 3.33
+        bad_words_ids: []
+    trimResponses: true
+    banBrackets: true
+lorebook:
+    lorebookVersion: 1
+    entries:
+        # Background Lore: Anything needed for context. Increase priority and/or reserve tokens for particularly important things
+        # -
+        #     text: "[  ]"
+        #     contextConfig:
+        #         prefix: ""
+        #         suffix: "\n"
+        #         tokenBudget: 2048
+        #         reservedTokens: 0 # Reserve sufficient tokens for entries that *must* be present if mentioned, otherwise leave at 0 
+        #         budgetPriority: 200 # Suggest 100-199 for least important, 200-299 for average importants, 300+ and reserved tokens for very important
+        #         trimDirection: doNotTrim
+        #         insertionType: newline
+        #         insertionPosition: -1
+        #     displayName: "Character: " # Concept / Faction / Character / Location / Race
+        #     keys:
+        #         - ""
+        #     searchRange: 1000
+        #     enabled: true
+        #     forceActivation: false
+        # Emphasis: Supporting information to reinforce difficult concepts
+        # -
+        #     text: "[  ]"
+        #     contextConfig:
+        #         prefix: ""
+        #         suffix: "\n"
+        #         tokenBudget: 2048
+        #         reservedTokens: 200
+        #         budgetPriority: -200 # to -299
+        #         trimDirection: doNotTrim
+        #         insertionType: newline
+        #         insertionPosition: -4 # Gets pushed up even further by everything below
+        #     displayName: "Emphasis: "
+        #     keys:
+        #         - ""
+        #     searchRange: 1000
+        #     enabled: true
+        #     forceActivation: false
+        # Genre
+        -
+            text: "${1#el:Encapsulation Left} Genre: ${3#genre[Fantasy]:Genre} ${2#er:Encapsulation Right}"
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 15
+                budgetPriority: -300
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -6
+            displayName: "Genre"
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+        # Author
+        -
+            text: "${el} Author: ${4#author[Robert Jordan]:Author} ${er}"
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 12
+                budgetPriority: -301
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -6
+            displayName: "Author"
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+        # Tags
+        -
+            text: "${el} Tags: ${5#tags[adventure& romance]:Tags} ${er}"
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 40
+                budgetPriority: -302
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -6
+            displayName: "Tags"
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+        # Rating
+        -
+            text: "${el} Rated: ${6#rating[R]:Rating} ${er}"
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 8
+                budgetPriority: -303
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -6
+            displayName: "Rating"
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+        # Writing Style
+        -
+            text: "${el} writing style: ${7#writing[sesquipedalian& creative& descriptive& dialog]:Writing Style} ${er}"
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 15
+                budgetPriority: -304
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -6
+            displayName: "Writing Style"
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+        # # Pillar: Crucial information to reinforce context
+        # -
+        #     text: "[  ]"
+        #     contextConfig:
+        #         prefix: ""
+        #         suffix: "\n"
+        #         tokenBudget: 2048
+        #         reservedTokens: 100
+        #         budgetPriority: -400 # -400 to -499
+        #         trimDirection: doNotTrim
+        #         insertionType: newline
+        #         insertionPosition: -4
+        #     displayName: "Pillar: "
+        #     keys:
+        #         - ""
+        #     searchRange: 1000
+        #     enabled: true
+        #     forceActivation: false
+        # Signpost
+        -
+            text: "***"
+            contextConfig:
+                prefix: "\n"
+                suffix: "\n\n"
+                tokenBudget: 2048
+                reservedTokens: 3
+                budgetPriority: -501 #insert this last of all
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -6
+            displayName: "Signpost"
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+author: ""
