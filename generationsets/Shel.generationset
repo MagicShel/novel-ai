@@ -1,0 +1,13 @@
+{
+  "temperature": 0.7,
+  "max_length": 60,
+  "min_length": 20,
+  "top_k": 100,
+  "top_p": 0.9,
+  "tail_free_sampling": 0,
+  "repetition_penalty": 3.5,
+  "repetition_penalty_range": 2048,
+  "repetition_penalty_slope": 3.33,
+  "bad_words_ids": [],
+  "prefix": "vanilla"
+}

@@ -1,0 +1,141 @@
+{
+  "lorebookVersion": 1,
+  "settings": {
+    "orderByKeyLocations": false
+  },
+  "entries": [
+    {
+      "text": "four categories of mage are Nephandi and Marauder and Traditional and Technomancer",
+      "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -1
+      },
+      "displayName": "Categories: Mage",
+      "keys": [
+        "mage",
+        "magic user"
+      ],
+      "searchRange": 2000,
+      "enabled": true,
+      "forceActivation": false,
+      "keyRelative": false,
+      "nonStoryActivatable": false
+    },
+    {
+      "text": "sleeper means non-mage",
+      "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -1
+      },
+      "displayName": "Lexicon: sleeper",
+      "keys": [
+        "sleeper"
+      ],
+      "searchRange": 2000,
+      "enabled": true,
+      "forceActivation": false,
+      "keyRelative": false,
+      "nonStoryActivatable": false
+    },
+    {
+      "text": "nephandi definition demon-worshiping mage",
+      "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -1
+      },
+      "displayName": "Lexicon: nephandi",
+      "keys": [
+        "nephandi"
+      ],
+      "searchRange": 2000,
+      "enabled": true,
+      "forceActivation": false,
+      "keyRelative": false,
+      "nonStoryActivatable": true
+    },
+    {
+      "text": "marauder means insane mage whose mind sees a different reality",
+      "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -1
+      },
+      "displayName": "Lexicon: marauder",
+      "keys": [
+        "marauder"
+      ],
+      "searchRange": 2000,
+      "enabled": true,
+      "forceActivation": false,
+      "keyRelative": false,
+      "nonStoryActivatable": true
+    },
+    {
+      "text": "traditional mage who works magic through arcane practices",
+      "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -1
+      },
+      "displayName": "Lexicon: tradition",
+      "keys": [
+        "tradition"
+      ],
+      "searchRange": 2000,
+      "enabled": true,
+      "forceActivation": false,
+      "keyRelative": false,
+      "nonStoryActivatable": true
+    },
+    {
+      "text": "technomancer tech-based mages who alter world through enlightened science",
+      "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -1
+      },
+      "displayName": "Lexicon: technocracy",
+      "keys": [
+        "technomancer"
+      ],
+      "searchRange": 2000,
+      "enabled": true,
+      "forceActivation": false,
+      "keyRelative": false,
+      "nonStoryActivatable": true
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "scenarioVersion": 0,
+  "title": "Madison Sinclare v21.07.12a",
+  "description": "Madison Sinclare, Adventurer",
+  "prompt": "I am Morgan Sinclair, a professor of archeology and sometimes adventurer who crosses the globe recovering ancient artifacts for preservation in a museum. My adventuring alter ego is \"Madison\" Sinclair. My adventures have frequently brought me into conflict with Nazis. Recently, I've heard rumors of the ${1#artifact:What artifact are you seeking?} in ${2#location:Where is the artifact?} and I mean to recover it before anyone else!\nI jot down the names of some local experts and hop aboard an airplane, bringing my leather satchel containing my tools and a small revolver. After landing and checking into a hotel, I ",
+  "tags": [],
+  "settings": {
+    "parameters": {
+      "temperature": 0.65,
+      "max_length": 60,
+      "min_length": 20,
+      "top_k": 100,
+      "top_p": 0.9,
+      "tail_free_sampling": 0,
+      "repetition_penalty": 3,
+      "repetition_penalty_range": 2048,
+      "repetition_penalty_slope": 3.33,
+      "bad_words_ids": []
+    },
+    "trimResponses": true,
+    "banBrackets": true,
+    "prefix": "theme_actionarcheology"
+  },
+  "context": [
+    {
+      "text": "The year is 1947. I am \"Madison\" Sinclair in ${location} seeking the ${artifact}",
+      "contextConfig": {
+        "prefix": "",
+        "suffix": "\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 512,
+        "budgetPriority": 100,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -1
+      }
+    },
+    {
+      "text": "",
+      "contextConfig": {
+        "prefix": "[ ",
+        "suffix": " ]\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 512,
+        "budgetPriority": -501,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -3
+      }
+    }
+  ],
+  "placeholders": [],
+  "ephemeralContext": [
+    {
+      "text": "I think someone is following me",
+      "contextConfig": {
+        "prefix": "[ ",
+        "suffix": " ] ",
+        "tokenBudget": 2048,
+        "reservedTokens": 2048,
+        "budgetPriority": -10000,
+        "trimDirection": "doNotTrim",
+        "insertionType": "sentence",
+        "maximumTrimType": "newline",
+        "insertionPosition": -2
+      },
+      "startingStep": 4,
+      "delay": 50,
+      "duration": 4,
+      "repeat": false,
+      "reverse": false
+    },
+    {
+      "text": "Something is amiss",
+      "contextConfig": {
+        "prefix": "[ ",
+        "suffix": " ] ",
+        "tokenBudget": 2048,
+        "reservedTokens": 2048,
+        "budgetPriority": -10000,
+        "trimDirection": "doNotTrim",
+        "insertionType": "sentence",
+        "maximumTrimType": "newline",
+        "insertionPosition": -2
+      },
+      "startingStep": 10,
+      "delay": 50,
+      "duration": 7,
+      "repeat": true,
+      "reverse": false
+    },
+    {
+      "text": "Suddenly things go from bad to worse",
+      "contextConfig": {
+        "prefix": "[ ",
+        "suffix": " ] ",
+        "tokenBudget": 2048,
+        "reservedTokens": 2048,
+        "budgetPriority": -10000,
+        "trimDirection": "doNotTrim",
+        "insertionType": "sentence",
+        "maximumTrimType": "newline",
+        "insertionPosition": -2
+      },
+      "startingStep": 20,
+      "delay": 50,
+      "duration": 9,
+      "repeat": true,
+      "reverse": false
+    },
+    {
+      "text": "Just then, a moment of insight saves the day",
+      "contextConfig": {
+        "prefix": "[ ",
+        "suffix": " ] ",
+        "tokenBudget": 2048,
+        "reservedTokens": 2048,
+        "budgetPriority": -10000,
+        "trimDirection": "doNotTrim",
+        "insertionType": "sentence",
+        "maximumTrimType": "newline",
+        "insertionPosition": -2
+      },
+      "startingStep": 30,
+      "delay": 50,
+      "duration": 3,
+      "repeat": true,
+      "reverse": false
+    },
+    {
+      "text": "Things will never be the same again, but all is better for it",
+      "contextConfig": {
+        "prefix": "[ ",
+        "suffix": " ] ",
+        "tokenBudget": 2048,
+        "reservedTokens": 2048,
+        "budgetPriority": -10000,
+        "trimDirection": "doNotTrim",
+        "insertionType": "sentence",
+        "maximumTrimType": "newline",
+        "insertionPosition": -2
+      },
+      "startingStep": 35,
+      "delay": 50,
+      "duration": 5,
+      "repeat": true,
+      "reverse": false
+    }
+  ],
+  "lorebook": {
+    "lorebookVersion": 1,
+    "settings": {
+      "orderByKeyLocations": false
+    },
+    "entries": [
+      {
+        "text": "I am Morgan \"Madison\" Sinclair 32yo female professor adventurer",
+        "contextConfig": {
+          "prefix": "[ ",
+          "suffix": " ]\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 200,
+          "budgetPriority": 300,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -1
+        },
+        "displayName": "Morgain Sinclair Summary",
+        "keys": [
+          "/Madison/",
+          "/Morgan/",
+          "/Sinclair/",
+          "/\\WI\\W/",
+          "/\\W[Mm]e\\W/"
+        ],
+        "searchRange": 2000,
+        "enabled": true,
+        "forceActivation": false,
+        "keyRelative": false,
+        "nonStoryActivatable": false
+      },
+      {
+        "text": "My description hair black eyes bright blue skin milky white my satchel leather revolver small",
+        "contextConfig": {
+          "prefix": "[ ",
+          "suffix": " ]\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 200,
+          "budgetPriority": 301,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -1
+        },
+        "displayName": "Morgain Sinclair Description",
+        "keys": [
+          "/Madison/",
+          "/Morgan/",
+          "/Sinclair/",
+          "/\\WI\\W/",
+          "/\\W[Mm]e\\W/"
+        ],
+        "searchRange": 2000,
+        "enabled": true,
+        "forceActivation": false,
+        "keyRelative": false,
+        "nonStoryActivatable": false
+      },
+      {
+        "text": "My personality rogueish and direct and resourceful and flirtatious",
+        "contextConfig": {
+          "prefix": "[ ",
+          "suffix": " ]\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 200,
+          "budgetPriority": 302,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -1
+        },
+        "displayName": "Morgain Sinclair Personality",
+        "keys": [
+          "/Madison/",
+          "/Morgan/",
+          "/Sinclair/",
+          "/\\WI\\W/",
+          "/\\W[Mm]e\\W/"
+        ],
+        "searchRange": 2000,
+        "enabled": true,
+        "forceActivation": false,
+        "keyRelative": false,
+        "nonStoryActivatable": false
+      },
+      {
+        "text": "Genre: Action and Adventure",
+        "contextConfig": {
+          "prefix": "[ ",
+          "suffix": " ]\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 15,
+          "budgetPriority": -400,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -6
+        },
+        "displayName": "Genre",
+        "keys": [],
+        "searchRange": 2000,
+        "enabled": true,
+        "forceActivation": true,
+        "keyRelative": false,
+        "nonStoryActivatable": false
+      },
+      {
+        "text": "Author: George Lucas",
+        "contextConfig": {
+          "prefix": "[ ",
+          "suffix": " ]\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 12,
+          "budgetPriority": -401,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -6
+        },
+        "displayName": "Author",
+        "keys": [],
+        "searchRange": 2000,
+        "enabled": true,
+        "forceActivation": true,
+        "keyRelative": false,
+        "nonStoryActivatable": false
+      },
+      {
+        "text": "Tags: action and adventure and romance}",
+        "contextConfig": {
+          "prefix": "[ ",
+          "suffix": " ]\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 40,
+          "budgetPriority": -402,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -6
+        },
+        "displayName": "Tags",
+        "keys": [],
+        "searchRange": 2000,
+        "enabled": true,
+        "forceActivation": true,
+        "keyRelative": false,
+        "nonStoryActivatable": false
+      },
+      {
+        "text": "writing style: descriptive and precise and evocative and wonder",
+        "contextConfig": {
+          "prefix": "[ ",
+          "suffix": " ]\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 15,
+          "budgetPriority": -403,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -6
+        },
+        "displayName": "Writing Style",
+        "keys": [],
+        "searchRange": 2000,
+        "enabled": true,
+        "forceActivation": true,
+        "keyRelative": false,
+        "nonStoryActivatable": false
+      },
+      {
+        "text": "* * *",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 3,
+          "budgetPriority": -500,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -6
+        },
+        "displayName": "Signpost",
+        "keys": [],
+        "searchRange": 2000,
+        "enabled": true,
+        "forceActivation": true,
+        "keyRelative": false,
+        "nonStoryActivatable": false
+      }
+    ]
+  },
+  "author": "Shel"
+}

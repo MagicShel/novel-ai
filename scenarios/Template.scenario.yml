@@ -1,0 +1,271 @@
+scenarioVersion: 0
+title: "Template"
+description: "Fill-in-the-blanks"
+prompt: ""
+tags: []
+context:
+    # Memory
+    -
+        text: ""
+        contextConfig:
+            prefix: ""
+            suffix: "\n"
+            tokenBudget: 2048
+            reservedTokens: 512
+            budgetPriority: 99
+            trimDirection: trimTop
+            insertionType: newline
+            insertionPosition: 0
+    # Author's Note
+    -
+        text: ""
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 512
+            budgetPriority: -501 # Immediately below signpost
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: -6
+ephemeralContext: []
+placeholders: []
+settings:
+    parameters:
+        # Randomness
+        # Higher values make the AI more daring by selecting less likely outcomes.
+        # Can lead to nonsense of set too high.
+        # Slider Range: 0.1 - 2.5 (default: 0.55)
+        temperature: 0.70
+
+        # Max Output Length (tokens)
+        max_length: 60
+
+        # Min Output Length (tokens)
+        min_length: 20
+
+        # Top-K Sampling
+        # Increases consistency by only selecting the most likely tokens and
+        # redistributing the probabilities. Lower settings create a smaller pool
+        # of tokens, trading creativity for consistency.
+        # Slider Range: 0-150 (default: 140)
+        # 0 disables
+        # NOTE: Not intended for use with Tail-Free sampling
+        top_k: 100
+
+        # Nucleus Sampling
+        # Increases consistency by taking tokens from the top and adding up
+        # their probabilities until it reaches the percentage set. Lower settings
+        # create a smaller pool of tokens, trading creativity for consistency.
+        # Slider Range: 0.05 - 0.975 (default: 0.9)
+        # 1 disables
+        # NOTE: Not intended for use with Tail-Free sampling
+        top_p: .9
+
+        # Tail-Free Sampling
+        # Increases the consistency of the output by working from the bottom and
+        # trimming the 'worst' possible tokens. Generally has a smaller effect
+        # on creativity than other sampling types.
+        # Slider Range: 0.05 - 0.999 (default: disabled)
+        # 0 disables
+        # NOTE: Not intended for use with Top-K or Nucleus sampling
+        tail_free_sampling: 0
+
+        # Repetition Penalty
+        # Reduces the chances of a word appearing multiple times in the output.
+        # Can help reduce repetitive sentences. Due to model-specific behavior,
+        # when using GPT-J 6B this value is scaled linearly to a value between
+        # 1 and 1.525
+        # Slider Range: 1-8 (default: 3.5)
+        repetition_penalty: 3.5
+
+        # Repetition Penalty Range
+        # How many tokens, starting from the last generated one, will be
+        # considered repeated if they appear in the next output.
+        # Slider Range: 0 - 2048 (default: 1024)
+        # 0 disables
+        repetition_penalty_range: 2048
+
+        # Repetition Penalty Slope
+        # Affects the ramping of the penalty's harshness, starting from the final
+        # token. Higher values penalize the final tokens more harshly, but are
+        # softer on the earlier tokens. Lower values cause a smoother reduction
+        # of probablily across all tokens.
+        # Slider Range: 0 - 9.99 (default: 6.57)
+        repetition_penalty_slope: 3.33
+
+        # Banned Token Sequences
+        # Prevents certain token sequences from being generated. Similar
+        # sequences (different capitalization, extra spaces) will be banned as
+        # well. Tokens can also be entered by ID: [123] or [123,124,125] for
+        # sequences. To prevent banning similar sequences, surround with
+        # brackets: [help] or {help}
+        bad_words_ids: []
+    trimResponses: true
+    banBrackets: true
+
+    # Story Prefix Options: [vanilla], style_arthurconandoyle, style_edgarallanpoe, style_hplovecraft, style_shridanlefanu,
+    # style_julesverne, theme_19thcenturyromance, theme_actionarcheology, theme_airships, theme_ai, theme_darkfantasy,
+    # theme_dragons, theme_egypt, theme_generalfantasy, theme_huntergatherer, theme_magicacademy, theme_libraries, theme_mars,
+    # theme_medieval, theme_militaryscifi, theme_naval, theme_pirates, theme_postapocalyptic, theme_rats, theme_romanceofthreekingdoms,
+    # theme_superheroes, inspiration_crabsnailandmonkey, inspiration_mercantilewolfgirlromance, inspiration_nervegear,
+    # inspiration_thronewars, inspiration_witchatlevelcap 
+    prefix: vanilla
+lorebook:
+    lorebookVersion: 1
+    settings:
+        orderByKeyLocations: false
+    entries:
+        # Background Lore: Anything needed for context. Increase priority and/or reserve tokens for particularly important things
+        # -
+        #     text: ""
+        #     contextConfig:
+        #         prefix: ":[ "
+        #         suffix: " ];\n"
+        #         tokenBudget: 2048
+        #         reservedTokens: 0 # Reserve sufficient tokens for entries that *must* be present if mentioned, otherwise leave at 0 
+        #         budgetPriority: 200 # Suggest 101-199 for least important, 200-299 for average importants, 300+ and reserved tokens for very important
+        #         trimDirection: doNotTrim
+        #         insertionType: newline
+        #         insertionPosition: -1
+        #     displayName: "Character: " # Concept / Faction / Character / Location / Race
+        #     keys: []
+        #     searchRange: 2000
+        #     enabled: true
+        #     forceActivation: false
+        #     keyRelative: false
+        #     nonStoryActivatable: false
+        # Emphasis: Supporting information to reinforce difficult concepts
+        # -
+        #     text: ""
+        #     contextConfig:
+        #         prefix: ":[ "
+        #         suffix: " ];\n"
+        #         tokenBudget: 2048
+        #         reservedTokens: 200
+        #         budgetPriority: -1 # to -100
+        #         trimDirection: doNotTrim
+        #         insertionType: newline
+        #         insertionPosition: -6 # Gets pushed up even further by everything below
+        #     displayName: "Emphasis: "
+        #     keys: []
+        #     searchRange: 2000
+        #     enabled: true
+        #     forceActivation: false
+        #     keyRelative: false
+        #     nonStoryActivatable: false
+        # Genre
+        -
+            text: "Genre: ${1#genre:Genre}"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 15
+                budgetPriority: -400
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -6
+            displayName: "Genre"
+            keys: []
+            searchRange: 2000
+            enabled: true
+            forceActivation: true
+            keyRelative: false
+            nonStoryActivatable: false
+        # Author
+        -
+            text: "Author: ${2#author:Author}"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 12
+                budgetPriority: -401
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -6
+            displayName: "Author"
+            keys: []
+            searchRange: 2000
+            enabled: true
+            forceActivation: true
+            keyRelative: false
+            nonStoryActivatable: false
+        # Tags
+        -
+            text: "Tags: ${3#tags:Tags}"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 40
+                budgetPriority: -402
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -6
+            displayName: "Tags"
+            keys: []
+            searchRange: 2000
+            enabled: true
+            forceActivation: true
+            keyRelative: false
+            nonStoryActivatable: false
+        # Writing Style
+        -
+            text: "writing style: ${4#writing:Writing Style}"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 15
+                budgetPriority: -403
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -6
+            displayName: "Writing Style"
+            keys: []
+            searchRange: 2000
+            enabled: true
+            forceActivation: true
+            keyRelative: false
+            nonStoryActivatable: false
+        # Pillar: Crucial information to reinforce context
+        # -
+        #     text: ""
+        #     contextConfig:
+        #         prefix: ":[ "
+        #         suffix: " ];\n"
+        #         tokenBudget: 2048
+        #         reservedTokens: 100
+        #         budgetPriority: -410 # -410 to -499
+        #         trimDirection: doNotTrim
+        #         insertionType: newline
+        #         insertionPosition: -6
+        #     displayName: "Pillar: "
+        #     keys: []
+        #     searchRange: 2000
+        #     enabled: true
+        #     forceActivation: false
+        #     keyRelative: false
+        #     nonStoryActivatable: false
+        # Signpost
+        -
+            text: "* * *"
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 3
+                budgetPriority: -500
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -6
+            displayName: "Signpost"
+            keys: []
+            searchRange: 2000
+            enabled: true
+            forceActivation: true
+            keyRelative: false
+            nonStoryActivatable: false
+author: ""

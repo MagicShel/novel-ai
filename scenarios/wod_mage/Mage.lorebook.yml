@@ -1,0 +1,660 @@
+lorebookVersion: 1
+entries:
+    -
+        text: "sleeper definition non-mage"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Definition: Sleeper"
+        keys:
+            - mortal
+            - sleeper
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "marauder definition insane mage"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Definition: Marauder"
+        keys:
+            - marauder
+            - insane
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "nephandi AKA fallen one definition corrupted servant of evil"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Definition: Nephandi"
+        keys:
+            - demon
+            - marauder
+            - mage
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "quintessence : magical resource fuels magic"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Concept: Quintessence"
+        keys:
+            - magic
+            - quint
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "sanctum AKA chantry : mage safehouse & pocket reality & safe from paradox"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Concept: Sanctum"
+        keys:
+            - sanctum
+            - chantry
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "acolyte : non-mage servant of mage believes magic"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Classification: Acolyte"
+        keys:
+            - mage
+            - acolyte
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "paradox : magical backlash consequence breaking reality caused blatant magic ];\n:[ subtle spell : safer to cast& magical yet appears mundane ];\n:[ blatant spell : creates paradox& obviously arcane& bizarre& unnatural"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Concept: Paradox"
+        keys:
+            - paradox
+            - magic
+            - cast
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "Technocracy : union of science based mage magic through science ];\n:[ Technocracy goal conceal magic eliminate supernatural ];\n:[ Technocracy 5 divisions : 1 Syndicate& 2 'Iteration X'& 3 'New World Order'& 4 Progenitors& 5 'Void Engineers'"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Faction: Technocracy"
+        keys:
+            - technocracy
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "Syndicate : Technocratic division of businessmen / mobsters who manipulate reality through money & finance"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Classification: Syndicate"
+        keys:
+            - syndicate
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "'Iteration X' : Technocratic division of cyborg enforcers equipped future tech weapons"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Classification: Iteration-X"
+        keys:
+            - iteration-x
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "'New World Order' AKA NWO : Technocratic division of leaders / visionaries can command mortal authorities mind control"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Classification: NWO"
+        keys:
+            - NWO
+            - New World Order
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "Progenitors : Technocratic division of magical biological science advanced medicine & mutation"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Classification: Progenitors"
+        keys:
+            - progenitors
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "'Void Engineers' : Technocratic division of space & dimensional exploration and protection"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Classification: Void Engineers"
+        keys:
+            - void engineer
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "casting magic requires flourish using gadget/gesture/item/act/phrase/song/music"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Concept: Casting"
+        keys:
+            - magic
+            - cast
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "sphere is specialty magic influence physical world ];\n:[ 7 spheres: 1 Connection& 2 Entropy& 3 Energy& 4 Life& 5 Matter& 6 Mind& 7 Time"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Concept: Spheres"
+        keys:
+            - magic
+            - sphere
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "Traditions alliance of 7 magical traditions devoted individualism& enlightenment];\n:[ 7 Traditions : 1 Chakravanti& 2 Mercurial& 3 Akashayana& 4 'Celestial Chorus'& 5 Sahajiya& 6 'Order of Hermes'& 7 Verbena"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Faction: Traditions"
+        keys:
+            - tradition
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "Chakravanti : magical assassins& death cultists& chaos mages ];\n:[ Chakravanti mage Tradition primary sphere entropy"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Classification: Chakravanti"
+        keys:
+            - chakravanti
+            - sleeper
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "Sahajiya AKA Ecstatic : tantric/transcendent/musican/altered state tradition mage primary sphere time"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Classification: Mortal"
+        keys:
+            - sahajiya
+            - ecstatic
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "Choruster : member of 'Celestial Chorus' Abrahamic/religious tradition mage primary sphere matter"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Classification: Celestial Chorus"
+        keys:
+            - chorus
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "Akashayana : martial artist/monk/ascetic tradition mage primary sphere mind"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Classification: Akashayana"
+        keys:
+            - akashayana
+            - akashic
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "hermetic : member 'Order of Hermes' occultist/achemist/prescriptive tradition mage primary sphere energy"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Classification: Hermetic"
+        keys:
+            - herme
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "Verbena : wiccan/naturist/shamanic tradition mage primary sphere life"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Classification: Verbena"
+        keys:
+            - witch
+            - verbena
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "Mercurial AKA Virtual Adept: reality hacker/gadgeteer tradition mage primary sphere connection"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Classification: Mercurial"
+        keys:
+            - mercurial
+            - virtual adept
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "connection : sphere grants powers conjuration/distortion/scrying/teleportation/warding"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Sphere: Connection"
+        keys:
+            - magic
+            - cast
+            - connection
+            - scry
+            - conjure
+            - teleport
+            - ward
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "entropy : sphere grants powers chaos/dissolution/fate/fortune/order"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Sphere: Entropy"
+        keys:
+            - magic
+            - cast
+            - entropy
+            - chaos
+            - fate
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "energy : sphere grants powers motion/fire/lightning/radiance/cold/physics/technology/weather"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Sphere: Energy"
+        keys:
+            - magic
+            - cast
+            - energy
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "life : sphere grants powers cloning/creation/disease/evolution/healing/improvement/shapeshifting/wounding"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Sphere: Life"
+        keys:
+            - magic
+            - cast
+            - life
+            - heal
+            - disease
+            - shapeshift
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "mind : sphere grants powers astral travel/communication/illusion/mind-shielding/self-empowerment"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Sphere: Mind"
+        keys:
+            - magic
+            - cast
+            - astral
+            - illusion
+            - telepath
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "time : sphere grants powers timelines/divination/time manipulation/travel"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Sphere: Time"
+        keys:
+            - magic
+            - cast
+            - speed
+            - divin
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "matter : sphere grants powers patterns/conjuration/shaping/transmutation"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Sphere: Matter"
+        keys:
+            - magic
+            - cast
+            - matter
+            - conjur
+            - transmut
+            - reshape
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "Belnor Cern 65 male master Chakravanti leader Dessau chantry ];\n:[ Belnor hair gray eyes gray spry playful"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Character: Belnor Cern"
+        keys:
+            - /Belnor/
+            - /Cern/
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+    -
+        text: "Dessau dense city secretly ruled by vampires ];\n:[ Dessau features mage chantry werewolves outskirts yet few in city"
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 0
+            budgetPriority: 500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: 1
+        displayName: "Location: Dessau"
+        keys:
+            - dessau
+            - city
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+settings:
+    orderByKeyLocations: false

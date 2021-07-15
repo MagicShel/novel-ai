@@ -1,0 +1,158 @@
+lorebookVersion: 1
+settings:
+  orderByKeyLocations: false
+entries:
+  # Background Lore: Anything needed for context. Increase priority and/or reserve tokens for particularly important things
+  -
+      text: four categories of mage are Nephandi and Marauder and Traditional and Technomancer
+      contextConfig:
+          prefix: ":[ "
+          suffix: " ];\n"
+          tokenBudget: 2048
+          reservedTokens: 0 # Reserve sufficient tokens for entries that *must* be present if mentioned, otherwise leave at 0 
+          budgetPriority: 200 # Suggest 101-199 for least important, 200-299 for average importants, 300+ and reserved tokens for very important
+          trimDirection: doNotTrim
+          insertionType: newline
+          insertionPosition: -1
+      displayName: "Categories: Mage" # Concept / Faction / Character / Location / Race
+      keys:
+        - mage
+        - magic user
+      searchRange: 2000
+      enabled: true
+      forceActivation: false
+      keyRelative: false
+      nonStoryActivatable: false
+  -
+      text: sleeper means non-mage
+      contextConfig:
+          prefix: ":[ "
+          suffix: " ];\n"
+          tokenBudget: 2048
+          reservedTokens: 0 # Reserve sufficient tokens for entries that *must* be present if mentioned, otherwise leave at 0 
+          budgetPriority: 200 # Suggest 101-199 for least important, 200-299 for average importants, 300+ and reserved tokens for very important
+          trimDirection: doNotTrim
+          insertionType: newline
+          insertionPosition: -1
+      displayName: "Lexicon: sleeper" # Concept / Faction / Character / Location / Race
+      keys:
+        - sleeper
+      searchRange: 2000
+      enabled: true
+      forceActivation: false
+      keyRelative: false
+      nonStoryActivatable: false
+  -
+      text: nephandi definition demon-worshiping mage
+      contextConfig:
+          prefix: ":[ "
+          suffix: " ];\n"
+          tokenBudget: 2048
+          reservedTokens: 0 # Reserve sufficient tokens for entries that *must* be present if mentioned, otherwise leave at 0 
+          budgetPriority: 200 # Suggest 101-199 for least important, 200-299 for average importants, 300+ and reserved tokens for very important
+          trimDirection: doNotTrim
+          insertionType: newline
+          insertionPosition: -1
+      displayName: "Lexicon: nephandi" # Concept / Faction / Character / Location / Race
+      keys:
+        - nephandi
+      searchRange: 2000
+      enabled: true
+      forceActivation: false
+      keyRelative: false
+      nonStoryActivatable: true
+  -
+      text: marauder means insane mage whose mind sees a different reality
+      contextConfig:
+          prefix: ":[ "
+          suffix: " ];\n"
+          tokenBudget: 2048
+          reservedTokens: 0 # Reserve sufficient tokens for entries that *must* be present if mentioned, otherwise leave at 0 
+          budgetPriority: 200 # Suggest 101-199 for least important, 200-299 for average importants, 300+ and reserved tokens for very important
+          trimDirection: doNotTrim
+          insertionType: newline
+          insertionPosition: -1
+      displayName: "Lexicon: marauder" # Concept / Faction / Character / Location / Race
+      keys:
+        - marauder
+      searchRange: 2000
+      enabled: true
+      forceActivation: false
+      keyRelative: false
+      nonStoryActivatable: true
+  -
+      text: traditional mage who works magic through arcane practices
+      contextConfig:
+          prefix: ":[ "
+          suffix: " ];\n"
+          tokenBudget: 2048
+          reservedTokens: 0 # Reserve sufficient tokens for entries that *must* be present if mentioned, otherwise leave at 0 
+          budgetPriority: 200 # Suggest 101-199 for least important, 200-299 for average importants, 300+ and reserved tokens for very important
+          trimDirection: doNotTrim
+          insertionType: newline
+          insertionPosition: -1
+      displayName: "Lexicon: tradition" # Concept / Faction / Character / Location / Race
+      keys:
+        - tradition
+      searchRange: 2000
+      enabled: true
+      forceActivation: false
+      keyRelative: false
+      nonStoryActivatable: true
+  -
+      text: technomancer tech-based mages who alter world through enlightened science
+      contextConfig:
+          prefix: ":[ "
+          suffix: " ];\n"
+          tokenBudget: 2048
+          reservedTokens: 0 # Reserve sufficient tokens for entries that *must* be present if mentioned, otherwise leave at 0 
+          budgetPriority: 200 # Suggest 101-199 for least important, 200-299 for average importants, 300+ and reserved tokens for very important
+          trimDirection: doNotTrim
+          insertionType: newline
+          insertionPosition: -1
+      displayName: "Lexicon: technocracy" # Concept / Faction / Character / Location / Race
+      keys:
+        - technomancer
+      searchRange: 2000
+      enabled: true
+      forceActivation: false
+      keyRelative: false
+      nonStoryActivatable: true
+  # Emphasis: Supporting information to reinforce difficult concepts
+  # -
+  #     text: ""
+  #     contextConfig:
+  #         prefix: ""
+  #         suffix: "\n"
+  #         tokenBudget: 2048
+  #         reservedTokens: 200
+  #         budgetPriority: -1 # to -100
+  #         trimDirection: doNotTrim
+  #         insertionType: newline
+  #         insertionPosition: -6 # Gets pushed up even further by everything below
+  #     displayName: "Emphasis: "
+  #     keys: []
+  #     searchRange: 2000
+  #     enabled: true
+  #     forceActivation: false
+  #     keyRelative: false
+  #     nonStoryActivatable: false
+  # Pillar: Crucial information to reinforce context
+  # -
+  #     text: ""
+  #     contextConfig:
+  #         prefix: ":[ "
+  #         suffix: " ];\n"
+  #         tokenBudget: 2048
+  #         reservedTokens: 100
+  #         budgetPriority: -410 # -410 to -499
+  #         trimDirection: doNotTrim
+  #         insertionType: newline
+  #         insertionPosition: -6
+  #     displayName: "Pillar: "
+  #     keys: []
+  #     searchRange: 2000
+  #     enabled: true
+  #     forceActivation: false
+  #     keyRelative: false
+  #     nonStoryActivatable: false

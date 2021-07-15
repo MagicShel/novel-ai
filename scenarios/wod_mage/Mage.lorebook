@@ -1,0 +1,677 @@
+"lorebookVersion": 1,
+"settings": {
+    "orderByKeyLocations": false
+},
+"entries": [
+    {
+    "text": "I am ${mcName} ${3#mcDesc[18yo female eyes brown hair long and brown skin bronze]:Main character description}",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "${mcName}: Summary",
+    "keys": [
+        "$/${mcName}/",
+        "/\\WI\\W/",
+        "/\\W[Mm]e\\W/"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "${mcName} powers ${mcPowers}",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "${mcName}: Powers",
+    "keys": [
+        "$/${mcName}/",
+        "/\\WI\\W/",
+        "/\\W[Mm]e\\W/"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "sleeper :non-mage",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Classification: Mortal",
+    "keys": [
+        "mortal",
+        "sleeper"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "marauder : insane mage",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Classification: Marauder",
+    "keys": [
+        "marauder",
+        "insane",
+        "mage"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "nephandi AKA fallen one : corrupted servant of evil",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Classification: Nephandi",
+    "keys": [
+        "demon",
+        "marauder",
+        "mage"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "quintessence : magical resource fuels magic",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Concept: Quintessence",
+    "keys": [
+        "magic",
+        "quint"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "sanctum AKA chantry : mage safehouse & pocket reality & safe from paradox",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Concept: Sanctum",
+    "keys": [
+        "sanctum",
+        "chantry"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "acolyte : non-mage servant of mage believes magic",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Classification: Acolyte",
+    "keys": [
+        "mage",
+        "acolyte"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "Technocracy : union of science based mage magic through science ];\n:[ Technocracy goal conceal magic eliminate supernatural ];\n:[ Technocracy 5 divisions : 1 Syndicate& 2 'Iteration X'& 3 'New World Order'& 4 Progenitors& 5 'Void Engineers'",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Faction: Technocracy",
+    "keys": [
+        "technocracy"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "Syndicate : Technocratic division of businessmen / mobsters who manipulate reality through money & finance",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Classification: Syndicate",
+    "keys": [
+        "syndicate"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "'Iteration X' : Technocratic division of cyborg enforcers equipped future tech weapons",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Classification: Iteration-X",
+    "keys": [
+        "iteration-x"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "'New World Order' AKA NWO : Technocratic division of leaders / visionaries can command mortal authorities mind control",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Classification: NWO",
+    "keys": [
+        "NWO",
+        "New World Order"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "Progenitors : Technocratic division of magical biological science advanced medicine & mutation",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Classification: Progenitors",
+    "keys": [
+        "progenitors"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "'Void Engineers' : Technocratic division of space & dimensional exploration and protection",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Classification: Void Engineers",
+    "keys": [
+        "void engineer"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "casting magic requires flourish using gadget/gesture/item/act/phrase/song/music",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Concept: Casting",
+    "keys": [
+        "magic",
+        "cast"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "Traditions alliance of 7 magical traditions devoted individualism& enlightenment];\n:[ 7 Traditions : 1 Chakravanti& 2 Mercurial& 3 Akashayana& 4 'Celestial Chorus'& 5 Sahajiya& 6 'Order of Hermes'& 7 Verbena",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Faction: Traditions",
+    "keys": [
+        "tradition"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "Chakravanti : magical assassins& death cultists& chaos mages tradition Chakravanti powers chakras and omens and tarot and fate",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Classification: Chakravanti",
+    "keys": [
+        "chakravanti",
+        "sleeper"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "Sahajiya AKA Ecstatic : tantric/transcendent/musican/altered state tradition Sahajiya powers chakras and tantra and mind-altering substances",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Classification: Mortal",
+    "keys": [
+        "sahajiya",
+        "ecstatic"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "Choruster : member of 'Celestial Chorus' Abrahamic/religious tradition Choruster powers faith healing and miracles",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Classification: Celestial Chorus",
+    "keys": [
+        "chorus"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "Akashayana : martial artist/monk/ascetic tradition mage Akashayana powers kung fu and illusion and suggestion",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Classification: Akashayana",
+    "keys": [
+        "akashayana",
+        "akashic"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "hermetic : member 'Order of Hermes' occultist/achemist/prescriptive tradition mage Hermetic powers rituals and bindings and runes and circles of power",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Classification: Hermetic",
+    "keys": [
+        "herme"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "Verbena : wiccan/naturist/shamanic tradition mage Verbena powers potions and hexes",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Classification: Verbena",
+    "keys": [
+        "witch",
+        "verbena"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "Mercurial AKA Virtual Adept: reality hacker/gadgeteer tradition mage Mercurial powers reality hacking",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Classification: Mercurial",
+    "keys": [
+        "mercurial",
+        "virtual adept"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "Belnor Cern 65 male master Chakravanti leader Dessau chantry Belnor hair gray eyes gray spry playful",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Character: Belnor Cern",
+    "keys": [
+        "/Belnor/",
+        "/Cern/"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "Dessau dense city secretly ruled by vampires Dessau features mage chantry werewolves outskirts yet few in city",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": 1
+    },
+    "displayName": "Location: Dessau",
+    "keys": [
+        "dessau",
+        "city"
+    ],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": false,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "Genre: Modern Magic",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 15,
+        "budgetPriority": -400,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -6
+    },
+    "displayName": "Genre",
+    "keys": [],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": true,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "Author: Neil Gaiman",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 12,
+        "budgetPriority": -401,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -6
+    },
+    "displayName": "Author",
+    "keys": [],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": true,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "Tags: urban fantasy and cosmic horror and gritty magic",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 40,
+        "budgetPriority": -402,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -6
+    },
+    "displayName": "Tags",
+    "keys": [],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": true,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "writing style: detailed and precise and arcane and magical",
+    "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 15,
+        "budgetPriority": -403,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -6
+    },
+    "displayName": "Writing Style",
+    "keys": [],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": true,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    },
+    {
+    "text": "* * *",
+    "contextConfig": {
+        "prefix": "",
+        "suffix": "\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 3,
+        "budgetPriority": -500,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -6
+    },
+    "displayName": "Signpost",
+    "keys": [],
+    "searchRange": 2000,
+    "enabled": true,
+    "forceActivation": true,
+    "keyRelative": false,
+    "nonStoryActivatable": false
+    }
+]

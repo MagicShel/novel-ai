@@ -1,0 +1,25 @@
+lorebookVersion: 1
+entries:
+    # Background Lore: Anything needed for context. Increase priority and/or reserve tokens for particularly important things
+    -
+        text: "Miraculously Solved AKA Max tall muscular elegant chiseled face leather armor carries leather backpack Max sworn to serve me unrequieted love for me"
+        contextConfig:
+            prefix: ""
+            suffix: "\n"
+            tokenBudget: 2048
+            reservedTokens: 0 # Reserve sufficient tokens for entries that *must* be present if mentioned, otherwise leave at 0 
+            budgetPriority: 200 # Suggest 100-199 for least important, 200-299 for average importants, 300+ and reserved tokens for very important
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: -1
+        displayName: "Character: Miraculous" # Concept / Faction / Character / Location / Race
+        keys:
+          - /Miraculous/
+          - /\WMax\W/
+        searchRange: 1000
+        enabled: true
+        forceActivation: false
+        keyRelative: false
+        nonStoryActivatable: false
+settings:
+    orderByKeyLocations: false

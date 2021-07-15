@@ -1,0 +1,256 @@
+{
+  "scenarioVersion": 0,
+  "title": "Life Pro-tip YouTube generator",
+  "description": "",
+  "prompt": "${2#hostCaps[PEWDIEPIE]:HOST NAME (all caps)}: \"Hey there, YouTubers! ${1#host[Pewdiepie]:YouTube Host} here again! The last episode got so much great feedback that I wanted to do another one, so I'm back today with more Elite Life Pro-Tips. But first, don't forget to ATOMIZE that like button and CLAMSLAM subscribe to get all the latest tips and secret life hacks! Now, lets get on with it. Today we're talking about ${2#subject[Freelance Programming]:Episode Subject} and HERE are my TOP TEN Pro-Tips to be an ELITE expert:\"\n ${hostCaps}: \"${subject} Pro-tip 1: This is going to BLOW YOUR MIND and you won't believe you haven't heard it ANYWHERE ELSE! ",
+  "tags": [],
+  "context": [
+    {
+      "text": "",
+      "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 512,
+        "budgetPriority": 100,
+        "trimDirection": "trimTop",
+        "insertionType": "newline",
+        "insertionPosition": 0
+      }
+    },
+    {
+      "text": "",
+      "contextConfig": {
+        "prefix": ":[ ",
+        "suffix": " ];\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 512,
+        "budgetPriority": -500,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -6
+      }
+    }
+  ],
+  "placeholders": [],
+  "settings": {
+    "parameters": {
+      "temperature": 0.65,
+      "max_length": 60,
+      "min_length": 20,
+      "top_k": 0,
+      "top_p": 1,
+      "tail_free_sampling": 0.8,
+      "repetition_penalty": 2.8,
+      "repetition_penalty_range": 512,
+      "repetition_penalty_slope": 3.33,
+      "bad_words_ids": []
+    },
+    "trimResponses": true,
+    "banBrackets": true
+  },
+  "lorebook": {
+    "lorebookVersion": 1,
+    "entries": [
+      {
+        "text": "${hostCaps}: \"Freelance Pro-tip 4: You guys GOTTA listen to this one. If you are going to take a meeting, NEVER do it without the contract in front of you! If what they want isn't in the contract, MAKE THEM PAY!\" ]",
+        "contextConfig": {
+          "prefix": ":[ ",
+          "suffix": " ];\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 0,
+          "budgetPriority": 200,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -1
+        },
+        "displayName": "Freelance",
+        "keys": [],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "${hostCaps}: \"Hiking Pro-tip 12: Check this out - this tip can SAVE YOUR LIFE! Tie your damn laces! A buddy of mine's laces came loose and he FELL of a fucking CLIFF!\" ]",
+        "contextConfig": {
+          "prefix": ":[ ",
+          "suffix": " ];\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 0,
+          "budgetPriority": 200,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -1
+        },
+        "displayName": "Hiking",
+        "keys": [],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "${hostCaps}: \"Kitchen Pro-tip 8: Two words: TITANIUM PIPES! You're gonna hear people say it's overkill, but I've NEVER had a leak!\" ]",
+        "contextConfig": {
+          "prefix": ":[ ",
+          "suffix": " ];\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 0,
+          "budgetPriority": 200,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -1
+        },
+        "displayName": "Kitchen",
+        "keys": [],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "${hostCaps}: \"Sex Pro-tip 21: STOP MASTURBATING! If you want to please a partner you need to have a NEED for sex! So break up with onanism and MAKE UP WITH PUSSY!!!\" ]",
+        "contextConfig": {
+          "prefix": ":[ ",
+          "suffix": " ];\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 0,
+          "budgetPriority": 200,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -1
+        },
+        "displayName": "Sex",
+        "keys": [],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "${hostCaps}: \"YouTube Pro-tip 1: My NUMBER ONE tip for being a successful YouTuber is GOLD! SHOW YOUR BODY OFF! Show off your breasts so the areola are peeking out of your top! You will get SO MANY LIKES. I use this tip, myself. If I adjust the camera a bit, you'll see the TIP OF MY DONG is peeking out of my shorts!!!\" ]",
+        "contextConfig": {
+          "prefix": ":[ ",
+          "suffix": " ];\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 0,
+          "budgetPriority": 200,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -1
+        },
+        "displayName": "YouTube",
+        "keys": [],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "Genre: YouTube",
+        "contextConfig": {
+          "prefix": ":[ ",
+          "suffix": " ];\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 15,
+          "budgetPriority": -300,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -6
+        },
+        "displayName": "Genre",
+        "keys": [],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "Author: Pewdiepie",
+        "contextConfig": {
+          "prefix": ":[ ",
+          "suffix": " ];\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 12,
+          "budgetPriority": -301,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -6
+        },
+        "displayName": "Author",
+        "keys": [],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "Tags: script and episodic and video and single character",
+        "contextConfig": {
+          "prefix": ":[ ",
+          "suffix": " ];\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 40,
+          "budgetPriority": -302,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -6
+        },
+        "displayName": "Tags",
+        "keys": [],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "Rated: PG-13",
+        "contextConfig": {
+          "prefix": ":[ ",
+          "suffix": " ];\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 8,
+          "budgetPriority": -303,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -6
+        },
+        "displayName": "Rating",
+        "keys": [],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "writing style: obnoxious and bad grammer and excited and loud and abrasive",
+        "contextConfig": {
+          "prefix": ":[ ",
+          "suffix": " ];\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 15,
+          "budgetPriority": -304,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -6
+        },
+        "displayName": "Writing Style",
+        "keys": [],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      },
+      {
+        "text": "* * *",
+        "contextConfig": {
+          "prefix": "\n",
+          "suffix": "\n\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 3,
+          "budgetPriority": -501,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "insertionPosition": -6
+        },
+        "displayName": "Signpost",
+        "keys": [],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": true
+      }
+    ]
+  },
+  "author": ""
+}

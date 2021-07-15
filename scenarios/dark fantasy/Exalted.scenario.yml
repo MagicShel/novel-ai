@@ -1,0 +1,561 @@
+scenarioVersion: 0
+title: "Exalted: Shinju (clean)"
+description: "An Exalted scenario featuring Shinju, a young Night Caste Solar."
+prompt: "The world of Exalted is a land of epic fantasy where demi-gods known as Exalts walk among mortals. Thousands of years ago, the most powerful of the gods, known as the Incarnae, created vessels of power call Exaltations that selected certain mortals of great potential and imbued them with great power and charged them with defeating the enemies of the gods. They were the Celestial Exalts: the unparalleled Solars chosen by The Unconquered Sun, the shapeshifting Lunars chosen by Luna, the prophetic Sidereal chosen by The Five Maidens. They were joined by the elementalist Terrestrials chosen by The Five Elemental Dragons. The enemies of the gods were defeated bringing about The First Age and the Exalts ruled Creation with the Solars as kings, the Lunars as their consorts and bodyguards, Sidereals as their advisors, and Terrestrials as their soldiers and guards.\nWhen a Celestial Exalt dies, their Exaltation passes on to a new mortal host. Terrestrial Exaltations are passed on through offspring rather than selecting a new host.\nThe First Age came to an end several hundred years ago with an event known as the Usurpation. The Solar kings had grown corrupt and given to vice, so the Sidereals manipulated the Terrestrials to rise up and slaughter the Solars and their Lunar allies. The Lunars were driven into exile and the Solars disappeared almost entirely, their Exaltations not choosing new hosts. The Terrestrials branded themselves Dragon-bloods to distance themselves from other Exalts and assumed rule of Creation from The Blessed Isle. Everything under their rule is called The Realm.\nIt is now hundreds of years later and Solar Exalts have started being chosen again, but now they are hunted by the Dragon-bloods.\n\nShinju is an 18 year old Night Caste Solar Exalt - the caste of assassins and rogues - charged with infiltrating the port city of Cowpai in the Scavenger Lands, on a mission to gather leverage on the governor to make him an ally."
+tags: [ ]
+context:
+    # "Memory" - Used to set the current scene
+    -
+        text: "Shinju is a Solar Exalt which grants extraordinary stealth and fighting abilities, though Shinju is still in training. Shinju can best any but the most capable mortal warriors, but to do so in public would almost certainly attract the attention of Dragon-bloods. Shinju can defeat most Dragon-bloods in single combat, but skilled opponents and groups are a grave threat. ]\n[ Shinju's mission is to avoid any Dragon-Bloods in Cowpai and gain influence with the governor to change the allegiance of Cowpai from The Realm to the Solars."
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 512
+            budgetPriority: -100
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: -4
+    # "Author's Note" - Used to give writing directives and drive home context updates (character lore describes a t-shirt, but they are wearing a swimsuit in the pool)
+    -
+        text: "Author's Note: In this scene Shinju is disguised as a consort from the Blessed Isle. She seeks access to the governor, but lacks the status to meet with him directly. She seeks allies and knowledge that will help her get close to the governor."
+        contextConfig:
+            prefix: ":[ "
+            suffix: " ];\n"
+            tokenBudget: 2048
+            reservedTokens: 512
+            budgetPriority: -500
+            trimDirection: doNotTrim
+            insertionType: newline
+            insertionPosition: -4
+placeholders: [ ]
+settings:
+    parameters:
+        temperature: 0.65
+        max_length: 60
+        min_length: 20
+        top_k: 0
+        top_p: 1
+        tail_free_sampling: 0.8
+        repetition_penalty: 2.8
+        repetition_penalty_range: 512
+        repetition_penalty_slope: 3.33
+        bad_words_ids: [ ]
+        prefix: style_epic_fantasy
+    trimResponses: true
+    banBrackets: true
+    trimResponses: true
+    banBrackets: true
+lorebook:
+    lorebookVersion: 1
+    entries:
+        # Background Lore
+        -
+            text: "Dragon-blood AKA Terrestrial Exalt: Exalts imbued by Elemental Dragon they numerous least powerful Exalts they betrayed murdered Solars & Lunars hundreds of years ago now they rule Creation from the Blessed Isle"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 75
+                budgetPriority: 301
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Faction: Dragon-Blooded"
+            keys:
+                - "/[Dd]ragon-?[Bb]lood/"
+                - terrestrial
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Dragon-blood Castes: Fire & Earth & Air & Water & Wood"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 0
+                budgetPriority: 301
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Faction: Dragon-Blooded"
+            keys:
+                - "/[Dd]ragon-?[Bb]lood/"
+                - terrestrial
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Solar: Exalts imbued by The Unconquered Sun they most powerful Exalts unseen hundreds of years yet now returning they betrayed by Dragon-Blooded in Usurpation"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 41
+                budgetPriority: 302
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Facton: Solars"
+            keys:
+                - "/Solar/"
+                - celestial
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Solar Castes: Dawn & Night & Eclipse & Zenith & Twilight"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 0
+                budgetPriority: 302
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Facton: Solars"
+            keys:
+                - "/Solar/"
+                - celestial
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "anima: aura surrounding all living things it normally invisible yet anima of Exalt channeling essence flares and can be seen"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 0
+                budgetPriority: 200
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Concept: Anima"
+            keys:
+                - anima
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "essence: current of energy moving through everything it source magic and wonder"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 0
+                budgetPriority: 200
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Concept: Essence"
+            keys:
+                - essence
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "spirit: divine being of essence and will; 4 spirit types: gods& elementals& demons& ghosts"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 0
+                budgetPriority: 200
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Concept: Spirit"
+            keys:
+                - spirit
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Exalt: mortals chosen for their exceptional qualities blessed with great power to defeat titans; after titans defeated Exalts afflicted The Great Curse  manifests as character flaws; Exalt types: Solar& Lunar& Sidereal& Abyssal& Dragon-blooded"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 75
+                budgetPriority: 300
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Concept: Exalt"
+            keys:
+                - /Exalt/
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Incarna (pl. Incarnae): seven greatest gods & rule heaven (The Unconquered Sun & Luna & Mercury & Venus & Mars & Jupiter & Saturn)"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 75
+                budgetPriority: 300
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Faction: Incarna"
+            keys:
+                - "/Incarnae?/"
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Celestial Exalted: 3 types Exalt imbued by Incarna: Solar & Lunar & Sidereal"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 0
+                budgetPriority: 200
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Faction: Incarna"
+            keys:
+                - celestial
+                - /Solar/
+                - /Lunar/
+                - /Sidereal/
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Deathlord: hand-chosen servant of the neverborn they most powerful beings command undead legions & untold horrors beyond imagining"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 0
+                budgetPriority: 300
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Race: Deathlord"
+            keys:
+                - deathlord
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Eclipse Caste: Solar Exalt, Archetypes: rangers & diplomats & bureaucrats, Abilities: oath-binding & negotiation"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 0
+                budgetPriority: 200
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Race: Solar Eclipse Caste"
+            keys:
+                - /Eclipse/
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Night Caste: Solar Exalt, Archetypes: investigators & spies & assassins, Abilities: stealth"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 0
+                budgetPriority: 200
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Race: Solar Night Caste"
+            keys:
+                - /Night/
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Cowpai: A port city on the threshold of the Great Sea. Districts: Scarlet & Military & Dregs & Docks & Shacks & Silver"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 100
+                budgetPriority: 300
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Location: Cowpai"
+            keys:
+                - /Cowpai/
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Cowpai Scarlet District: Residences of officials and foreign dignitaries; exits to the dregs, Silver District, and Military District"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 100
+                budgetPriority: 200
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Location: Cowpai Scarlet District"
+            keys:
+                - "/[Ss]carlet [Dd]istrict/"
+                - foreign
+                - governor
+                - official
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Cowpai Dregs: Seedy part of town with brothels & inns & taverns; occupies the city center with exits to all other districts"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 100
+                budgetPriority: 200
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Location: Cowpai Dregs"
+            keys:
+                - dregs
+                - tavern
+                - inn
+                - whore
+                - brothel
+                - prostitute
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Cowpai Docks: port area of town with piers and warehouses; west side of town with exits to shacks, dregs, and Silver District"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 100
+                budgetPriority: 200
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Location: Cowpai Docks"
+            keys:
+                - dock
+                - pier
+                - sailor
+                - ship
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Cowpai Shacks: poor area of town with ramshackle houses where farmers, dock-workers, vendors, and prostitues live; exits to dregs, Military District, and docks"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 100
+                budgetPriority: 200
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Location: Cowpai Shacks"
+            keys:
+                - shacks
+                - poor
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Cowpai Silver District: wealthy merchants with stores and high end products for wealthy clientelle; exits to the dregs, the Scarlet District, and the docks"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 100
+                budgetPriority: 200
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Location: Cowpai Silver District"
+            keys:
+                - "/[Ss]ilver [Dd]istrict/"
+                - rich
+                - wealthy
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Cowpai Military District: a camp full of tents and training grounds where guards and soldiers are housed and trained; exits to the shacks, dregs, and Scarlet District"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 100
+                budgetPriority: 200
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Location: Cowpai Military District"
+            keys:
+                - military
+                - soldier
+                - guard
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        -
+            text: "Shinju 18 female Night Caste she short wiry hair black eyes green she bold & defiant & adventurous"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 100
+                budgetPriority: 300
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: 0
+            displayName: "Character: Shinju"
+            keys:
+                - "/Shinju/"
+            searchRange: 1000
+            enabled: true
+            forceActivation: false
+        # Emphasis: Position -4, Priority -200, Reserve 200 (Supporting information to reinforce difficult concepts)
+        # Pillar: Position -4, Priority -400, Reserve 200 (Crucial information to reinforce context)
+        # Genre
+        -
+            text: "Genre: Epic Dramatic Fantasy"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 200
+                budgetPriority: -300
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -4
+            displayName: "Genre"
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+        # Author
+        -
+            text: "Author: Robert Jordan"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 200
+                budgetPriority: -301
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -4
+            displayName: "Author"
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+        # Tags
+        -
+            text: "Tags: epic& fantasy& wuxia& heist& intrigue"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 200
+                budgetPriority: -302
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -4
+            displayName: "Tags"
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+        # Editor's Note
+        -
+            text: "writing style: descriptive& creative"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 200
+                budgetPriority: -303
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -8
+            displayName: "Writing Style"
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+        # Tone
+        -
+            text: "Tone: dark& gritty"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 200
+                budgetPriority: -304
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -4
+            displayName: "Tone"
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+        # Rating
+        -
+            text: "Rated: R"
+            contextConfig:
+                prefix: ":[ "
+                suffix: " ];\n"
+                tokenBudget: 2048
+                reservedTokens: 200
+                budgetPriority: -305
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -4
+            displayName: "Rating"
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+        # Signpost
+        -
+            text: "* * *"
+            contextConfig:
+                prefix: ""
+                suffix: "\n"
+                tokenBudget: 2048
+                reservedTokens: 3
+                budgetPriority: -501
+                trimDirection: doNotTrim
+                insertionType: newline
+                insertionPosition: -4
+            displayName: "Signpost"
+            keys:
+                - ""
+            searchRange: 1000
+            enabled: true
+            forceActivation: true
+author: "Shel"

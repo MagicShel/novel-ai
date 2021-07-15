@@ -1,0 +1,28 @@
+{
+  "lorebookVersion": 1,
+  "entries": [
+    {
+      "text": "Miraculously Solved AKA Max tall muscular elegant chiseled face leather armor carries leather backpack Max sworn to serve me unrequieted love for me",
+      "contextConfig": {
+        "prefix": "",
+        "suffix": "\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 0,
+        "budgetPriority": 200,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "insertionPosition": -1
+      },
+      "displayName": "Character: Miraculous",
+      "keys": [
+        "/Miraculous/",
+        "/\\WMax\\W/"
+      ],
+      "searchRange": 1000,
+      "enabled": true,
+      "forceActivation": false,
+      "keyRelative": false,
+      "nonStoryActivatable": false
+    }
+  ]
+}
