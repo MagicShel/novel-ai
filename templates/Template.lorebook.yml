@@ -1,0 +1,61 @@
+lorebookVersion: 1
+settings:
+  orderByKeyLocations: false
+entries:
+  # Background Lore: Anything needed for context. Increase priority and/or reserve tokens for particularly important things
+  # -
+  #     text: ""
+  #     contextConfig:
+  #         prefix: ":[ "
+  #         suffix: " ];\n"
+  #         tokenBudget: 2048
+  #         reservedTokens: 0 # Reserve sufficient tokens for entries that *must* be present if mentioned, otherwise leave at 0 
+  #         budgetPriority: 200 # Suggest 101-199 for least important, 200-299 for average importants, 300+ and reserved tokens for very important
+  #         trimDirection: doNotTrim
+  #         insertionType: newline
+  #         insertionPosition: -1
+  #     displayName: "Character: " # Concept / Faction / Character / Location / Race
+  #     keys: []
+  #     searchRange: 2000
+  #     enabled: true
+  #     forceActivation: false
+  #     keyRelative: false
+  #     nonStoryActivatable: false
+  # Emphasis: Supporting information to reinforce difficult concepts
+  # -
+  #     text: ""
+  #     contextConfig:
+  #         prefix: ":[ "
+  #         suffix: " ];\n"
+  #         tokenBudget: 2048
+  #         reservedTokens: 200
+  #         budgetPriority: -1 # to -100
+  #         trimDirection: doNotTrim
+  #         insertionType: newline
+  #         insertionPosition: -6 # Gets pushed up even further by everything below
+  #     displayName: "Emphasis: "
+  #     keys: []
+  #     searchRange: 2000
+  #     enabled: true
+  #     forceActivation: false
+  #     keyRelative: false
+  #     nonStoryActivatable: false
+  # Pillar: Crucial information to reinforce context
+  # -
+  #     text: ""
+  #     contextConfig:
+  #         prefix: ":[ "
+  #         suffix: " ];\n"
+  #         tokenBudget: 2048
+  #         reservedTokens: 100
+  #         budgetPriority: -410 # -410 to -499
+  #         trimDirection: doNotTrim
+  #         insertionType: newline
+  #         insertionPosition: -6
+  #     displayName: "Pillar: "
+  #     keys: []
+  #     searchRange: 2000
+  #     enabled: true
+  #     forceActivation: false
+  #     keyRelative: false
+  #     nonStoryActivatable: false
