@@ -1,38 +1,23 @@
 {
-  "scenarioVersion": 0,
+  "scenarioVersion": 1,
   "title": "Madison Sinclare v21.07.12a",
   "description": "Madison Sinclare, Adventurer",
-  "prompt": "I am Morgan Sinclair, a professor of archeology and sometimes adventurer who crosses the globe recovering ancient artifacts for preservation in a museum. My adventuring alter ego is \"Madison\" Sinclair. My adventures have frequently brought me into conflict with Nazis. Recently, I've heard rumors of the ${1#artifact:What artifact are you seeking?} in ${2#location:Where is the artifact?} and I mean to recover it before anyone else!\nI jot down the names of some local experts and hop aboard an airplane, bringing my leather satchel containing my tools and a small revolver. After landing and checking into a hotel, I ",
+  "prompt": "I am Madison Sinclair, a professor of archeology and sometimes adventurer who crosses the globe recovering ancient artifacts for preservation in a museum. My adventures have frequently brought me into conflict with Nazis. Recently, I've heard rumors of the ${1#artifact:What artifact are you seeking?} in ${2#location:Where is the artifact?} and I mean to recover it before anyone else!\nI jot down the names of some local experts and hop aboard an airplane, bringing my leather satchel containing my tools and a small revolver. After landing and checking into a hotel, ",
   "tags": [],
-  "settings": {
-    "parameters": {
-      "temperature": 0.65,
-      "max_length": 60,
-      "min_length": 20,
-      "top_k": 100,
-      "top_p": 0.9,
-      "tail_free_sampling": 0,
-      "repetition_penalty": 3,
-      "repetition_penalty_range": 2048,
-      "repetition_penalty_slope": 3.33,
-      "bad_words_ids": []
-    },
-    "trimResponses": true,
-    "banBrackets": true,
-    "prefix": "theme_actionarcheology"
-  },
+  "placeholders": [],
   "context": [
     {
-      "text": "The year is 1947. I am \"Madison\" Sinclair in ${location} seeking the ${artifact}",
+      "text": "I am Madison Sinclair in ${location} seeking the ${artifact}",
       "contextConfig": {
         "prefix": "",
         "suffix": "\n",
         "tokenBudget": 2048,
         "reservedTokens": 512,
-        "budgetPriority": 100,
-        "trimDirection": "doNotTrim",
+        "budgetPriority": 800,
+        "insertionPosition": 0,
+        "trimDirection": "trimTop",
         "insertionType": "newline",
-        "insertionPosition": -1
+        "maximumTrimType": "sentence"
       }
     },
     {
@@ -42,17 +27,17 @@
         "suffix": " ]\n",
         "tokenBudget": 2048,
         "reservedTokens": 512,
-        "budgetPriority": -501,
+        "budgetPriority": -400,
+        "insertionPosition": -4,
         "trimDirection": "doNotTrim",
         "insertionType": "newline",
-        "insertionPosition": -3
+        "maximumTrimType": "sentence"
       }
     }
   ],
-  "placeholders": [],
   "ephemeralContext": [
     {
-      "text": "I think someone is following me",
+      "text": "Someone trying to stop me",
       "contextConfig": {
         "prefix": "[ ",
         "suffix": " ] ",
@@ -71,7 +56,7 @@
       "reverse": false
     },
     {
-      "text": "Something is amiss",
+      "text": "I have a bad feeling about this",
       "contextConfig": {
         "prefix": "[ ",
         "suffix": " ] ",
@@ -90,7 +75,7 @@
       "reverse": false
     },
     {
-      "text": "Suddenly things go from bad to worse",
+      "text": "Things go from bad to worse",
       "contextConfig": {
         "prefix": "[ ",
         "suffix": " ] ",
@@ -104,12 +89,12 @@
       },
       "startingStep": 20,
       "delay": 50,
-      "duration": 9,
+      "duration": 7,
       "repeat": true,
       "reverse": false
     },
     {
-      "text": "Just then, a moment of insight saves the day",
+      "text": "Eureka! I've got an idea that just might work!",
       "contextConfig": {
         "prefix": "[ ",
         "suffix": " ] ",
@@ -148,13 +133,13 @@
     }
   ],
   "lorebook": {
-    "lorebookVersion": 1,
+    "lorebookVersion": 2,
     "settings": {
       "orderByKeyLocations": false
     },
     "entries": [
       {
-        "text": "I am Morgan \"Madison\" Sinclair 32yo female professor adventurer",
+        "text": "I am Madison Sinclair 32yo female professor adventurer",
         "contextConfig": {
           "prefix": "[ ",
           "suffix": " ]\n",
@@ -163,12 +148,12 @@
           "budgetPriority": 300,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "maximumTrimType": "newline",
+          "insertionPosition": 0
         },
-        "displayName": "Morgain Sinclair Summary",
+        "displayName": "Madison Sinclair Summary",
         "keys": [
           "/Madison/",
-          "/Morgan/",
           "/Sinclair/",
           "/\\WI\\W/",
           "/\\W[Mm]e\\W/"
@@ -180,7 +165,7 @@
         "nonStoryActivatable": false
       },
       {
-        "text": "My description hair black eyes bright blue skin milky white my satchel leather revolver small",
+        "text": "Madison Sinclair [ me ] description hair black eyes bright blue skin milky white her satchel leather revolver small",
         "contextConfig": {
           "prefix": "[ ",
           "suffix": " ]\n",
@@ -189,12 +174,12 @@
           "budgetPriority": 301,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "maximumTrimType": "newline",
+          "insertionPosition": 0
         },
-        "displayName": "Morgain Sinclair Description",
+        "displayName": "Madison Sinclair Description",
         "keys": [
           "/Madison/",
-          "/Morgan/",
           "/Sinclair/",
           "/\\WI\\W/",
           "/\\W[Mm]e\\W/"
@@ -206,7 +191,7 @@
         "nonStoryActivatable": false
       },
       {
-        "text": "My personality rogueish and direct and resourceful and flirtatious",
+        "text": "Madison Sinclair [ me ] personality rogueish and direct and resourceful and flirtatious",
         "contextConfig": {
           "prefix": "[ ",
           "suffix": " ]\n",
@@ -215,12 +200,12 @@
           "budgetPriority": 302,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "maximumTrimType": "newline",
+          "insertionPosition": 0
         },
-        "displayName": "Morgain Sinclair Personality",
+        "displayName": "Madison Sinclair Personality",
         "keys": [
           "/Madison/",
-          "/Morgan/",
           "/Sinclair/",
           "/\\WI\\W/",
           "/\\W[Mm]e\\W/"
@@ -232,16 +217,17 @@
         "nonStoryActivatable": false
       },
       {
-        "text": "Genre: Action and Adventure",
+        "text": "Genre: Action/Adventure",
         "contextConfig": {
           "prefix": "[ ",
           "suffix": " ]\n",
           "tokenBudget": 2048,
           "reservedTokens": 15,
-          "budgetPriority": -400,
+          "budgetPriority": 3,
+          "insertionPosition": -1,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -6
+          "maximumTrimType": "sentence"
         },
         "displayName": "Genre",
         "keys": [],
@@ -252,36 +238,17 @@
         "nonStoryActivatable": false
       },
       {
-        "text": "Author: George Lucas",
-        "contextConfig": {
-          "prefix": "[ ",
-          "suffix": " ]\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 12,
-          "budgetPriority": -401,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -6
-        },
-        "displayName": "Author",
-        "keys": [],
-        "searchRange": 2000,
-        "enabled": true,
-        "forceActivation": true,
-        "keyRelative": false,
-        "nonStoryActivatable": false
-      },
-      {
-        "text": "Tags: action and adventure and romance}",
+        "text": "Tags: action adventure romance",
         "contextConfig": {
           "prefix": "[ ",
           "suffix": " ]\n",
           "tokenBudget": 2048,
           "reservedTokens": 40,
-          "budgetPriority": -402,
+          "budgetPriority": 2,
+          "insertionPosition": -1,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -6
+          "maximumTrimType": "sentence"
         },
         "displayName": "Tags",
         "keys": [],
@@ -292,16 +259,17 @@
         "nonStoryActivatable": false
       },
       {
-        "text": "writing style: descriptive and precise and evocative and wonder",
+        "text": "writing style: descriptive precise evocative wonderous",
         "contextConfig": {
           "prefix": "[ ",
           "suffix": " ]\n",
           "tokenBudget": 2048,
           "reservedTokens": 15,
-          "budgetPriority": -403,
+          "budgetPriority": 1,
+          "insertionPosition": -1,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -6
+          "maximumTrimType": "sentence"
         },
         "displayName": "Writing Style",
         "keys": [],
@@ -312,16 +280,16 @@
         "nonStoryActivatable": false
       },
       {
-        "text": "* * *",
+        "text": "***",
         "contextConfig": {
           "prefix": "",
           "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 3,
-          "budgetPriority": -500,
+          "budgetPriority": -399,
+          "insertionPosition": -4,
           "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -6
+          "insertionType": "newline"
         },
         "displayName": "Signpost",
         "keys": [],
@@ -332,6 +300,23 @@
         "nonStoryActivatable": false
       }
     ]
+  },
+  "settings": {
+    "parameters": {
+      "temperature": 0.72,
+      "max_length": 60,
+      "min_length": 20,
+      "top_k": 0,
+      "top_p": 0.725,
+      "tail_free_sampling": 1,
+      "repetition_penalty": 3,
+      "repetition_penalty_range": 1024,
+      "repetition_penalty_slope": 6.57,
+      "bad_words_ids": []
+    },
+    "trimResponses": true,
+    "banBrackets": true,
+    "prefix": "theme_actionarcheology"
   },
   "author": "Shel"
 }

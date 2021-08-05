@@ -3,8 +3,9 @@ title: "Madison Sinclare v21.07.12a"
 description: "Madison Sinclare, Adventurer"
 prompt: "I am Madison Sinclair, a professor of archeology and sometimes adventurer who crosses the globe recovering ancient artifacts for preservation in a museum. My adventures have frequently brought me into conflict with Nazis. Recently, I've heard rumors of the ${1#artifact:What artifact are you seeking?} in ${2#location:Where is the artifact?} and I mean to recover it before anyone else!\nI jot down the names of some local experts and hop aboard an airplane, bringing my leather satchel containing my tools and a small revolver. After landing and checking into a hotel, "
 tags: []
+placeholders: []
 context:
-    # Memory: Position -1, Priority 100, Reserve 512
+    # Memory
     -
         text: "I am Madison Sinclair in ${location} seeking the ${artifact}"
         contextConfig:
@@ -12,11 +13,12 @@ context:
             suffix: "\n"
             tokenBudget: 2048
             reservedTokens: 512
-            budgetPriority: 100
-            trimDirection: doNotTrim
+            budgetPriority: 800 # Default
+            insertionPosition: 0
+            trimDirection: trimTop
             insertionType: newline
-            insertionPosition: -1
-    # Author's Note: Position -4, Priority -800, Reserve 512
+            maximumTrimType: sentence
+    # Author's Note
     -
         text: ""
         contextConfig:
@@ -24,11 +26,11 @@ context:
             suffix: " ]\n"
             tokenBudget: 2048
             reservedTokens: 512
-            budgetPriority: -501
+            budgetPriority: -400 # Default
+            insertionPosition: -4
             trimDirection: doNotTrim
             insertionType: newline
-            insertionPosition: -3
-placeholders: []
+            maximumTrimType: sentence
 ephemeralContext:
     -
         text: 'Someone trying to stop me'
@@ -116,7 +118,7 @@ ephemeralContext:
         repeat: true
         reverse: false
 lorebook:
-    lorebookVersion: 1
+    lorebookVersion: 2
     settings:
         orderByKeyLocations: false
     entries:
@@ -131,7 +133,8 @@ lorebook:
                 budgetPriority: 300
                 trimDirection: doNotTrim
                 insertionType: newline
-                insertionPosition: -1
+                maximumTrimType: newline
+                insertionPosition: 0
             displayName: "Madison Sinclair Summary"
             keys:
                 - /Madison/
@@ -144,7 +147,7 @@ lorebook:
             keyRelative: false
             nonStoryActivatable: false
         -
-            text: "My description hair black eyes bright blue skin milky white my satchel leather revolver small"
+            text: "Madison Sinclair [ me ] description hair black eyes bright blue skin milky white her satchel leather revolver small"
             contextConfig:
                 prefix: "[ "
                 suffix: " ]\n"
@@ -153,7 +156,8 @@ lorebook:
                 budgetPriority: 301
                 trimDirection: doNotTrim
                 insertionType: newline
-                insertionPosition: -1
+                maximumTrimType: newline
+                insertionPosition: 0
             displayName: "Madison Sinclair Description"
             keys:
                 - /Madison/
@@ -166,7 +170,7 @@ lorebook:
             keyRelative: false
             nonStoryActivatable: false
         -
-            text: "My personality rogueish and direct and resourceful and flirtatious"
+            text: "Madison Sinclair [ me ] personality rogueish and direct and resourceful and flirtatious"
             contextConfig:
                 prefix: "[ "
                 suffix: " ]\n"
@@ -175,7 +179,8 @@ lorebook:
                 budgetPriority: 302
                 trimDirection: doNotTrim
                 insertionType: newline
-                insertionPosition: -1
+                maximumTrimType: newline
+                insertionPosition: 0
             displayName: "Madison Sinclair Personality"
             keys:
                 - /Madison/
@@ -189,36 +194,18 @@ lorebook:
             nonStoryActivatable: false
         # Genre
         -
-            text: "Genre: Action and Adventure"
+            text: "Genre: Action/Adventure"
             contextConfig:
                 prefix: "[ "
                 suffix: " ]\n"
                 tokenBudget: 2048
                 reservedTokens: 15
-                budgetPriority: -400
+                budgetPriority: 3
+                insertionPosition: -1
                 trimDirection: doNotTrim
                 insertionType: newline
-                insertionPosition: -6
+                maximumTrimType: sentence
             displayName: "Genre"
-            keys: []
-            searchRange: 2000
-            enabled: true
-            forceActivation: true
-            keyRelative: false
-            nonStoryActivatable: false
-        # Author
-        -
-            text: "Author: George Lucas"
-            contextConfig:
-                prefix: "[ "
-                suffix: " ]\n"
-                tokenBudget: 2048
-                reservedTokens: 12
-                budgetPriority: -401
-                trimDirection: doNotTrim
-                insertionType: newline
-                insertionPosition: -6
-            displayName: "Author"
             keys: []
             searchRange: 2000
             enabled: true
@@ -227,16 +214,17 @@ lorebook:
             nonStoryActivatable: false
         # Tags
         -
-            text: "Tags: action and adventure and romance}"
+            text: "Tags: action adventure romance"
             contextConfig:
                 prefix: "[ "
                 suffix: " ]\n"
                 tokenBudget: 2048
                 reservedTokens: 40
-                budgetPriority: -402
+                budgetPriority: 2
+                insertionPosition: -1
                 trimDirection: doNotTrim
                 insertionType: newline
-                insertionPosition: -6
+                maximumTrimType: sentence
             displayName: "Tags"
             keys: []
             searchRange: 2000
@@ -246,16 +234,17 @@ lorebook:
             nonStoryActivatable: false
         # Writing Style
         -
-            text: "writing style: descriptive and precise and evocative and wonder"
+            text: "writing style: descriptive precise evocative wonderous"
             contextConfig:
                 prefix: "[ "
                 suffix: " ]\n"
                 tokenBudget: 2048
                 reservedTokens: 15
-                budgetPriority: -403
+                budgetPriority: 1
+                insertionPosition: -1
                 trimDirection: doNotTrim
                 insertionType: newline
-                insertionPosition: -6
+                maximumTrimType: sentence
             displayName: "Writing Style"
             keys: []
             searchRange: 2000
@@ -263,37 +252,18 @@ lorebook:
             forceActivation: true
             keyRelative: false
             nonStoryActivatable: false
-        # # Pillar: Crucial information to reinforce context
-        # -
-        #     text: ""
-        #     contextConfig:
-        #         prefix: ""
-        #         suffix: "\n"
-        #         tokenBudget: 2048
-        #         reservedTokens: 100
-        #         budgetPriority: -410 # -410 to -499
-        #         trimDirection: doNotTrim
-        #         insertionType: newline
-        #         insertionPosition: -4
-        #     displayName: "Pillar: "
-        #     keys: []
-        #     searchRange: 2000
-        #     enabled: true
-        #     forceActivation: false
-        #     keyRelative: false
-        #     nonStoryActivatable: false
         # Signpost
         -
-            text: "* * *"
+            text: "***"
             contextConfig:
                 prefix: ""
                 suffix: "\n"
                 tokenBudget: 2048
                 reservedTokens: 3
-                budgetPriority: -500
+                budgetPriority: -399 
+                insertionPosition: -4
                 trimDirection: doNotTrim
                 insertionType: newline
-                insertionPosition: -6
             displayName: "Signpost"
             keys: []
             searchRange: 2000
