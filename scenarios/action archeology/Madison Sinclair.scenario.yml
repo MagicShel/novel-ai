@@ -1,92 +1,12 @@
-scenarioVersion: 0
+scenarioVersion: 1
 title: "Madison Sinclare v21.07.12a"
 description: "Madison Sinclare, Adventurer"
-prompt: "I am Morgan Sinclair, a professor of archeology and sometimes adventurer who crosses the globe recovering ancient artifacts for preservation in a museum. My adventuring alter ego is \"Madison\" Sinclair. My adventures have frequently brought me into conflict with Nazis. Recently, I've heard rumors of the ${1#artifact:What artifact are you seeking?} in ${2#location:Where is the artifact?} and I mean to recover it before anyone else!\nI jot down the names of some local experts and hop aboard an airplane, bringing my leather satchel containing my tools and a small revolver. After landing and checking into a hotel, I "
+prompt: "I am Madison Sinclair, a professor of archeology and sometimes adventurer who crosses the globe recovering ancient artifacts for preservation in a museum. My adventures have frequently brought me into conflict with Nazis. Recently, I've heard rumors of the ${1#artifact:What artifact are you seeking?} in ${2#location:Where is the artifact?} and I mean to recover it before anyone else!\nI jot down the names of some local experts and hop aboard an airplane, bringing my leather satchel containing my tools and a small revolver. After landing and checking into a hotel, "
 tags: []
-settings:
-    parameters:
-        # Randomness
-        # Higher values make the AI more daring by selecting less likely outcomes.
-        # Can lead to nonsense of set too high.
-        # Slider Range: 0.1 - 2.5 (default: 0.55)
-        temperature: 0.65
-
-        # Max Output Length (tokens)
-        max_length: 60
-
-        # Min Output Length (tokens)
-        min_length: 20
-
-        # Top-K Sampling
-        # Increases consistency by only selecting the most likely tokens and
-        # redistributing the probabilities. Lower settings create a smaller pool
-        # of tokens, trading creativity for consistency.
-        # Slider Range: 0-150 (default: 140)
-        # 0 disables
-        # NOTE: Not intended for use with Tail-Free sampling
-        top_k: 100
-
-        # Nucleus Sampling
-        # Increases consistency by taking tokens from the top and adding up
-        # their probabilities until it reaches the percentage set. Lower settings
-        # create a smaller pool of tokens, trading creativity for consistency.
-        # Slider Range: 0.05 - 0.975 (default: 0.9)
-        # 1 disables
-        # NOTE: Not intended for use with Tail-Free sampling
-        top_p: .9
-
-        # Tail-Free Sampling
-        # Increases the consistency of the output by working from the bottom and
-        # trimming the 'worst' possible tokens. Generally has a smaller effect
-        # on creativity than other sampling types.
-        # Slider Range: 0.05 - 0.999 (default: disabled)
-        # 0 disables
-        # NOTE: Not intended for use with Top-K or Nucleus sampling
-        tail_free_sampling: 0
-
-        # Repetition Penalty
-        # Reduces the chances of a word appearing multiple times in the output.
-        # Can help reduce repetitive sentences. Due to model-specific behavior,
-        # when using GPT-J 6B this value is scaled linearly to a value between
-        # 1 and 1.525
-        # Slider Range: 1-8 (default: 3.5)
-        repetition_penalty: 3
-
-        # Repetition Penalty Range
-        # How many tokens, starting from the last generated one, will be
-        # considered repeated if they appear in the next output.
-        # Slider Range: 0 - 2048 (default: 1024)
-        # 0 disables
-        repetition_penalty_range: 2048
-
-        # Repetition Penalty Slope
-        # Affects the ramping of the penalty's harshness, starting from the final
-        # token. Higher values penalize the final tokens more harshly, but are
-        # softer on the earlier tokens. Lower values cause a smoother reduction
-        # of probablily across all tokens.
-        # Slider Range: 0 - 9.99 (default: 6.57)
-        repetition_penalty_slope: 3.33
-
-        # Banned Token Sequences
-        # Prevents certain token sequences from being generated. Similar
-        # sequences (different capitalization, extra spaces) will be banned as
-        # well. Tokens can also be entered by ID: [123] or [123,124,125] for
-        # sequences. To prevent banning similar sequences, surround with
-        # brackets: [help] or {help}
-        bad_words_ids: []
-    trimResponses: true
-    banBrackets: true
-    # Story Prefix Options: [vanilla], style_arthurconandoyle, style_edgarallanpoe, style_hplovecraft, style_shridanlefanu,
-    # style_julesverne, theme_19thcenturyromance, theme_actionarcheology, theme_airships, theme_ai, theme_darkfantasy,
-    # theme_dragons, theme_egypt, theme_generalfantasy, theme_huntergatherer, theme_magicacademy, theme_libraries, theme_mars,
-    # theme_medieval, theme_militaryscifi, theme_naval, theme_pirates, theme_postapocalyptic, theme_rats, theme_romanceofthreekingdoms,
-    # theme_superheroes, inspiration_crabsnailandmonkey, inspiration_mercantilewolfgirlromance, inspiration_nervegear,
-    # inspiration_thronewars, inspiration_witchatlevelcap 
-    prefix: theme_actionarcheology
 context:
     # Memory: Position -1, Priority 100, Reserve 512
     -
-        text: "The year is 1947. I am \"Madison\" Sinclair in ${location} seeking the ${artifact}"
+        text: "I am Madison Sinclair in ${location} seeking the ${artifact}"
         contextConfig:
             prefix: ""
             suffix: "\n"
@@ -111,7 +31,7 @@ context:
 placeholders: []
 ephemeralContext:
     -
-        text: 'I think someone is following me'
+        text: 'Someone trying to stop me'
         contextConfig:
             prefix: "[ "
             suffix: " ] "
@@ -128,7 +48,7 @@ ephemeralContext:
         repeat: false
         reverse: false
     -
-        text: 'Something is amiss'
+        text: 'I have a bad feeling about this'
         contextConfig:
             prefix: "[ "
             suffix: " ] "
@@ -145,7 +65,7 @@ ephemeralContext:
         repeat: true
         reverse: false
     -
-        text: 'Suddenly things go from bad to worse'
+        text: 'Things go from bad to worse'
         contextConfig:
             prefix: "[ "
             suffix: " ] "
@@ -158,11 +78,11 @@ ephemeralContext:
             insertionPosition: -2
         startingStep: 20
         delay: 50
-        duration: 9
+        duration: 7
         repeat: true
         reverse: false
     -
-        text: 'Just then, a moment of insight saves the day'
+        text: "Eureka! I've got an idea that just might work!"
         contextConfig:
             prefix: "[ "
             suffix: " ] "
@@ -202,7 +122,7 @@ lorebook:
     entries:
         # Keep each line to <= 18 tokens, then close encapsulation and do a carriage return
         -
-            text: "I am Morgan \"Madison\" Sinclair 32yo female professor adventurer"
+            text: "I am Madison Sinclair 32yo female professor adventurer"
             contextConfig:
                 prefix: "[ "
                 suffix: " ]\n"
@@ -212,10 +132,9 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: "Morgain Sinclair Summary"
+            displayName: "Madison Sinclair Summary"
             keys:
                 - /Madison/
-                - /Morgan/
                 - /Sinclair/
                 - /\WI\W/
                 - /\W[Mm]e\W/
@@ -235,10 +154,9 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: "Morgain Sinclair Description"
+            displayName: "Madison Sinclair Description"
             keys:
                 - /Madison/
-                - /Morgan/
                 - /Sinclair/
                 - /\WI\W/
                 - /\W[Mm]e\W/
@@ -258,10 +176,9 @@ lorebook:
                 trimDirection: doNotTrim
                 insertionType: newline
                 insertionPosition: -1
-            displayName: "Morgain Sinclair Personality"
+            displayName: "Madison Sinclair Personality"
             keys:
                 - /Madison/
-                - /Morgan/
                 - /Sinclair/
                 - /\WI\W/
                 - /\W[Mm]e\W/
@@ -384,4 +301,86 @@ lorebook:
             forceActivation: true
             keyRelative: false
             nonStoryActivatable: false
+settings:
+    parameters:
+        # Randomness
+        # Higher values make the AI more daring by selecting less likely outcomes.
+        # Can lead to nonsense of set too high.
+        # Slider Range: 0.1 - 2.5 (default: 0.55)
+        temperature: 0.72
+
+        # Max Output Length (tokens)
+        # default: 40
+        max_length: 60
+
+        # Min Output Length (tokens)
+        # default: 1
+        min_length: 20
+
+        # Top-K Sampling
+        # Increases consistency by only selecting the most likely tokens and
+        # redistributing the probabilities. Lower settings create a smaller pool
+        # of tokens, trading creativity for consistency.
+        # Slider Range: 0-150 (default: 140)
+        # 0 disables
+        # NOTE: Not intended for use with Tail-Free sampling
+        top_k: 0
+
+        # Nucleus Sampling
+        # Increases consistency by taking tokens from the top and adding up
+        # their probabilities until it reaches the percentage set. Lower settings
+        # create a smaller pool of tokens, trading creativity for consistency.
+        # Slider Range: 0.05 - 0.975 (default: 0.9)
+        # 1 disables
+        # NOTE: Not intended for use with Tail-Free sampling
+        top_p: .725
+
+        # Tail-Free Sampling
+        # Increases the consistency of the output by working from the bottom and
+        # trimming the 'worst' possible tokens. Generally has a smaller effect
+        # on creativity than other sampling types.
+        # Slider Range: 0.05 - 0.999 (default: disabled)
+        # 1 disables
+        # NOTE: Not intended for use with Top-K or Nucleus sampling
+        tail_free_sampling: 1
+
+        # Repetition Penalty
+        # Reduces the chances of a word appearing multiple times in the output.
+        # Can help reduce repetitive sentences. Due to model-specific behavior,
+        # when using GPT-J 6B this value is scaled linearly to a value between
+        # 1 and 1.525
+        # Slider Range: 1-8 (default: 3.5)
+        repetition_penalty: 3
+
+        # Repetition Penalty Range
+        # How many tokens, starting from the last generated one, will be
+        # considered repeated if they appear in the next output.
+        # Slider Range: 0 - 2048 (default: 1024)
+        # 0 disables
+        repetition_penalty_range: 1024
+
+        # Repetition Penalty Slope
+        # Affects the ramping of the penalty's harshness, starting from the final
+        # token. Higher values penalize the final tokens more harshly, but are
+        # softer on the earlier tokens. Lower values cause a smoother reduction
+        # of probablily across all tokens.
+        # Slider Range: 0 - 9.99 (default: 6.57)
+        repetition_penalty_slope: 6.57
+
+        # Banned Token Sequences
+        # Prevents certain token sequences from being generated. Similar
+        # sequences (different capitalization, extra spaces) will be banned as
+        # well. Tokens can also be entered by ID: [123] or [123,124,125] for
+        # sequences. To prevent banning similar sequences, surround with
+        # brackets: [help] or {help}
+        bad_words_ids: []
+    trimResponses: true
+    banBrackets: true
+    # Story Prefix Options: [vanilla], style_arthurconandoyle, style_edgarallanpoe, style_hplovecraft, style_shridanlefanu,
+    # style_julesverne, theme_19thcenturyromance, theme_actionarcheology, theme_airships, theme_ai, theme_darkfantasy,
+    # theme_dragons, theme_egypt, theme_generalfantasy, theme_huntergatherer, theme_magicacademy, theme_libraries, theme_mars,
+    # theme_medieval, theme_militaryscifi, theme_naval, theme_pirates, theme_postapocalyptic, theme_rats, theme_romanceofthreekingdoms,
+    # theme_superheroes, inspiration_crabsnailandmonkey, inspiration_mercantilewolfgirlromance, inspiration_nervegear,
+    # inspiration_thronewars, inspiration_witchatlevelcap 
+    prefix: theme_actionarcheology
 author: "Shel"
