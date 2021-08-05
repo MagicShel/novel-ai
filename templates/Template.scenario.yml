@@ -33,6 +33,7 @@ context:
 ephemeralContext: []
 placeholders: []
 settings:
+    # These parameters are equivalent to default-optimalwhitepaper
     parameters:
         # Randomness
         # Higher values make the AI more daring by selecting less likely outcomes.
@@ -105,7 +106,6 @@ settings:
         # sequences. To prevent banning similar sequences, surround with
         # brackets: [help] or {help}
         bad_words_ids: []
-    preset: default-optimalwhitepaper
     trimResponses: true
     banBrackets: true
     prefix: vanilla #Should probably be customized
