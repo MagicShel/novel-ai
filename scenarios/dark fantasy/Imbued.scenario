@@ -1,69 +1,55 @@
 {
-  "scenarioVersion": 0,
+  "scenarioVersion": 1,
   "title": "Imbued",
   "description": "A world of fantasy super-heroes in a land of corruption and oppression.",
-  "prompt": "Creation is a land full of magic and ancient wonders from ages long past, but it has begun to crumble. Alliances of old have crumbled as petty despots turn their oppressive attentions inward. Many believe the gods have turned their backs on Creation, leaving humanity to fend for itself.\nLong ago, the gods chose certain gifted mortals to be champions, gifted with great abilities that set them far above other everyone else. They became unparalleled kings, generals, warriors, bureaucrats, spies, assassins, engineers, and sorcerors. They were known as the Celestials because they were chosen by the greatest of all gods - the Incarnae. They used their great power to defeat the common enemy of men and gods: the mighty Primordials. Primordials who were struck down became the Undying - half-living half-dead gods of doom and death who seek an end to Creation and their eternal suffering. Primordials who surrendered were imprisoned in an inescapable realm where they are served by demons.\nFollowing the defeat of the Primordials was an age of peace and enlightenment, during which great magical wonders were created, far beyond the ken of modern sorcerors. Perhaps it was a great curse, or perhaps it was the lack of an existential threat, or possibly the gods turned their back on Creation and denied the champions their wisdom; whatever the cause, these might kings and warriors grew petty and vengeful. Their once-wise rule gave way to war and strife and threatened to devastate Creation. Many champions fell to war and many more fell to assassins. Some few even fell to old age, despite lifespans of thousands of years. Eventually the few that were left were overthrown and the gods stopped imbuing new champions and their kind disappeared from memory.\nThe Celestials were not the only champions among men. During the Primordial War, the greatest of the Elementals - known as the Five Elemental Dragons - created champions of their own, known as Dragon-bloods. Slightly less powerful than Celestials, but much more numerous, they filled the bulk of the armies commanded by the Celestials. With the disappearance of the Celestials, the Dragon-bloods became the rulers and champions of Creation. The Dragon-bloods drove back the armies of the mercurial Fae, who thought with the Celestials gone, Creation was ripe for invasion. Having defended the lands of man, the Dragon-bloods set about ruling it, and above them all sits the Scarlet Empress - until recently.\nFive years ago, the Scarlet Empress disappeared and none know where she went. This poses a great threat to the stability of Creation, as the nobel houses of the Dragon-blooded threaten to drag Creation into a war of supremecy. And this is not even the greatest threat Creation faces. Celestials are again appearing in the world, along with new kinds of champions: the Abyssal champions of the Undying, and the Infernal champions of the Yozi.\nInto this world, I was born. I am ${1#myName:My name} a poor girl with a destiny. I may be a nobody now, but soon I will be imbued with the power of a Celestial.",
+  "prompt": "Creation is a land full of magic and ancient wonders from ages long past, but it has begun to crumble. Alliances of old have crumbled as petty despots turn their oppressive attentions inward. Many believe the gods have turned their backs on Creation, leaving humanity to fend for itself.\nLong ago, the gods chose certain gifted mortals to be champions, gifted with great abilities that set them far above other everyone else. They became unparalleled kings, generals, warriors, bureaucrats, spies, assassins, engineers, and sorcerors. They were known as the Celestials because they were chosen by the greatest of all gods - the Incarnae. They used their great power to defeat the common enemy of men and gods: the mighty Primordials. Primordials who were struck down became the Undying - half-living half-dead gods of doom and death who seek an end to Creation and their eternal suffering. Primordials who surrendered were imprisoned in an inescapable realm where they are served by demons.\nFollowing the defeat of the Primordials was an age of peace and enlightenment, during which great magical wonders were created, far beyond the ken of modern sorcerors. Perhaps it was a great curse, or perhaps it was the lack of an existential threat, or possibly the gods turned their back on Creation and denied the champions their wisdom; whatever the cause, these might kings and warriors grew petty and vengeful. Their once-wise rule gave way to war and strife and threatened to devastate Creation. Many champions fell to war and many more fell to assassins. Some few even fell to old age, despite lifespans of thousands of years. Eventually the few that were left were overthrown and the gods stopped imbuing new champions and their kind disappeared from memory.\nThe Celestials were not the only champions among men. During the Primordial War, the greatest of the Elementals - known as the Five Elemental Dragons - created champions of their own, known as Dragon-bloods. Slightly less powerful than Celestials, but much more numerous, they filled the bulk of the armies commanded by the Celestials. With the disappearance of the Celestials, the Dragon-bloods became the rulers and champions of Creation. The Dragon-bloods drove back the armies of the mercurial Fae, who thought with the Celestials gone, Creation was ripe for invasion. Having defended the lands of man, the Dragon-bloods set about ruling it, and above them all sits the Scarlet Empress - until recently.\nFive years ago, the Scarlet Empress disappeared and none know where she went. This poses a great threat to the stability of Creation, as the noble houses of the Dragon-blooded threaten to drag Creation into a war of supremacy. And this is not even the greatest threat Creation faces. Celestials are again appearing in the world, along with new kinds of champions: the Abyssal champions of the Undying, and the Infernal champions of the Yozi.\nInto this world, I was born. I am ${1#myName:My name} a poor girl with a destiny. I may be a nobody now, but soon I will be imbued with the power of a Celestial.",
   "tags": [],
+  "placeholders": [],
   "context": [
     {
       "text": "",
       "contextConfig": {
-        "prefix": ":[ ",
-        "suffix": " ];\n",
+        "prefix": "[ ",
+        "suffix": " ]\n",
         "tokenBudget": 2048,
         "reservedTokens": 512,
-        "budgetPriority": 100,
+        "budgetPriority": 800,
         "trimDirection": "trimTop",
         "insertionType": "newline",
-        "insertionPosition": 0
+        "insertionPosition": 0,
+        "maximumTrimType": "sentence"
       }
     },
     {
-      "text": "",
+      "text": "A foreboding feeling permeates the air. Something wicked stirs.",
       "contextConfig": {
-        "prefix": ":[ ",
-        "suffix": " ];\n",
+        "prefix": "[ ",
+        "suffix": " ]\n",
         "tokenBudget": 2048,
         "reservedTokens": 512,
-        "budgetPriority": -500,
+        "budgetPriority": -400,
+        "insertionPosition": -4,
         "trimDirection": "doNotTrim",
         "insertionType": "newline",
-        "insertionPosition": -6
+        "maximumTrimType": "sentence"
       }
     }
   ],
-  "placeholders": [],
-  "settings": {
-    "parameters": {
-      "temperature": 0.65,
-      "max_length": 60,
-      "min_length": 20,
-      "top_k": 0,
-      "top_p": 1,
-      "tail_free_sampling": 0.8,
-      "repetition_penalty": 2.8,
-      "repetition_penalty_range": 512,
-      "repetition_penalty_slope": 3.33,
-      "bad_words_ids": [],
-      "prefix": "theme_naval"
-    },
-    "trimResponses": true,
-    "banBrackets": true
-  },
   "lorebook": {
-    "lorebookVersion": 1,
+    "lorebookVersion": 2,
     "entries": [
       {
-        "text": "${myName} ${2#myAge[18]:My Age}female destined to become Celestial",
+        "text": "About ${myName} [ me ] ${2#myAge[18]:My Age}female destined to become Celestial",
         "contextConfig": {
-          "prefix": ":[ ",
-          "suffix": " ];\n",
+          "prefix": "[ ",
+          "suffix": " ]\n",
           "tokenBudget": 2048,
           "reservedTokens": 100,
           "budgetPriority": 300,
+          "insertionPosition": 0,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "maximumTrimType": "sentence"
         },
         "displayName": "Character: ${myName}",
         "keys": [
@@ -78,16 +64,17 @@
         "nonStoryActivatable": false
       },
       {
-        "text": "${myName} description build small hair long and red skin milky eyes green ${myName} breasts small and firm nipples pink and long mons smooth and bare",
+        "text": "Description of ${myName} [ me ] build small hair long and red skin milky eyes green ${myName} breasts small",
         "contextConfig": {
-          "prefix": ":[ ",
-          "suffix": " ];\n",
+          "prefix": "[ ",
+          "suffix": " ]\n",
           "tokenBudget": 2048,
           "reservedTokens": 100,
           "budgetPriority": 301,
+          "insertionPosition": 0,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "maximumTrimType": "sentence"
         },
         "displayName": "Description: ${myName}",
         "keys": [
@@ -99,16 +86,17 @@
         "enabled": true
       },
       {
-        "text": "${myName} personality shy and brave and loyal and kind",
+        "text": "Personality of ${myName} [ me ] shy and brave and loyal and kind",
         "contextConfig": {
-          "prefix": ":[ ",
-          "suffix": " ];\n",
+          "prefix": "[ ",
+          "suffix": " ]\n",
           "tokenBudget": 2048,
           "reservedTokens": 100,
           "budgetPriority": 302,
+          "insertionPosition": 0,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -1
+          "maximumTrimType": "sentence"
         },
         "displayName": "Personality: ${myName}",
         "keys": [
@@ -123,41 +111,17 @@
         "nonStoryActivatable": false
       },
       {
-        "text": "${myName} friends Mariella16girl (tall hair black skin tanned)",
-        "contextConfig": {
-          "prefix": ":[ ",
-          "suffix": " ];\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 100,
-          "budgetPriority": 303,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -1
-        },
-        "displayName": "Friends: ${myName}",
-        "keys": [
-          "/\\WI\\W/",
-          "/\\W[Mm]e\\W/",
-          "$/\\W${myName}\\W/",
-          "/Mariella/"
-        ],
-        "searchRange": 1000,
-        "enabled": true,
-        "forceActivation": true,
-        "keyRelative": false,
-        "nonStoryActivatable": false
-      },
-      {
         "text": "Celestial definition human chosen by a mighty god and gifted with great skill",
         "contextConfig": {
-          "prefix": ":[ ",
-          "suffix": " ];\n",
+          "prefix": "[ ",
+          "suffix": " ]\n",
           "tokenBudget": 2048,
           "reservedTokens": 100,
           "budgetPriority": -200,
+          "insertionPosition": -4,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -10
+          "maximumTrimType": "sentence"
         },
         "displayName": "Definition: Celestial",
         "keys": [
@@ -172,38 +136,19 @@
       {
         "text": "Genre: Epic Fantasy",
         "contextConfig": {
-          "prefix": ":[ ",
-          "suffix": " ];\n",
+          "prefix": "[ ",
+          "suffix": " ]\n",
           "tokenBudget": 2048,
           "reservedTokens": 15,
-          "budgetPriority": -300,
+          "budgetPriority": 3,
+          "insertionPosition": -1,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -6
+          "maximumTrimType": "sentence"
         },
         "displayName": "Genre",
         "keys": [],
-        "searchRange": 1000,
-        "enabled": true,
-        "forceActivation": true,
-        "keyRelative": false,
-        "nonStoryActivatable": false
-      },
-      {
-        "text": "Author: Fred Saberhagen",
-        "contextConfig": {
-          "prefix": ":[ ",
-          "suffix": " ];\n",
-          "tokenBudget": 2048,
-          "reservedTokens": 12,
-          "budgetPriority": -301,
-          "trimDirection": "doNotTrim",
-          "insertionType": "newline",
-          "insertionPosition": -6
-        },
-        "displayName": "Author",
-        "keys": [],
-        "searchRange": 1000,
+        "searchRange": 2000,
         "enabled": true,
         "forceActivation": true,
         "keyRelative": false,
@@ -212,64 +157,84 @@
       {
         "text": "Tags: adventure& romance& politics& intrigue& flawed hero& anti-hero& fantasy",
         "contextConfig": {
-          "prefix": ":[ ",
-          "suffix": " ];\n",
+          "prefix": "[ ",
+          "suffix": " ]\n",
           "tokenBudget": 2048,
           "reservedTokens": 40,
-          "budgetPriority": -302,
+          "budgetPriority": 2,
+          "insertionPosition": -1,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -6
+          "maximumTrimType": "sentence"
         },
         "displayName": "Tags",
         "keys": [],
-        "searchRange": 1000,
+        "searchRange": 2000,
         "enabled": true,
         "forceActivation": true,
         "keyRelative": false,
         "nonStoryActivatable": false
       },
       {
-        "text": "writing style: precise and descriptive and flowery and erotic",
+        "text": "writing style: precise and descriptive and flowery",
         "contextConfig": {
-          "prefix": ":[ ",
-          "suffix": " ];\n",
+          "prefix": "[ ",
+          "suffix": " ]\n",
           "tokenBudget": 2048,
           "reservedTokens": 15,
-          "budgetPriority": -303,
+          "budgetPriority": 1,
+          "insertionPosition": -1,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -6
+          "maximumTrimType": "sentence"
         },
         "displayName": "Writing Style",
         "keys": [],
-        "searchRange": 1000,
+        "searchRange": 2000,
         "enabled": true,
         "forceActivation": true,
         "keyRelative": false,
         "nonStoryActivatable": false
       },
       {
-        "text": "* * *",
+        "text": "***",
         "contextConfig": {
           "prefix": "",
-          "suffix": "\n\n",
+          "suffix": "\n",
           "tokenBudget": 2048,
           "reservedTokens": 3,
-          "budgetPriority": -501,
+          "budgetPriority": -399,
+          "insertionPosition": -4,
           "trimDirection": "doNotTrim",
           "insertionType": "newline",
-          "insertionPosition": -6
+          "maximumTrimType": "sentence"
         },
         "displayName": "Signpost",
         "keys": [],
-        "searchRange": 1000,
+        "searchRange": 2000,
         "enabled": true,
         "forceActivation": true,
         "keyRelative": false,
         "nonStoryActivatable": false
       }
     ]
+  },
+  "settings": {
+    "parameters": {
+      "temperature": 0.72,
+      "max_length": 60,
+      "min_length": 20,
+      "top_k": 0,
+      "top_p": 0.725,
+      "tail_free_sampling": 1,
+      "repetition_penalty": 3,
+      "repetition_penalty_range": 1024,
+      "repetition_penalty_slope": 6.57,
+      "bad_words_ids": [],
+      "prefix": "theme_darkfantasy"
+    },
+    "trimResponses": true,
+    "banBrackets": true
   },
   "author": "Shel"
 }

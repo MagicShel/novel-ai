@@ -44,8 +44,6 @@ settings:
         prefix: style_epic_fantasy
     trimResponses: true
     banBrackets: true
-    trimResponses: true
-    banBrackets: true
 lorebook:
     lorebookVersion: 1
     entries:

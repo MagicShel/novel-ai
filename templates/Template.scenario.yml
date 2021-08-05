@@ -169,6 +169,7 @@ lorebook:
                 insertionPosition: -4
                 trimDirection: doNotTrim
                 insertionType: newline
+                maximumTrimType: sentence
             displayName: "Signpost"
             keys: []
             searchRange: 2000

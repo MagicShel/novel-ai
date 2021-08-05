@@ -238,7 +238,7 @@
         "nonStoryActivatable": false
       },
       {
-        "text": "Tags: action adventure romance",
+        "text": "Tags: action& adventure& romance",
         "contextConfig": {
           "prefix": "[ ",
           "suffix": " ]\n",
