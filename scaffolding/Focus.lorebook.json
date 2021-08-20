@@ -1,0 +1,209 @@
+{
+    "lorebookVersion": 3,
+    "entries": [
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "time of day: ",
+                "suffix": "; ",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 400,
+                "trimDirection": "trimBottom",
+                "insertionType": "sentence",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "lastUpdatedAt": 1629474077283,
+            "displayName": "Focus: Time of Day (morning/afternoon/evening/night)",
+            "id": "74c6c8ad-1d4c-4c44-ac1a-ad7d081b3024",
+            "keys": [],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": true,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "a7ae6fbb-973c-42ea-9d17-2efafc1aec38"
+        },
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "I am at: ",
+                "suffix": "; ",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 400,
+                "trimDirection": "trimBottom",
+                "insertionType": "sentence",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "lastUpdatedAt": 1629474084928,
+            "displayName": "Focus: I am at",
+            "id": "dab415dc-187a-4238-86a6-0c4176ada657",
+            "keys": [],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": true,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "a7ae6fbb-973c-42ea-9d17-2efafc1aec38"
+        },
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "people with me: ",
+                "suffix": "; ",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 400,
+                "trimDirection": "trimBottom",
+                "insertionType": "sentence",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "lastUpdatedAt": 1629473382179,
+            "displayName": "Focus: People with me",
+            "id": "c610ccd6-e5dc-4fc2-ba41-75921df5cd96",
+            "keys": [],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": true,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "a7ae6fbb-973c-42ea-9d17-2efafc1aec38"
+        },
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "I am doing: ",
+                "suffix": "; ",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 400,
+                "trimDirection": "trimBottom",
+                "insertionType": "sentence",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "lastUpdatedAt": 1629473966026,
+            "displayName": "Focus: I am doing",
+            "id": "4f3e276d-4c4b-4ff1-9b56-542a18db9cde",
+            "keys": [],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": true,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "a7ae6fbb-973c-42ea-9d17-2efafc1aec38"
+        },
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "my outfit is: ",
+                "suffix": "; ",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 400,
+                "trimDirection": "trimBottom",
+                "insertionType": "sentence",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "lastUpdatedAt": 1629474145067,
+            "displayName": "Focus: My outfit is",
+            "id": "91d2d0ee-c182-4d0b-80cd-d627cf909d15",
+            "keys": [],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": true,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "a7ae6fbb-973c-42ea-9d17-2efafc1aec38"
+        },
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "I am feeling: ",
+                "suffix": "; ",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 400,
+                "trimDirection": "trimBottom",
+                "insertionType": "sentence",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "lastUpdatedAt": 1629474168218,
+            "displayName": "Focus: I am feeling",
+            "id": "9a83f3e7-a520-4020-9e54-b9e771c120d7",
+            "keys": [],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": true,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "a7ae6fbb-973c-42ea-9d17-2efafc1aec38"
+        }
+    ],
+    "settings": {
+        "orderByKeyLocations": false
+    },
+    "categories": [
+        {
+            "name": "Focus",
+            "id": "a7ae6fbb-973c-42ea-9d17-2efafc1aec38",
+            "enabled": true,
+            "createSubcontext": true,
+            "subcontextSettings": {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "[ currently: ",
+                    "suffix": "]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 100,
+                    "budgetPriority": -100,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -4
+                },
+                "lastUpdatedAt": 1629427793912,
+                "displayName": "Focus",
+                "id": "cc8f3d62-1c3d-4fe2-b2d0-3b0165cee640",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            },
+            "useCategoryDefaults": true,
+            "categoryDefaults": {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "; ",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "sentence",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1629470520744,
+                "displayName": "Focus:",
+                "id": "860b88af-6265-4f46-88d9-52539af51b12",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            }
+        }
+    ]
+}

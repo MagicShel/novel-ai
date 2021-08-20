@@ -1,0 +1,226 @@
+{
+  "scenarioVersion": 1,
+  "title": "The Bride",
+  "description": "You are a young bride in the 19th century, just wed to an ugly, but powerful man. He invites you to explore the house... but one room is forbidden. 1st Person POV.",
+  "prompt": "I grew up an only child. My dear mother had a difficult pregnancy and my birth was traumatic. We were both fortunate enough to survive, but to my shame the experience left my mother barren. Worse, I am a girl who deprived my parents of a strapping brother who would help tend the fields and eventually carry on the family name. They never expressed their disappointment to me, but as I grew older, I could tell it weighed heavily on them. I was starting to catch the eye of several lads around town and found my thoughts turning to love, but one day my mother sat me down and explained the importance of marrying well. I despaired of this duty as my father turned away each suitor who, while pleasant enough to look up, could not afford the lofty dowry my father sought. But all that changed four months ago.\nI had gone with my father to market to help sell some wheat and barley and buy some pigs to help feed us through winter. Unfortunately, wheat was in abundance and the cost of pigs was high, and my father despaired to feed three mouths until spring. It was that afternoon that ${husbandName} came across our cart. He wore the sun-bleached finery of a ship's captain and was nearly as old as my father with deep furrows on his face that disappeared into a disheveled salt-and-pepper beard which took on an almost blue hue. He and Father spoke in hushed tones while one or the other glanced over at me as if I were a pheasant they were haggling over. Presently, Father called me over and instructed me to remove my petticoats to display the shape of my hips. I felt uncomfortable, but betrayed no mention of this in front of the merchant. That evening, I protested to Mother, and she presented my complaints privately to Father. When she returned, she explained that I would do my duty to my family and wed this man in the spring.\nAt first, I was horrified to imagine a life with such an old and ugly husband, but I resigned myself to this fate. He had met and exceeded my father's dowry price, and my mother assured me I would want for nothing. ${husbandName}, I was informed, was retiring from a life at sea and sought to make a home and name for himself, which is why he had been looking for a bride to join him upon his return from his final voyage. Fall turned to winter, and with each passing week my spirits dipped further. We fed well on pork puchased with my bride-price, but it was as ashes in my mouth. Presently, winter turned to spring and the icy harbor thawed, granting passage and soon my betrothed's ship came to port. Mother and I made the final preparations and the date was set two weeks hence.\nToday is the day of my wedding, and we arrive at church and I change into my homemade dress. At ${husbandName}'s request, my hair is adorned with naught but a blue ribbon. I come before the altar and he takes my soft hands with his gnarled, salt-split fingers. His touch is as uncomfortable as his visiage. I recite my vows as the hollow grows inside of me. How can I swear an oath to this man, with whom I've never before spoken? I weep openly, concealing my pain behind a joyless smile that fools all save Mother.\nAfter the ceremony, I kiss my parents goodbye and join my husband in his carriage. The steady clopping of the horses defies my intent to get to know my new husband, as the steady rythem soon has me fast asleep.\nI awaken when the carriage stops before a smartly maintained manor house. This mansion is far finer than any I'd seen before, and it is to be my home!\n\"I'm the lady of this estate!\" I could scarcely fathom such an impossibility.\n\"Indeed you are. All you behold is yours. You may explore it with only two restrictions: First, you are to present yourself in my chambers promptly each evening by the final chime of the eight o'clock bell. And second, you must never enter the wine cellar. This should be of little difficulty because the door is kept locked and the key kept safe. Nonetheless, should this rule be broken, the consequences would be most dire.\"\nI smile to find my new husband in posession of a sense of good humor to tease the import of so small a transgression, but my smile fades when I glance into his eyes and find a demeanor most serious.\"As you say, sir.\"\n${husbandName} takes his leave, and I am left to explore. The house is three stories, with an east and west wing, totalling two-score rooms at least! As I wander, a sense of foreboding sets in. The servants are defferential, but distant and I hear them whisper amongst themselves when my back is turned. The portraits I discover in the great hall and library are all of my lord and no others. Curious that his family would not be on proud display.\nI continue my explorations as my intuition tells me there is a great and terrible mystery to be uncovered here. My suspicions take on a chilling focus when I walk into a bedroom in the east wing and find ",
+  "tags": [],
+  "placeholders": [
+    {
+      "key": "brideName",
+      "description": "Your name?",
+      "defaultValue": "Samantha",
+      "order": 1
+    },
+    {
+      "key": "brideAge",
+      "description": "Your age?",
+      "defaultValue": "eighteen",
+      "order": 2
+    },
+    {
+      "key": "husbandName",
+      "description": "Your husband's name?",
+      "defaultValue": "Bluebeard",
+      "order": 3
+    }
+  ],
+  "context": [
+    {
+      "text": "My name is ${brideName}. I am a girl of ${brideAge} years and married just this day to ${husbandName} out of duty rather than love. I am wearing only my thin, white wedding dress and a blue ribbon in my hair. My hair is brown and silky and falls past my shoulders. I must present myself in ${husbandName}'s bed chamber each evening by the final chime of the eight o'clock bell. I am forbidden from entering the locked wine cellar under threat of consequences most severe.",
+      "contextConfig": {
+        "prefix": "",
+        "suffix": "\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 512,
+        "budgetPriority": 800,
+        "insertionPosition": 0,
+        "trimDirection": "trimTop",
+        "insertionType": "newline",
+        "maximumTrimType": "sentence"
+      }
+    },
+    {
+      "text": "",
+      "contextConfig": {
+        "prefix": "[ ",
+        "suffix": " ]\n",
+        "tokenBudget": 2048,
+        "reservedTokens": 512,
+        "budgetPriority": -400,
+        "insertionPosition": -4,
+        "trimDirection": "doNotTrim",
+        "insertionType": "newline",
+        "maximumTrimType": "sentence"
+      }
+    }
+  ],
+  "ephemeralContext": [],
+  "lorebook": {
+    "lorebookVersion": 2,
+    "settings": {
+      "orderByKeyLocations": false
+    },
+    "entries": [
+      {
+        "text": "Genre: ${1#genre:Genre}",
+        "contextConfig": {
+          "prefix": "[ ",
+          "suffix": " ]\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 15,
+          "budgetPriority": 3,
+          "insertionPosition": -1,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "maximumTrimType": "sentence"
+        },
+        "displayName": "Genre",
+        "keys": [],
+        "searchRange": 2000,
+        "enabled": true,
+        "forceActivation": true,
+        "keyRelative": false,
+        "nonStoryActivatable": false
+      },
+      {
+        "text": "Tags: ${2#tags:Tags}",
+        "contextConfig": {
+          "prefix": "[ ",
+          "suffix": " ]\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 40,
+          "budgetPriority": 2,
+          "insertionPosition": -1,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "maximumTrimType": "sentence"
+        },
+        "displayName": "Tags",
+        "keys": [],
+        "searchRange": 2000,
+        "enabled": true,
+        "forceActivation": true,
+        "keyRelative": false,
+        "nonStoryActivatable": false
+      },
+      {
+        "text": "writing style: ${3#writing:Writing Style}",
+        "contextConfig": {
+          "prefix": "[ ",
+          "suffix": " ]\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 15,
+          "budgetPriority": 1,
+          "insertionPosition": -1,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "maximumTrimType": "sentence"
+        },
+        "displayName": "Writing Style",
+        "keys": [],
+        "searchRange": 2000,
+        "enabled": true,
+        "forceActivation": true,
+        "keyRelative": false,
+        "nonStoryActivatable": false
+      },
+      {
+        "text": "***",
+        "contextConfig": {
+          "prefix": "",
+          "suffix": "\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 3,
+          "budgetPriority": -399,
+          "insertionPosition": -4,
+          "trimDirection": "doNotTrim",
+          "insertionType": "newline",
+          "maximumTrimType": "sentence"
+        },
+        "displayName": "Signpost",
+        "keys": [],
+        "searchRange": 2000,
+        "enabled": true,
+        "forceActivation": true,
+        "keyRelative": false,
+        "nonStoryActivatable": false
+      }
+    ]
+  },
+  "settings": {
+    "parameters": {
+      "temperature": 0.72,
+      "max_length": 60,
+      "min_length": 20,
+      "top_k": 0,
+      "top_p": 0.725,
+      "tail_free_sampling": 1,
+      "repetition_penalty": 3,
+      "repetition_penalty_range": 1024,
+      "repetition_penalty_slope": 6.57,
+      "bad_words_ids": []
+    },
+    "trimResponses": true,
+    "banBrackets": true,
+    "prefix": "vanilla"
+  },
+  "storyContextConfig": {
+    "prefix": "",
+    "suffix": "",
+    "tokenBudget": 2048,
+    "reservedTokens": 512,
+    "budgetPriority": 0,
+    "trimDirection": "trimTop",
+    "insertionType": "newline",
+    "maximumTrimType": "sentence",
+    "insertionPosition": -1
+  },
+  "contextDefaults": {
+    "ephemeralDefaults": [
+      {
+        "text": "",
+        "contextConfig": {
+          "prefix": "[ ",
+          "suffix": " ] ",
+          "tokenBudget": 2048,
+          "reservedTokens": 2048,
+          "budgetPriority": -10000,
+          "trimDirection": "doNotTrim",
+          "insertionType": "sentence",
+          "maximumTrimType": "newline",
+          "insertionPosition": -2
+        },
+        "startingStep": 1,
+        "delay": 0,
+        "duration": 1,
+        "repeat": false,
+        "reverse": false
+      }
+    ],
+    "loreDefaults": [
+      {
+        "text": "",
+        "contextConfig": {
+          "prefix": "[ ",
+          "suffix": " ]\n",
+          "tokenBudget": 2048,
+          "reservedTokens": 0,
+          "budgetPriority": 400,
+          "trimDirection": "trimBottom",
+          "insertionType": "newline",
+          "maximumTrimType": "sentence",
+          "insertionPosition": -1
+        },
+        "lastUpdatedAt": 1628171914090,
+        "displayName": "New Lorebook Entry",
+        "keys": [],
+        "searchRange": 1000,
+        "enabled": true,
+        "forceActivation": false,
+        "keyRelative": false,
+        "nonStoryActivatable": false
+      }
+    ]
+  },
+  "author": ""
+}
