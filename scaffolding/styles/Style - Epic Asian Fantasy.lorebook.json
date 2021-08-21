@@ -2,7 +2,7 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "",
+            "text": "Ken Liu",
             "contextConfig": {
                 "prefix": "Author:",
                 "suffix": "; ",
@@ -26,7 +26,7 @@
             "category": "c72bdbda-6192-4b58-830f-7b6628099762"
         },
         {
-            "text": "",
+            "text": "epic fantasy, dark fantasy, Asian fantasy, wuxia, spirits, mythic fantasy, heroic fantasy",
             "contextConfig": {
                 "prefix": "Tags: ",
                 "suffix": "; ",
@@ -50,7 +50,7 @@
             "category": "c72bdbda-6192-4b58-830f-7b6628099762"
         },
         {
-            "text": "",
+            "text": "science fiction/fantasy, literary",
             "contextConfig": {
                 "prefix": "Genre: ",
                 "suffix": " ",
@@ -79,7 +79,7 @@
     },
     "categories": [
         {
-            "name": "Style",
+            "name": "Style: Epic Asian Fantasy",
             "id": "c72bdbda-6192-4b58-830f-7b6628099762",
             "enabled": true,
             "createSubcontext": true,
