@@ -1,0 +1,137 @@
+{
+    "lorebookVersion": 3,
+    "entries": [
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "[ about me:",
+                "suffix": " ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 400,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "lastUpdatedAt": 1629898983774,
+            "displayName": "Person: Me: Summary",
+            "id": "62e0cab4-a4f6-41b3-8c0e-4c63c8bbf3d5",
+            "keys": [],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": true,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "78ca760b-3e22-4972-8cb7-d0f09158a01c"
+        },
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "[ description of me: ",
+                "suffix": " ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 399,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "lastUpdatedAt": 1629898921629,
+            "displayName": "Person: Me: Description",
+            "id": "9ef9b1d3-d16c-4a1f-8512-a97d58d57e2e",
+            "keys": [],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": true,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "78ca760b-3e22-4972-8cb7-d0f09158a01c"
+        },
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "[ my personality: ",
+                "suffix": " ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 398,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "lastUpdatedAt": 1629896624219,
+            "displayName": "Person: Me: Personality",
+            "id": "8bb6e35d-98dc-4dbd-85a1-f14456568201",
+            "keys": [],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": true,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "78ca760b-3e22-4972-8cb7-d0f09158a01c"
+        }
+    ],
+    "settings": {
+        "orderByKeyLocations": false
+    },
+    "categories": [
+        {
+            "name": "Person: Me",
+            "id": "78ca760b-3e22-4972-8cb7-d0f09158a01c",
+            "enabled": true,
+            "createSubcontext": true,
+            "subcontextSettings": {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1629899226824,
+                "displayName": "New Lorebook Entry",
+                "id": "9af0fd8d-287a-4c7d-a1d8-6509c614ccec",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            },
+            "useCategoryDefaults": true,
+            "categoryDefaults": {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "[ ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1629896073522,
+                "displayName": "New Lorebook Entry",
+                "id": "9933a788-7bc2-4948-82ad-8610557ceecf",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            }
+        }
+    ]
+}

@@ -1,0 +1,153 @@
+{
+    "lorebookVersion": 3,
+    "entries": [
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "[ $NAME: ",
+                "suffix": " ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 400,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "lastUpdatedAt": 1629476261406,
+            "displayName": "Summary of $NAME",
+            "id": "058323f8-06f6-4501-9a24-c04e08760fbc",
+            "keys": [
+                "/$NAME/"
+            ],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": false,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "3aa8b27e-2589-4267-9f11-c640443844d6"
+        },
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "[ $NAME's appearance: ",
+                "suffix": " ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 400,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "lastUpdatedAt": 1629476502862,
+            "displayName": "Description of $NAME",
+            "id": "7a04e546-6c63-490c-94d2-939d3d7d2d08",
+            "keys": [
+                "look",
+                "see",
+                "examine",
+                "inspect",
+                "ogle",
+                "glance"
+            ],
+            "searchRange": 300,
+            "enabled": true,
+            "forceActivation": false,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "3aa8b27e-2589-4267-9f11-c640443844d6"
+        },
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "[ personality of $NAME: ",
+                "suffix": " ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 400,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "lastUpdatedAt": 1629476492313,
+            "displayName": "Personality of $NAME",
+            "id": "f6cac639-104b-4b93-bda0-c68794db312b",
+            "keys": [
+                "says",
+                "asks"
+            ],
+            "searchRange": 300,
+            "enabled": true,
+            "forceActivation": false,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "3aa8b27e-2589-4267-9f11-c640443844d6"
+        }
+    ],
+    "settings": {
+        "orderByKeyLocations": false
+    },
+    "categories": [
+        {
+            "name": "Person: $NAME",
+            "id": "3aa8b27e-2589-4267-9f11-c640443844d6",
+            "enabled": true,
+            "createSubcontext": true,
+            "subcontextSettings": {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "{ about $NAME:\n",
+                    "suffix": "\n}\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1629427793912,
+                "displayName": "Person: $NAME",
+                "id": "cc8f3d62-1c3d-4fe2-b2d0-3b0165cee640",
+                "keys": [
+                    "/$NAME/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            },
+            "useCategoryDefaults": true,
+            "categoryDefaults": {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "[ ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1629475003084,
+                "displayName": "New Lorebook Entry",
+                "id": "6ffa59f3-0d2d-4dc6-9b82-9ac2face6b17",
+                "keys": [
+                    "/$NAME/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            }
+        }
+    ]
+}
