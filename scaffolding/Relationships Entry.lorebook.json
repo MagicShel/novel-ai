@@ -1,0 +1,55 @@
+{
+    "lorebookVersion": 3,
+    "entries": [
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "[ AAA feels ",
+                "suffix": " toward BBB ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 400,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "displayName": "Relationship: AAA->BBB",
+            "keys": [
+                "/AAA.*BBB/",
+                "/BBB.*AAA/"
+            ],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": false,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "cat-relationships"
+        },
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "[ BBB feels ",
+                "suffix": " toward AAA ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 400,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "displayName": "Relationship: BBB->AAA",
+            "keys": [
+                "/AAA.*BBB/",
+                "/BBB.*AAA/"
+            ],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": false,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "cat-relationships"
+        }
+    ]
+}
