@@ -1,0 +1,55 @@
+{
+    "lorebookVersion": 3,
+    "entries": [
+        {
+            "text": "paternal and protective",
+            "contextConfig": {
+                "prefix": "[ Mal feels ",
+                "suffix": " toward Kaylee ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 400,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "displayName": "Relationship: Mal->Kaylee",
+            "keys": [
+                "/Mal.*Kaylee/",
+                "/Kaylee.*Mal/"
+            ],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": false,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "cat-relationships"
+        },
+        {
+            "text": "loyal and nurturing",
+            "contextConfig": {
+                "prefix": "[ Kaylee feels ",
+                "suffix": " toward Mal ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 400,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "displayName": "Relationship: Kaylee->Mal",
+            "keys": [
+                "/Mal.*Kaylee/",
+                "/Kaylee.*Mal/"
+            ],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": false,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "cat-relationships"
+        }
+    ]
+}

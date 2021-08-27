@@ -1,0 +1,171 @@
+{
+    "lorebookVersion": 3,
+    "entries": [
+        {
+            "text": "Malcolm \"Mal\" Reynolds owner and captain of Serenity Firefly-class freighter; Mal is a scoundrel with a strong personal code",
+            "contextConfig": {
+                "prefix": "[ Mal: ",
+                "suffix": " ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 50,
+                "budgetPriority": 400,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "displayName": "Characer: Mal: About",
+            "keys": [
+                "/Mal/",
+                "/Reynolds/",
+                "captain"
+            ],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": false,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "cat-Mal"
+        },
+        {
+            "text": "35-year-old ruggedly handsome man wearing brown duster; Mal's hair is brown medium-length",
+            "contextConfig": {
+                "prefix": "[ Mal: ",
+                "suffix": " ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 399,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "displayName": "Character: Mal: Appearance",
+            "keys": [
+                "/Mal/",
+                "/Reynolds/",
+                "captain"
+            ],
+            "searchRange": 300,
+            "enabled": true,
+            "forceActivation": false,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "cat-Mal"
+        },
+        {
+            "text": "fiercely independent, sardonic, dislikes religion",
+            "contextConfig": {
+                "prefix": "[ Mal: ",
+                "suffix": " ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 398,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "displayName": "Character: Mal: Personality",
+            "keys": [
+                "/Mal/",
+                "/Reynolds/",
+                "captain"
+            ],
+            "searchRange": 300,
+            "enabled": true,
+            "forceActivation": false,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "cat-Mal"
+        },
+        {
+            "text": "\"Been a long time since Patience shot me and that was due to a perfectly legitimate conflict of interest. I got no grudge.\"; \"Someone ever tries to kill you, you try to kill 'em right back!\"",
+            "contextConfig": {
+                "prefix": "[ quotes by Mal: ",
+                "suffix": " ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 397,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "displayName": "Character: Mal: Quotes",
+            "keys": [
+                "/Mal/",
+                "/Reynolds/",
+                "captain"
+            ],
+            "searchRange": 300,
+            "enabled": true,
+            "forceActivation": false,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "cat-Mal"
+        }
+    ],
+    "settings": {
+        "orderByKeyLocations": false
+    },
+    "categories": [
+        {
+            "name": "Character: Mal",
+            "id": "cat-Mal",
+            "enabled": true,
+            "createSubcontext": true,
+            "subcontextSettings": {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 150,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": 0
+                },
+                "lastUpdatedAt": 1629427793912,
+                "displayName": "Person: Mal",
+                "keys": [
+                    "/Mal/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            },
+            "useCategoryDefaults": true,
+            "categoryDefaults": {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "[ ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1629475003084,
+                "displayName": "New Lorebook Entry",
+                "keys": [
+                    "/Mal/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            }
+        }
+    ]
+}

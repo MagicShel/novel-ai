@@ -1,0 +1,55 @@
+{
+    "lorebookVersion": 3,
+    "entries": [
+        {
+            "text": "romantic tension and insecurity",
+            "contextConfig": {
+                "prefix": "[ Mal feels ",
+                "suffix": " toward Inara ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 400,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "displayName": "Relationship: Mal->Inara",
+            "keys": [
+                "/Mal.*Inara/",
+                "/Inara.*Mal/"
+            ],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": false,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "cat-relationships"
+        },
+        {
+            "text": "romantic tension and frustration",
+            "contextConfig": {
+                "prefix": "[ Inara feels ",
+                "suffix": " toward Mal ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 400,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "displayName": "Relationship: Inara->Mal",
+            "keys": [
+                "/Mal.*Inara/",
+                "/Inara.*Mal/"
+            ],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": false,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "cat-relationships"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "lorebookVersion": 3,
+    "categories": [
+        {
+            "name": "Relationships",
+            "id": "cat-relationships",
+            "enabled": true,
+            "createSubcontext": true,
+            "subcontextSettings": {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 200,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                }
+            },
+            "useCategoryDefaults": true,
+            "categoryDefaults": {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "[ ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 20,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "displayName": "New Lorebook Entry",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            }
+        }
+    ]
+}
