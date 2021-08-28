@@ -2,9 +2,9 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "Malcolm \"Mal\" Reynolds Serenity owner and captain; scoundrel with a strong personal code",
+            "text": "Simon Tam Serenity crew neurosurgeon medic brother of River",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ Simon: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 50,
@@ -14,23 +14,23 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Characer: Mal: About",
+            "displayName": "Characer: Simon: About",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Simon/",
+                "medic",
+                "doctor"
             ],
             "searchRange": 1000,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Simon"
         },
         {
-            "text": "35-year-old ruggedly handsome man wearing brown duster; Mal's hair is brown medium-length",
+            "text": "28-year-old handsome man, thin, hair black& medium-length",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ Simon: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -40,23 +40,23 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Appearance",
+            "displayName": "Character: Simon: Appearance",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Simon/",
+                "medic",
+                "doctor"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Simon"
         },
         {
-            "text": "fiercely independent, loyal to Serenity crew, sardonic, dislikes religion",
+            "text": "exceptionally smart, born to privilege but gave it up to rescue River",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ Simon: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -66,23 +66,23 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Personality",
+            "displayName": "Character: Simon: Personality",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Simon/",
+                "medic",
+                "doctor"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Simon"
         },
         {
-            "text": "\"Been a long time since Patience shot me and that was due to a perfectly legitimate conflict of interest. I got no grudge.\"; \"Someone ever tries to kill you, you try to kill 'em right back!\"",
+            "text": "",
             "contextConfig": {
-                "prefix": "[ quotes by Mal: ",
+                "prefix": "[ quotes by Simon: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -92,18 +92,18 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Quotes",
+            "displayName": "Character: Simon: Quotes",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Simon/",
+                "medic",
+                "doctor"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Simon"
         }
     ],
     "settings": {
@@ -111,8 +111,8 @@
     },
     "categories": [
         {
-            "name": "Character: Mal",
-            "id": "cat-Mal",
+            "name": "Character: Simon",
+            "id": "cat-Simon",
             "enabled": true,
             "createSubcontext": true,
             "subcontextSettings": {
@@ -129,10 +129,12 @@
                     "insertionPosition": 0
                 },
                 "lastUpdatedAt": 1629427793912,
-                "displayName": "Person: Mal",
+                "displayName": "Person: Simon",
                 "keys": [
-                    "/Mal/"
-                ],
+                    "/Simon/",
+                    "medic",
+                    "doctor"
+                    ],
                 "searchRange": 1000,
                 "enabled": true,
                 "forceActivation": false,
@@ -157,7 +159,7 @@
                 "lastUpdatedAt": 1629475003084,
                 "displayName": "New Lorebook Entry",
                 "keys": [
-                    "/Mal/"
+                    "/Simon/"
                 ],
                 "searchRange": 1000,
                 "enabled": true,

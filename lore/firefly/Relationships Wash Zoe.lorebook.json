@@ -2,10 +2,10 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "paternal protective inspired",
+            "text": "love trust loyalty",
             "contextConfig": {
-                "prefix": "[ Mal feels ",
-                "suffix": " toward Kaylee ]\n",
+                "prefix": "[ Wash feels ",
+                "suffix": " toward Zoe ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
                 "budgetPriority": 400,
@@ -14,10 +14,10 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Relationship: Mal->Kaylee",
+            "displayName": "Relationship: Wash->Zoe",
             "keys": [
-                "/Mal.*Kaylee/",
-                "/Kaylee.*Mal/"
+                "/Wash.*Zoe/",
+                "/Zoe.*Wash/"
             ],
             "searchRange": 1000,
             "enabled": true,
@@ -27,10 +27,10 @@
             "category": "cat-relationships"
         },
         {
-            "text": "loyal nurturing hopeful",
+            "text": "love protective",
             "contextConfig": {
-                "prefix": "[ Kaylee feels ",
-                "suffix": " toward Mal ]\n",
+                "prefix": "[ Zoe feels ",
+                "suffix": " toward Wash ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
                 "budgetPriority": 400,
@@ -39,10 +39,10 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Relationship: Kaylee->Mal",
+            "displayName": "Relationship: Zoe->Wash",
             "keys": [
-                "/Mal.*Kaylee/",
-                "/Kaylee.*Mal/"
+                "/Wash.*Zoe/",
+                "/Zoe.*Wash/"
             ],
             "searchRange": 1000,
             "enabled": true,

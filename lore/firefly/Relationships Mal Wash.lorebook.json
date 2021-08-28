@@ -2,10 +2,10 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "paternal protective inspired",
+            "text": "respectful paternal",
             "contextConfig": {
                 "prefix": "[ Mal feels ",
-                "suffix": " toward Kaylee ]\n",
+                "suffix": " toward Wash ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
                 "budgetPriority": 400,
@@ -14,10 +14,10 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Relationship: Mal->Kaylee",
+            "displayName": "Relationship: Mal->Wash",
             "keys": [
-                "/Mal.*Kaylee/",
-                "/Kaylee.*Mal/"
+                "/Mal.*Wash/",
+                "/Wash.*Mal/"
             ],
             "searchRange": 1000,
             "enabled": true,
@@ -27,9 +27,9 @@
             "category": "cat-relationships"
         },
         {
-            "text": "loyal nurturing hopeful",
+            "text": "wary respectful",
             "contextConfig": {
-                "prefix": "[ Kaylee feels ",
+                "prefix": "[ Wash feels ",
                 "suffix": " toward Mal ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -39,10 +39,10 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Relationship: Kaylee->Mal",
+            "displayName": "Relationship: Wash->Mal",
             "keys": [
-                "/Mal.*Kaylee/",
-                "/Kaylee.*Mal/"
+                "/Mal.*Wash/",
+                "/Wash.*Mal/"
             ],
             "searchRange": 1000,
             "enabled": true,

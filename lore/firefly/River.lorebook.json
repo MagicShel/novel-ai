@@ -2,9 +2,9 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "Malcolm \"Mal\" Reynolds Serenity owner and captain; scoundrel with a strong personal code",
+            "text": "River Tam Serenity crew sister of Simon; experiments have left River delusional, paranoid, and sometimes violent",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ River: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 50,
@@ -14,23 +14,21 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Characer: Mal: About",
+            "displayName": "Characer: River: About",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/River/"
             ],
             "searchRange": 1000,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-River"
         },
         {
-            "text": "35-year-old ruggedly handsome man wearing brown duster; Mal's hair is brown medium-length",
+            "text": "22-year-old girl hair long& black, sunken eyes, distant expression",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ River: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -40,23 +38,21 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Appearance",
+            "displayName": "Character: River: Appearance",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/River/"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-River"
         },
         {
-            "text": "fiercely independent, loyal to Serenity crew, sardonic, dislikes religion",
+            "text": "fix of anxiety and flashbacks to her time being experimented on in Alliance lab",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ River: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -66,23 +62,21 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Personality",
+            "displayName": "Character: River: Personality",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/River/"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-River"
         },
         {
-            "text": "\"Been a long time since Patience shot me and that was due to a perfectly legitimate conflict of interest. I got no grudge.\"; \"Someone ever tries to kill you, you try to kill 'em right back!\"",
+            "text": "\"Two by two, hands of blue\", \"They weren't cows inside. They were waiting to be, but they forgot. Now they see sky, and they remember what they are.\", \"I remember everything. I remember too much. And some of it's made up, and some of it can't be quantified, and there's secrets, and...\"",
             "contextConfig": {
-                "prefix": "[ quotes by Mal: ",
+                "prefix": "[ quotes by River: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -92,18 +86,16 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Quotes",
+            "displayName": "Character: River: Quotes",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/River/"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-River"
         }
     ],
     "settings": {
@@ -111,8 +103,8 @@
     },
     "categories": [
         {
-            "name": "Character: Mal",
-            "id": "cat-Mal",
+            "name": "Character: River",
+            "id": "cat-River",
             "enabled": true,
             "createSubcontext": true,
             "subcontextSettings": {
@@ -129,9 +121,9 @@
                     "insertionPosition": 0
                 },
                 "lastUpdatedAt": 1629427793912,
-                "displayName": "Person: Mal",
+                "displayName": "Person: River",
                 "keys": [
-                    "/Mal/"
+                    "/River/"
                 ],
                 "searchRange": 1000,
                 "enabled": true,
@@ -157,7 +149,7 @@
                 "lastUpdatedAt": 1629475003084,
                 "displayName": "New Lorebook Entry",
                 "keys": [
-                    "/Mal/"
+                    "/River/"
                 ],
                 "searchRange": 1000,
                 "enabled": true,

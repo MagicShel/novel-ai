@@ -1,0 +1,89 @@
+{
+    "lorebookVersion": 3,
+    "entries": [
+        {
+            "text": "Firefly-class freighter owned and captained by Malcolm Reynolds and piloted by Wash; Serenity is unarmed but has smuggling and passenger compartments",
+            "contextConfig": {
+                "prefix": "[ about Serenity: ",
+                "suffix": " ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 50,
+                "budgetPriority": 400,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "displayName": "Serenity: Summary",
+            "keys": [
+                "/Serenity/",
+                "/Firefly/"
+            ],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": true,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "cat-Serenity"
+        },
+        {
+            "text": "Captain Malcom \"Mal\" Reynolds, Second in command Zoe Washburn, Mechanic Kaylee Frye, Mercenary Jayne Cobb, Pilot Hoban \"Wash\" Washburn, Doctor Simon Tam, Companion Inara Serra, Crew Shepherd Derrial Book, Crew River Tam",
+            "contextConfig": {
+                "prefix": "[ Serenity crew: ",
+                "suffix": " ]\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 50,
+                "budgetPriority": 400,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -1
+            },
+            "displayName": "Serenity: Crew",
+            "keys": [
+                "crew"
+            ],
+            "searchRange": 1000,
+            "enabled": true,
+            "forceActivation": false,
+            "keyRelative": false,
+            "nonStoryActivatable": false,
+            "category": "cat-Serenity"
+        }
+    ],
+    "categories": [
+        {
+            "name": "Serenity",
+            "id": "cat-Serenity",
+            "enabled": true,
+            "createSubcontext": true,
+            "subcontextSettings": {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 150,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": 0
+                },
+                "lastUpdatedAt": 1629427793912,
+                "displayName": "Serenity",
+                "keys": [
+                    "/Serenity/",
+                    "/Firefly/",
+                    "crew"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            }
+        }
+    ]
+}

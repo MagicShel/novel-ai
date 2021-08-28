@@ -2,10 +2,10 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "paternal protective inspired",
+            "text": "friendship trust platonic love",
             "contextConfig": {
-                "prefix": "[ Mal feels ",
-                "suffix": " toward Kaylee ]\n",
+                "prefix": "[ Kaylee feels ",
+                "suffix": " toward Inara ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
                 "budgetPriority": 400,
@@ -14,10 +14,10 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Relationship: Mal->Kaylee",
+            "displayName": "Relationship: Kaylee->Inara",
             "keys": [
-                "/Mal.*Kaylee/",
-                "/Kaylee.*Mal/"
+                "/Kaylee.*Inara/",
+                "/Inara.*Kaylee/"
             ],
             "searchRange": 1000,
             "enabled": true,
@@ -27,10 +27,10 @@
             "category": "cat-relationships"
         },
         {
-            "text": "loyal nurturing hopeful",
+            "text": "friendship trust platonic love",
             "contextConfig": {
-                "prefix": "[ Kaylee feels ",
-                "suffix": " toward Mal ]\n",
+                "prefix": "[ Inara feels ",
+                "suffix": " toward Kaylee ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
                 "budgetPriority": 400,
@@ -39,10 +39,10 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Relationship: Kaylee->Mal",
+            "displayName": "Relationship: Inara->Kaylee",
             "keys": [
-                "/Mal.*Kaylee/",
-                "/Kaylee.*Mal/"
+                "/Kaylee.*Inara/",
+                "/Inara.*Kaylee/"
             ],
             "searchRange": 1000,
             "enabled": true,

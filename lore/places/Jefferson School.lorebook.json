@@ -2,35 +2,36 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "Malcolm \"Mal\" Reynolds Serenity owner and captain; scoundrel with a strong personal code",
+            "text": "Jefferson is a middle school for children between 11 and 14",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ about Jefferson School: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
-                "reservedTokens": 50,
+                "reservedTokens": 0,
                 "budgetPriority": 400,
                 "trimDirection": "doNotTrim",
                 "insertionType": "newline",
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Characer: Mal: About",
+            "lastUpdatedAt": 1630014727307,
+            "displayName": "Jefferson School: About",
+            "id": "73277bb2-2628-4e57-9e36-c98ddff2fe81",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "Jefferson",
+                "school"
             ],
             "searchRange": 1000,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "960bf5b9-0d56-41c7-ae0d-00e405f95380"
         },
         {
-            "text": "35-year-old ruggedly handsome man wearing brown duster; Mal's hair is brown medium-length",
+            "text": "Principal Mr. Harrison, Teacher Mr. Morris, Teacher Mrs. Barre, Secretary Miss Nips",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ faculty at Jefferson: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -40,23 +41,24 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Appearance",
+            "lastUpdatedAt": 1630014953103,
+            "displayName": "Jefferson School: Faculty",
+            "id": "3d772422-e4fc-448a-8be5-307b120ea1e7",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "teacher",
+                "principal"
             ],
-            "searchRange": 300,
+            "searchRange": 1000,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "960bf5b9-0d56-41c7-ae0d-00e405f95380"
         },
         {
-            "text": "fiercely independent, loyal to Serenity crew, sardonic, dislikes religion",
+            "text": "Staci, Maude, Chris, Eduard, Charles, Brenda, Claudia, Rick, David",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ students at Jefferson: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -66,44 +68,20 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Personality",
+            "lastUpdatedAt": 1630015080127,
+            "displayName": "Jefferson School: Students",
+            "id": "b51b7913-9e56-4dd1-869d-359e4efd10d2",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "student",
+                "kid",
+                "class"
             ],
-            "searchRange": 300,
+            "searchRange": 1000,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
-        },
-        {
-            "text": "\"Been a long time since Patience shot me and that was due to a perfectly legitimate conflict of interest. I got no grudge.\"; \"Someone ever tries to kill you, you try to kill 'em right back!\"",
-            "contextConfig": {
-                "prefix": "[ quotes by Mal: ",
-                "suffix": " ]\n",
-                "tokenBudget": 2048,
-                "reservedTokens": 0,
-                "budgetPriority": 397,
-                "trimDirection": "doNotTrim",
-                "insertionType": "newline",
-                "maximumTrimType": "sentence",
-                "insertionPosition": -1
-            },
-            "displayName": "Character: Mal: Quotes",
-            "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
-            ],
-            "searchRange": 300,
-            "enabled": true,
-            "forceActivation": false,
-            "keyRelative": false,
-            "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "960bf5b9-0d56-41c7-ae0d-00e405f95380"
         }
     ],
     "settings": {
@@ -111,8 +89,8 @@
     },
     "categories": [
         {
-            "name": "Character: Mal",
-            "id": "cat-Mal",
+            "name": "Jefferson School",
+            "id": "960bf5b9-0d56-41c7-ae0d-00e405f95380",
             "enabled": true,
             "createSubcontext": true,
             "subcontextSettings": {
@@ -121,31 +99,20 @@
                     "prefix": "",
                     "suffix": "\n",
                     "tokenBudget": 2048,
-                    "reservedTokens": 150,
+                    "reservedTokens": 0,
                     "budgetPriority": 400,
                     "trimDirection": "trimBottom",
                     "insertionType": "newline",
                     "maximumTrimType": "sentence",
                     "insertionPosition": 0
-                },
-                "lastUpdatedAt": 1629427793912,
-                "displayName": "Person: Mal",
-                "keys": [
-                    "/Mal/"
-                ],
-                "searchRange": 1000,
-                "enabled": true,
-                "forceActivation": false,
-                "keyRelative": false,
-                "nonStoryActivatable": false,
-                "category": ""
+                }
             },
             "useCategoryDefaults": true,
             "categoryDefaults": {
                 "text": "",
                 "contextConfig": {
-                    "prefix": "[ ",
-                    "suffix": " ]\n",
+                    "prefix": "",
+                    "suffix": "\n",
                     "tokenBudget": 2048,
                     "reservedTokens": 0,
                     "budgetPriority": 400,
@@ -154,11 +121,10 @@
                     "maximumTrimType": "sentence",
                     "insertionPosition": -1
                 },
-                "lastUpdatedAt": 1629475003084,
+                "lastUpdatedAt": 1630014539237,
                 "displayName": "New Lorebook Entry",
-                "keys": [
-                    "/Mal/"
-                ],
+                "id": "a5f2daa0-fb9f-48ef-a96b-f54e541c271b",
+                "keys": [],
                 "searchRange": 1000,
                 "enabled": true,
                 "forceActivation": false,

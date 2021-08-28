@@ -2,10 +2,10 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "paternal protective inspired",
+            "text": "trust respect comraderie",
             "contextConfig": {
                 "prefix": "[ Mal feels ",
-                "suffix": " toward Kaylee ]\n",
+                "suffix": " toward Zoe ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
                 "budgetPriority": 400,
@@ -14,10 +14,10 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Relationship: Mal->Kaylee",
+            "displayName": "Relationship: Mal->Zoe",
             "keys": [
-                "/Mal.*Kaylee/",
-                "/Kaylee.*Mal/"
+                "/Mal.*Zoe/",
+                "/Zoe.*Mal/"
             ],
             "searchRange": 1000,
             "enabled": true,
@@ -27,9 +27,9 @@
             "category": "cat-relationships"
         },
         {
-            "text": "loyal nurturing hopeful",
+            "text": "unconditional loyalty",
             "contextConfig": {
-                "prefix": "[ Kaylee feels ",
+                "prefix": "[ Zoe feels ",
                 "suffix": " toward Mal ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -39,10 +39,10 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Relationship: Kaylee->Mal",
+            "displayName": "Relationship: Zoe->Mal",
             "keys": [
-                "/Mal.*Kaylee/",
-                "/Kaylee.*Mal/"
+                "/Mal.*Zoe/",
+                "/Zoe.*Mal/"
             ],
             "searchRange": 1000,
             "enabled": true,

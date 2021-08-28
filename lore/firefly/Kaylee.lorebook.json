@@ -2,9 +2,9 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "Malcolm \"Mal\" Reynolds Serenity owner and captain; scoundrel with a strong personal code",
+            "text": "Kaylee Frye Serenity crew mechanic",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ Kaylee: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 50,
@@ -14,23 +14,21 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Characer: Mal: About",
+            "displayName": "Characer: Kaylee: About",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Kaylee/"
             ],
             "searchRange": 1000,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Kaylee"
         },
         {
-            "text": "35-year-old ruggedly handsome man wearing brown duster; Mal's hair is brown medium-length",
+            "text": "23-year-old woman beautiful yet curvy; Kaylee hair straight& long& sandy; dirty and greasy; wears greasy vest",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ Kaylee: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -40,23 +38,21 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Appearance",
+            "displayName": "Character: Kaylee: Appearance",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Kaylee/"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Kaylee"
         },
         {
-            "text": "fiercely independent, loyal to Serenity crew, sardonic, dislikes religion",
+            "text": "wholesome, sweet, optimistic",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ Kaylee: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -66,23 +62,21 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Personality",
+            "displayName": "Character: Kaylee: Personality",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Kaylee/"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Kaylee"
         },
         {
-            "text": "\"Been a long time since Patience shot me and that was due to a perfectly legitimate conflict of interest. I got no grudge.\"; \"Someone ever tries to kill you, you try to kill 'em right back!\"",
+            "text": "\"Everything's shiny, Captain. Not to fret.\"; \"Have faith, Captain!\"; \"Going on a year now, I ain't had nothing twixt my nethers weren't run on batteries.\"",
             "contextConfig": {
-                "prefix": "[ quotes by Mal: ",
+                "prefix": "[ quotes by Kaylee: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -92,18 +86,16 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Quotes",
+            "displayName": "Character: Kaylee: Quotes",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Kaylee/"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Kaylee"
         }
     ],
     "settings": {
@@ -111,8 +103,8 @@
     },
     "categories": [
         {
-            "name": "Character: Mal",
-            "id": "cat-Mal",
+            "name": "Character: Kaylee",
+            "id": "cat-Kaylee",
             "enabled": true,
             "createSubcontext": true,
             "subcontextSettings": {
@@ -129,9 +121,9 @@
                     "insertionPosition": 0
                 },
                 "lastUpdatedAt": 1629427793912,
-                "displayName": "Person: Mal",
+                "displayName": "Person: Kaylee",
                 "keys": [
-                    "/Mal/"
+                    "/Kaylee/"
                 ],
                 "searchRange": 1000,
                 "enabled": true,
@@ -157,7 +149,7 @@
                 "lastUpdatedAt": 1629475003084,
                 "displayName": "New Lorebook Entry",
                 "keys": [
-                    "/Mal/"
+                    "/Kaylee/"
                 ],
                 "searchRange": 1000,
                 "enabled": true,

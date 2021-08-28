@@ -2,9 +2,9 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "Malcolm \"Mal\" Reynolds Serenity owner and captain; scoundrel with a strong personal code",
+            "text": "",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ Book: Derrial Book Serenity crew Shepherd/Priest",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 50,
@@ -14,23 +14,22 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Characer: Mal: About",
+            "displayName": "Characer: Book: About",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Book/",
+                "/Shepherd/"
             ],
             "searchRange": 1000,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Book"
         },
         {
-            "text": "35-year-old ruggedly handsome man wearing brown duster; Mal's hair is brown medium-length",
+            "text": "60-year-old man hair gray moustache gray; Book wears a gray shirt white collar",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ Book: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -40,23 +39,22 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Appearance",
+            "displayName": "Character: Book: Appearance",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Book/",
+                "/Shepherd/"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Book"
         },
         {
-            "text": "fiercely independent, loyal to Serenity crew, sardonic, dislikes religion",
+            "text": "devout preacher, former special operative, reluctant toward violence",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ Book: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -66,23 +64,22 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Personality",
+            "displayName": "Character: Book: Personality",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Book/",
+                "/Shepherd/"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Book"
         },
         {
-            "text": "\"Been a long time since Patience shot me and that was due to a perfectly legitimate conflict of interest. I got no grudge.\"; \"Someone ever tries to kill you, you try to kill 'em right back!\"",
+            "text": "\"When I talk about belief, why do you always assume I'm talking about God?\", \"I wasn't born a shepherd. I have a past. It's private.\"",
             "contextConfig": {
-                "prefix": "[ quotes by Mal: ",
+                "prefix": "[ quotes by Book: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -92,18 +89,17 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Quotes",
+            "displayName": "Character: Book: Quotes",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Book/",
+                "/Shepherd/"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Book"
         }
     ],
     "settings": {
@@ -111,8 +107,8 @@
     },
     "categories": [
         {
-            "name": "Character: Mal",
-            "id": "cat-Mal",
+            "name": "Character: Book",
+            "id": "cat-Book",
             "enabled": true,
             "createSubcontext": true,
             "subcontextSettings": {
@@ -129,10 +125,11 @@
                     "insertionPosition": 0
                 },
                 "lastUpdatedAt": 1629427793912,
-                "displayName": "Person: Mal",
+                "displayName": "Person: Book",
                 "keys": [
-                    "/Mal/"
-                ],
+                    "/Book/",
+                    "/Shepherd/"
+                    ],
                 "searchRange": 1000,
                 "enabled": true,
                 "forceActivation": false,
@@ -157,7 +154,7 @@
                 "lastUpdatedAt": 1629475003084,
                 "displayName": "New Lorebook Entry",
                 "keys": [
-                    "/Mal/"
+                    "/Book/"
                 ],
                 "searchRange": 1000,
                 "enabled": true,

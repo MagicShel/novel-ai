@@ -2,9 +2,9 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "Malcolm \"Mal\" Reynolds Serenity owner and captain; scoundrel with a strong personal code",
+            "text": "Hoban \"Wash\" Washburn Serenity crew pilot husband of Zoe",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ Wash: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 50,
@@ -14,23 +14,21 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Characer: Mal: About",
+            "displayName": "Characer: Wash: About",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Wash/"
             ],
             "searchRange": 1000,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Wash"
         },
         {
-            "text": "35-year-old ruggedly handsome man wearing brown duster; Mal's hair is brown medium-length",
+            "text": "30-year-old stocky man hair blonde& medium-length",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ Wash: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -40,23 +38,21 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Appearance",
+            "displayName": "Character: Wash: Appearance",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Wash/"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Wash"
         },
         {
-            "text": "fiercely independent, loyal to Serenity crew, sardonic, dislikes religion",
+            "text": "undisciplined, quippy, panicks under pressure",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ Wash: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -66,23 +62,21 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Personality",
+            "displayName": "Character: Wash: Personality",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Wash/"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Wash"
         },
         {
-            "text": "\"Been a long time since Patience shot me and that was due to a perfectly legitimate conflict of interest. I got no grudge.\"; \"Someone ever tries to kill you, you try to kill 'em right back!\"",
+            "text": "\"we’re crooks. If everything were right we’d be in jail.\", \"Who’s flying this thing?! Oh right, that would be me. Back to work.\", \"It’s always a hoot and we don’t all die from it.\"",
             "contextConfig": {
-                "prefix": "[ quotes by Mal: ",
+                "prefix": "[ quotes by Wash: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -92,18 +86,16 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Quotes",
+            "displayName": "Character: Wash: Quotes",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Wash/"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Wash"
         }
     ],
     "settings": {
@@ -111,8 +103,8 @@
     },
     "categories": [
         {
-            "name": "Character: Mal",
-            "id": "cat-Mal",
+            "name": "Character: Wash",
+            "id": "cat-Wash",
             "enabled": true,
             "createSubcontext": true,
             "subcontextSettings": {
@@ -129,9 +121,9 @@
                     "insertionPosition": 0
                 },
                 "lastUpdatedAt": 1629427793912,
-                "displayName": "Person: Mal",
+                "displayName": "Person: Wash",
                 "keys": [
-                    "/Mal/"
+                    "/Wash/"
                 ],
                 "searchRange": 1000,
                 "enabled": true,
@@ -157,7 +149,7 @@
                 "lastUpdatedAt": 1629475003084,
                 "displayName": "New Lorebook Entry",
                 "keys": [
-                    "/Mal/"
+                    "/Wash/"
                 ],
                 "searchRange": 1000,
                 "enabled": true,

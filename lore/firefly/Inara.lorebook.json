@@ -2,9 +2,9 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "Malcolm \"Mal\" Reynolds Serenity owner and captain; scoundrel with a strong personal code",
+            "text": "Inara Serra Serenity crew companion (courtesan); does not service crew; Inara has high social status and lends legitimacy to Serenity",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ Inara: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 50,
@@ -14,23 +14,23 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Characer: Mal: About",
+            "displayName": "Characer: Inara: About",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Inara/",
+                "companion",
+                "whore"
             ],
             "searchRange": 1000,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Inara"
         },
         {
-            "text": "35-year-old ruggedly handsome man wearing brown duster; Mal's hair is brown medium-length",
+            "text": "25-year-old woman stunningly beautiful perfect makeup high fashion; Inara hair long& black& wavy",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ Inara: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -40,23 +40,23 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Appearance",
+            "displayName": "Character: Inara: Appearance",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Inara/",
+                "companion",
+                "whore"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Inara"
         },
         {
-            "text": "fiercely independent, loyal to Serenity crew, sardonic, dislikes religion",
+            "text": "seductive, persuasive, compromising, level-headed, sexually-open",
             "contextConfig": {
-                "prefix": "[ Mal: ",
+                "prefix": "[ Inara: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -66,23 +66,23 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Personality",
+            "displayName": "Character: Inara: Personality",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Inara/",
+                "companion",
+                "whore"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Inara"
         },
         {
-            "text": "\"Been a long time since Patience shot me and that was due to a perfectly legitimate conflict of interest. I got no grudge.\"; \"Someone ever tries to kill you, you try to kill 'em right back!\"",
+            "text": "\"You’re lost in the woods. We all are. Even Mal. The only difference is, he likes it that way.\"",
             "contextConfig": {
-                "prefix": "[ quotes by Mal: ",
+                "prefix": "[ quotes by Inara: ",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 0,
@@ -92,18 +92,18 @@
                 "maximumTrimType": "sentence",
                 "insertionPosition": -1
             },
-            "displayName": "Character: Mal: Quotes",
+            "displayName": "Character: Inara: Quotes",
             "keys": [
-                "/Mal/",
-                "/Reynolds/",
-                "captain"
+                "/Inara/",
+                "companion",
+                "whore"
             ],
             "searchRange": 300,
             "enabled": true,
             "forceActivation": false,
             "keyRelative": false,
             "nonStoryActivatable": false,
-            "category": "cat-Mal"
+            "category": "cat-Inara"
         }
     ],
     "settings": {
@@ -111,8 +111,8 @@
     },
     "categories": [
         {
-            "name": "Character: Mal",
-            "id": "cat-Mal",
+            "name": "Character: Inara",
+            "id": "cat-Inara",
             "enabled": true,
             "createSubcontext": true,
             "subcontextSettings": {
@@ -129,10 +129,12 @@
                     "insertionPosition": 0
                 },
                 "lastUpdatedAt": 1629427793912,
-                "displayName": "Person: Mal",
+                "displayName": "Person: Inara",
                 "keys": [
-                    "/Mal/"
-                ],
+                    "/Inara/",
+                    "companion",
+                    "whore"
+                    ],
                 "searchRange": 1000,
                 "enabled": true,
                 "forceActivation": false,
@@ -157,8 +159,10 @@
                 "lastUpdatedAt": 1629475003084,
                 "displayName": "New Lorebook Entry",
                 "keys": [
-                    "/Mal/"
-                ],
+                    "/Inara/",
+                    "companion",
+                    "whore"
+                    ],
                 "searchRange": 1000,
                 "enabled": true,
                 "forceActivation": false,
