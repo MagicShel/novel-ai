@@ -1,0 +1,2364 @@
+{
+    "scenarioVersion": 1,
+    "title": "Firefly",
+    "description": "A familiar crew pilots the spaceship Serenity",
+    "prompt": "",
+    "tags": [],
+    "context": [
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 800,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": 0
+            }
+        },
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 2048,
+                "budgetPriority": -400,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -4
+            }
+        }
+    ],
+    "ephemeralContext": [],
+    "placeholders": [],
+    "settings": {
+        "parameters": {
+            "temperature": 0.72,
+            "max_length": 40,
+            "min_length": 1,
+            "top_k": 0,
+            "top_p": 0.725,
+            "tail_free_sampling": 1,
+            "repetition_penalty": 3,
+            "repetition_penalty_range": 1024,
+            "repetition_penalty_slope": 6.57,
+            "bad_words_ids": []
+        },
+        "preset": "default-optimalwhitepaper",
+        "trimResponses": true,
+        "banBrackets": true,
+        "prefix": "theme_mars"
+    },
+    "lorebook": {
+        "lorebookVersion": 3,
+        "entries": [
+            {
+                "text": "connected fixer/ finds jobs for Mal and Serenity",
+                "contextConfig": {
+                    "prefix": "[ Badger: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381651790,
+                "displayName": "Characer: Badger: About",
+                "id": "5e4982b6-2e65-4ac0-80d2-97e30a900a83",
+                "keys": [
+                    "/Badger/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Badger"
+            },
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "[ Badger: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 399,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381651790,
+                "displayName": "Character: Badger: Appearance",
+                "id": "8820ec2b-22c5-467e-9640-143bf78a615b",
+                "keys": [
+                    "/Badger/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Badger"
+            },
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "[ Badger: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 398,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381651790,
+                "displayName": "Character: Badger: Personality",
+                "id": "1be03e97-17ff-4657-8bbd-1aad8aa1ec2f",
+                "keys": [
+                    "/Badger/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Badger"
+            },
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "[ quotes by Badger: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 397,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381651790,
+                "displayName": "Character: Badger: Quotes",
+                "id": "1262efc0-20ed-461b-9338-1fdd5340cea4",
+                "keys": [
+                    "/Badger/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Badger"
+            },
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "[ Book: Derrial Book/ Serenity crew/ Shepherd (Preacher)",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381654036,
+                "displayName": "Characer: Book: About",
+                "id": "284c3b07-ff5b-4d72-9318-c21ca7365815",
+                "keys": [
+                    "/Book/",
+                    "/Shepherd/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Book"
+            },
+            {
+                "text": "60-year-old/ man/ hair gray/ moustache gray/ Book wears a gray shirt white collar",
+                "contextConfig": {
+                    "prefix": "[ Book: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 399,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381654036,
+                "displayName": "Character: Book: Appearance",
+                "id": "44605856-493b-4749-891f-5aac8e3a8aa8",
+                "keys": [
+                    "/Book/",
+                    "/Shepherd/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Book"
+            },
+            {
+                "text": "devout/ recites from Bible/ former special operative/ reluctant toward violence",
+                "contextConfig": {
+                    "prefix": "[ Book: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 398,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381654036,
+                "displayName": "Character: Book: Personality",
+                "id": "a75dc75d-e0ae-4b6a-baa6-3a13b4708a01",
+                "keys": [
+                    "/Book/",
+                    "/Shepherd/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Book"
+            },
+            {
+                "text": "\"When I talk about belief, why do you always assume I'm talking about God?\"/ \"I wasn't born a shepherd. I have a past. It's private.\"",
+                "contextConfig": {
+                    "prefix": "[ quotes by Book: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 397,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381654036,
+                "displayName": "Character: Book: Quotes",
+                "id": "2882a164-3736-4ba4-9c25-2e2798cd6b48",
+                "keys": [
+                    "/Book/",
+                    "/Shepherd/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Book"
+            },
+            {
+                "text": "Inara Serra/ Serenity crew/ companion (courtesan)/ does not service crew/ Inara high social status/ lends legitimacy to Serenity",
+                "contextConfig": {
+                    "prefix": "[ Inara: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381656400,
+                "displayName": "Characer: Inara: About",
+                "id": "9aebab2e-cdcb-447f-b7a7-ae94cd379c19",
+                "keys": [
+                    "/Inara/",
+                    "companion",
+                    "whore"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Inara"
+            },
+            {
+                "text": "25-year-old woman/ stunningly beautiful/ perfect makeup/ high fashion/ Inara hair long black wavy",
+                "contextConfig": {
+                    "prefix": "[ Inara: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 399,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381656400,
+                "displayName": "Character: Inara: Appearance",
+                "id": "a23666dd-019b-4fde-afe8-376dbe26279c",
+                "keys": [
+                    "/Inara/",
+                    "companion",
+                    "whore"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Inara"
+            },
+            {
+                "text": "seductive/ persuasive/ compromising/ level-headed/ sexually-open",
+                "contextConfig": {
+                    "prefix": "[ Inara: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 398,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381656400,
+                "displayName": "Character: Inara: Personality",
+                "id": "bb409629-ce9a-41d2-b5a3-bf391e891c8e",
+                "keys": [
+                    "/Inara/",
+                    "companion",
+                    "whore"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Inara"
+            },
+            {
+                "text": "\"You’re lost in the woods. We all are. Even Mal. The only difference is, he likes it that way.\"",
+                "contextConfig": {
+                    "prefix": "[ quotes by Inara: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 397,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381656400,
+                "displayName": "Character: Inara: Quotes",
+                "id": "aa9eb653-77cf-419a-9f58-82c9534836c8",
+                "keys": [
+                    "/Inara/",
+                    "companion",
+                    "whore"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Inara"
+            },
+            {
+                "text": "Jayne Cobb/ Serenity crew/ mercenary soldier",
+                "contextConfig": {
+                    "prefix": "[ Jayne: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381657697,
+                "displayName": "Characer: Jayne: About",
+                "id": "e1fa8b07-1f37-47b3-aa2e-f0b82872df79",
+                "keys": [
+                    "/Jayne/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Jayne"
+            },
+            {
+                "text": "33-year-old/ man/ powerful/ muscular/ hair short black/ goatee",
+                "contextConfig": {
+                    "prefix": "[ Jayne: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 399,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381657698,
+                "displayName": "Character: Jayne: Appearance",
+                "id": "44f704cd-ce32-4398-a62d-4e2fb5a72bb0",
+                "keys": [
+                    "/Jayne/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Jayne"
+            },
+            {
+                "text": "loyalty to Mal is flexible depending on offers/ macho/ terrified of Reavers",
+                "contextConfig": {
+                    "prefix": "[ Jayne: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 398,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381657698,
+                "displayName": "Character: Jayne: Personality",
+                "id": "6aff3ca9-a04b-43c6-852b-609a96c7e436",
+                "keys": [
+                    "/Jayne/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Jayne"
+            },
+            {
+                "text": "\"Let's go be bad guys!\"/ \"Saw that comin'.\"/ \"Here’s a little concept I’ve been working on. Why don’t we shoot her first?\"",
+                "contextConfig": {
+                    "prefix": "[ quotes by Jayne: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 397,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381657698,
+                "displayName": "Character: Jayne: Quotes",
+                "id": "b9fce057-0eed-496a-ab09-bfe789db0d41",
+                "keys": [
+                    "/Jayne/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Jayne"
+            },
+            {
+                "text": "Kaylee Frye/ Serenity crew/ mechanic",
+                "contextConfig": {
+                    "prefix": "[ Kaylee: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381659526,
+                "displayName": "Characer: Kaylee: About",
+                "id": "732b822a-3901-4627-abe0-3a64affe4d70",
+                "keys": [
+                    "/Kaylee/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Kaylee"
+            },
+            {
+                "text": "23-year-old/ woman/ beautiful/ curvy/ Kaylee hair straight long sandy/ dirty/ greasy/ greasy vest",
+                "contextConfig": {
+                    "prefix": "[ Kaylee: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 399,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381659526,
+                "displayName": "Character: Kaylee: Appearance",
+                "id": "9628a10c-cebf-4237-969e-6cb19a6fbfb4",
+                "keys": [
+                    "/Kaylee/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Kaylee"
+            },
+            {
+                "text": "wholesome/ sweet/ optimistic",
+                "contextConfig": {
+                    "prefix": "[ Kaylee: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 398,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381659526,
+                "displayName": "Character: Kaylee: Personality",
+                "id": "b16edd3d-7b15-4f09-b222-6b2bc75a51c3",
+                "keys": [
+                    "/Kaylee/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Kaylee"
+            },
+            {
+                "text": "\"Everything's shiny, Captain. Not to fret.\"/ \"Have faith, Captain!\"/ \"Going on a year now, I ain't had nothing twixt my nethers weren't run on batteries.\"",
+                "contextConfig": {
+                    "prefix": "[ quotes by Kaylee: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 397,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381659526,
+                "displayName": "Character: Kaylee: Quotes",
+                "id": "525c50c1-b5d8-452d-844e-7ffeb20ca767",
+                "keys": [
+                    "/Kaylee/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Kaylee"
+            },
+            {
+                "text": "Malcolm \"Mal\" Reynolds/ Serenity owner/ captain/ scoundrel/ strong personal code",
+                "contextConfig": {
+                    "prefix": "[ Mal: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381661397,
+                "displayName": "Characer: Mal: About",
+                "id": "9a7a2c0a-ef8c-47d7-b916-d2569d18f30a",
+                "keys": [
+                    "/Mal/",
+                    "/Reynolds/",
+                    "captain"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Mal"
+            },
+            {
+                "text": "35-year-old/ ruggedly handsome/ man/ brown duster/ Mal's hair brown medium-length",
+                "contextConfig": {
+                    "prefix": "[ Mal: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 399,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381661397,
+                "displayName": "Character: Mal: Appearance",
+                "id": "47e41bf0-6e76-4e40-9564-bb5fa30aedcf",
+                "keys": [
+                    "/Mal/",
+                    "/Reynolds/",
+                    "captain"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Mal"
+            },
+            {
+                "text": "fiercely independent/ loyal to Serenity crew/ sardonic/ dislikes religion",
+                "contextConfig": {
+                    "prefix": "[ Mal: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 398,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381661397,
+                "displayName": "Character: Mal: Personality",
+                "id": "90ef76d6-499c-4967-853e-b2bb4f8db0f8",
+                "keys": [
+                    "/Mal/",
+                    "/Reynolds/",
+                    "captain"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Mal"
+            },
+            {
+                "text": "\"Been a long time since Patience shot me and that was due to a perfectly legitimate conflict of interest. I got no grudge.\"/ \"Someone ever tries to kill you, you try to kill 'em right back!\"",
+                "contextConfig": {
+                    "prefix": "[ quotes by Mal: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 397,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381661397,
+                "displayName": "Character: Mal: Quotes",
+                "id": "8ae501fb-87f8-41b6-bbaf-d88605bf52ce",
+                "keys": [
+                    "/Mal/",
+                    "/Reynolds/",
+                    "captain"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Mal"
+            },
+            {
+                "text": "River Tam/ Serenity crew/ sister of Simon/ experiments left River delusional, paranoid, and sometimes violent",
+                "contextConfig": {
+                    "prefix": "[ River: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381663123,
+                "displayName": "Characer: River: About",
+                "id": "b5131420-606f-4361-b840-06e1d9538807",
+                "keys": [
+                    "/River/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-River"
+            },
+            {
+                "text": "22-year-old/ girl/ hair long black/ sunken eyes/ distant expression",
+                "contextConfig": {
+                    "prefix": "[ River: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 399,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381663123,
+                "displayName": "Character: River: Appearance",
+                "id": "e5ec764e-b50e-448f-91c2-0cec5fe1c958",
+                "keys": [
+                    "/River/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-River"
+            },
+            {
+                "text": "fix of anxiety and flashbacks to her time being experimented on in Alliance lab",
+                "contextConfig": {
+                    "prefix": "[ River: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 398,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381663123,
+                "displayName": "Character: River: Personality",
+                "id": "6f93aefd-26f1-4665-a74e-aed255a8f597",
+                "keys": [
+                    "/River/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-River"
+            },
+            {
+                "text": "\"Two by two, hands of blue\"/ \"They weren't cows inside. They were waiting to be, but they forgot. Now they see sky, and they remember what they are.\"/ \"I remember everything. I remember too much. And some of it's made up, and some of it can't be quantified, and there's secrets, and...\"",
+                "contextConfig": {
+                    "prefix": "[ quotes by River: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 397,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381663123,
+                "displayName": "Character: River: Quotes",
+                "id": "a2020d4e-7082-45fb-9000-38497b12c272",
+                "keys": [
+                    "/River/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-River"
+            },
+            {
+                "text": "Firefly-class freighter/ owned and captained by Malcolm Reynolds/ piloted by Wash/ Serenity unarmed/ smuggling passenger compartments",
+                "contextConfig": {
+                    "prefix": "[ about Serenity: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381665043,
+                "displayName": "Serenity: Summary",
+                "id": "56f8fb85-c810-4183-9047-a3b5fcd94cd9",
+                "keys": [
+                    "/Serenity/",
+                    "/Firefly/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Serenity"
+            },
+            {
+                "text": "Captain Mal/ Second in command Zoe/ Mechanic Kaylee/ Mercenary Jayne/ Pilot Wash/ Doctor Simon/ Companion Inara/ Crew Shepherd Book/ Crew River",
+                "contextConfig": {
+                    "prefix": "[ Serenity crew: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381665043,
+                "displayName": "Serenity: Crew",
+                "id": "e23e7664-e0b7-4a8e-918e-e11613a284a5",
+                "keys": [
+                    "crew"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Serenity"
+            },
+            {
+                "text": "Simon Tam/ Serenity crew/ neurosurgeon/ medic/ brother of River",
+                "contextConfig": {
+                    "prefix": "[ Simon: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381666770,
+                "displayName": "Characer: Simon: About",
+                "id": "d54d1b9f-cddf-40ac-928b-ef8ec64ac8d3",
+                "keys": [
+                    "/Simon/",
+                    "medic",
+                    "doctor"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Simon"
+            },
+            {
+                "text": "28-year-old/ handsome/ man/ thin/ hair black medium-length",
+                "contextConfig": {
+                    "prefix": "[ Simon: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 399,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381666771,
+                "displayName": "Character: Simon: Appearance",
+                "id": "a5e5112c-4fc5-4bbe-96f8-8ec849f71572",
+                "keys": [
+                    "/Simon/",
+                    "medic",
+                    "doctor"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Simon"
+            },
+            {
+                "text": "exceptionally smart/ born to privilege but gave it up to rescue River",
+                "contextConfig": {
+                    "prefix": "[ Simon: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 398,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381666771,
+                "displayName": "Character: Simon: Personality",
+                "id": "421c8dd9-9862-42dc-81a2-1cc5a4d4e3f5",
+                "keys": [
+                    "/Simon/",
+                    "medic",
+                    "doctor"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Simon"
+            },
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "[ quotes by Simon: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 397,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381666771,
+                "displayName": "Character: Simon: Quotes",
+                "id": "e799746b-76fa-44ab-97be-ca4694a98767",
+                "keys": [
+                    "/Simon/",
+                    "medic",
+                    "doctor"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Simon"
+            },
+            {
+                "text": "Hoban \"Wash\" Washburn/ Serenity crew/ pilot/ husband of Zoe",
+                "contextConfig": {
+                    "prefix": "[ Wash: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381668452,
+                "displayName": "Characer: Wash: About",
+                "id": "16f05f26-e138-444b-884b-7e3fc162d712",
+                "keys": [
+                    "/Wash/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Wash"
+            },
+            {
+                "text": "30-year-old/ stocky/ man/ hair blonde medium-length",
+                "contextConfig": {
+                    "prefix": "[ Wash: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 399,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381668452,
+                "displayName": "Character: Wash: Appearance",
+                "id": "a89ae10c-ce4b-4092-b36a-89781a59bd50",
+                "keys": [
+                    "/Wash/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Wash"
+            },
+            {
+                "text": "undisciplined/ quippy/ panicks under pressure",
+                "contextConfig": {
+                    "prefix": "[ Wash: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 398,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381668452,
+                "displayName": "Character: Wash: Personality",
+                "id": "915ed8a6-5743-4e25-9c7a-5a356ffed851",
+                "keys": [
+                    "/Wash/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Wash"
+            },
+            {
+                "text": "\"we’re crooks. If everything were right we’d be in jail.\"/ \"Who’s flying this thing?! Oh right, that would be me. Back to work.\"/ \"It’s always a hoot and we don’t all die from it.\"",
+                "contextConfig": {
+                    "prefix": "[ quotes by Wash: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 397,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381668452,
+                "displayName": "Character: Wash: Quotes",
+                "id": "63dbd031-88de-4cef-966b-fc469d3446ff",
+                "keys": [
+                    "/Wash/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Wash"
+            },
+            {
+                "text": "Zoe Washburn/ Serenity crew/ second in command/ wife of Wash",
+                "contextConfig": {
+                    "prefix": "[ Zoe: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381670344,
+                "displayName": "Characer: Zoe: About",
+                "id": "748766fa-cf61-47d8-b02f-b73c55410ca0",
+                "keys": [
+                    "/Zoe/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Zoe"
+            },
+            {
+                "text": "33-year-old/ woman/ skin dark/ hair long black curly",
+                "contextConfig": {
+                    "prefix": "[ Zoe: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 399,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381670344,
+                "displayName": "Character: Zoe: Appearance",
+                "id": "5ee2591c-daa9-4ce3-a5f7-aa7b28127b9b",
+                "keys": [
+                    "/Zoe/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Zoe"
+            },
+            {
+                "text": "serious/ unwavering loyalty to Mal/ calm under pressure",
+                "contextConfig": {
+                    "prefix": "[ Zoe: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 398,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381670344,
+                "displayName": "Character: Zoe: Personality",
+                "id": "143c36f8-9a8f-499f-beff-653f014644fd",
+                "keys": [
+                    "/Zoe/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Zoe"
+            },
+            {
+                "text": "\"Do you know what the definition of a hero is? Someone who gets other people killed.\"/ \"You paid money for this, sir? On purpose?\"",
+                "contextConfig": {
+                    "prefix": "[ quotes by Zoe: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 397,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381670344,
+                "displayName": "Character: Zoe: Quotes",
+                "id": "eca3116f-5d3f-407e-a144-36f0d9634f2c",
+                "keys": [
+                    "/Zoe/"
+                ],
+                "searchRange": 300,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-Zoe"
+            },
+            {
+                "text": "friendship/ trust/ platonic love",
+                "contextConfig": {
+                    "prefix": "[ Kaylee feels ",
+                    "suffix": " toward Inara ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381671930,
+                "displayName": "Relationship: Kaylee->Inara",
+                "id": "36a59325-89ba-43b8-a581-41eee0bbe414",
+                "keys": [
+                    "/Kaylee.*Inara/",
+                    "/Inara.*Kaylee/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-relationships"
+            },
+            {
+                "text": "friendship/ trust/ platonic love",
+                "contextConfig": {
+                    "prefix": "[ Inara feels ",
+                    "suffix": " toward Kaylee ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381671930,
+                "displayName": "Relationship: Inara->Kaylee",
+                "id": "ad1baea6-4a24-4821-93de-30f4250523ea",
+                "keys": [
+                    "/Kaylee.*Inara/",
+                    "/Inara.*Kaylee/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-relationships"
+            },
+            {
+                "text": "romantic tension/ insecurity",
+                "contextConfig": {
+                    "prefix": "[ Mal feels ",
+                    "suffix": " toward Inara ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381673856,
+                "displayName": "Relationship: Mal->Inara",
+                "id": "2c10cbc2-516d-4d99-802e-38826045d775",
+                "keys": [
+                    "/Mal.*Inara/",
+                    "/Inara.*Mal/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-relationships"
+            },
+            {
+                "text": "romantic tension/ frustration",
+                "contextConfig": {
+                    "prefix": "[ Inara feels ",
+                    "suffix": " toward Mal ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381673856,
+                "displayName": "Relationship: Inara->Mal",
+                "id": "cf0aa858-0115-4a2a-a0ca-6e165fc5d63e",
+                "keys": [
+                    "/Mal.*Inara/",
+                    "/Inara.*Mal/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-relationships"
+            },
+            {
+                "text": "suspicious/ commanding",
+                "contextConfig": {
+                    "prefix": "[ Mal feels ",
+                    "suffix": " toward Jayne ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381675253,
+                "displayName": "Relationship: Mal->Jayne",
+                "id": "bceb9aeb-c4f6-46a3-ba15-d8e551a455a1",
+                "keys": [
+                    "/Mal.*Jayne/",
+                    "/Jayne.*Mal/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-relationships"
+            },
+            {
+                "text": "bought loyalty/ subordinate",
+                "contextConfig": {
+                    "prefix": "[ Jayne feels ",
+                    "suffix": " toward Mal ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381675253,
+                "displayName": "Relationship: Jayne->Mal",
+                "id": "79e390ef-1ac2-4a1e-b766-eed91318681c",
+                "keys": [
+                    "/Mal.*Jayne/",
+                    "/Jayne.*Mal/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-relationships"
+            },
+            {
+                "text": "paternal/ protective/ inspired",
+                "contextConfig": {
+                    "prefix": "[ Mal feels ",
+                    "suffix": " toward Kaylee ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381677301,
+                "displayName": "Relationship: Mal->Kaylee",
+                "id": "a5390aeb-bfe4-433c-ac04-583f05b22ee4",
+                "keys": [
+                    "/Mal.*Kaylee/",
+                    "/Kaylee.*Mal/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-relationships"
+            },
+            {
+                "text": "loyal/ nurturing/ hopeful",
+                "contextConfig": {
+                    "prefix": "[ Kaylee feels ",
+                    "suffix": " toward Mal ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381677301,
+                "displayName": "Relationship: Kaylee->Mal",
+                "id": "e3335852-c225-4bf9-873f-7b7d2ad4d70b",
+                "keys": [
+                    "/Mal.*Kaylee/",
+                    "/Kaylee.*Mal/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-relationships"
+            },
+            {
+                "text": "respectful/ paternal",
+                "contextConfig": {
+                    "prefix": "[ Mal feels ",
+                    "suffix": " toward Wash ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381679191,
+                "displayName": "Relationship: Mal->Wash",
+                "id": "6449a105-bb45-486f-8532-43bdfc8e14a3",
+                "keys": [
+                    "/Mal.*Wash/",
+                    "/Wash.*Mal/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-relationships"
+            },
+            {
+                "text": "wary/ respectful",
+                "contextConfig": {
+                    "prefix": "[ Wash feels ",
+                    "suffix": " toward Mal ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381679191,
+                "displayName": "Relationship: Wash->Mal",
+                "id": "a880d196-903b-417a-8b7a-12eaf698b897",
+                "keys": [
+                    "/Mal.*Wash/",
+                    "/Wash.*Mal/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-relationships"
+            },
+            {
+                "text": "trust/ respect/ comraderie",
+                "contextConfig": {
+                    "prefix": "[ Mal feels ",
+                    "suffix": " toward Zoe ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381682068,
+                "displayName": "Relationship: Mal->Zoe",
+                "id": "638eaf9d-0842-43be-8d68-30638e0833c9",
+                "keys": [
+                    "/Mal.*Zoe/",
+                    "/Zoe.*Mal/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-relationships"
+            },
+            {
+                "text": "unconditional loyalty",
+                "contextConfig": {
+                    "prefix": "[ Zoe feels ",
+                    "suffix": " toward Mal ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381682068,
+                "displayName": "Relationship: Zoe->Mal",
+                "id": "e5016767-e09f-4805-8301-187e335734ce",
+                "keys": [
+                    "/Mal.*Zoe/",
+                    "/Zoe.*Mal/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-relationships"
+            },
+            {
+                "text": "love/ trust/ loyalty",
+                "contextConfig": {
+                    "prefix": "[ Wash feels ",
+                    "suffix": " toward Zoe ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381683748,
+                "displayName": "Relationship: Wash->Zoe",
+                "id": "000d3f29-01ca-4a5f-86b3-a20ee40e0dde",
+                "keys": [
+                    "/Wash.*Zoe/",
+                    "/Zoe.*Wash/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-relationships"
+            },
+            {
+                "text": "love/ protective",
+                "contextConfig": {
+                    "prefix": "[ Zoe feels ",
+                    "suffix": " toward Wash ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381683748,
+                "displayName": "Relationship: Zoe->Wash",
+                "id": "956d97a3-91df-4c36-aeb3-fb2891edfbd6",
+                "keys": [
+                    "/Wash.*Zoe/",
+                    "/Zoe.*Wash/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "cat-relationships"
+            },
+            {
+                "text": "Insane humans/ driven entirely by hate and lust/ extremely violent/ murderous/ rapacious",
+                "contextConfig": {
+                    "prefix": "[ Reavers: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381853141,
+                "displayName": "Reavers",
+                "id": "75fb16f9-8dcf-4f40-a39b-939c47820e90",
+                "keys": [
+                    "/Reavers/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            }
+        ],
+        "settings": {
+            "orderByKeyLocations": false
+        },
+        "categories": [
+            {
+                "name": "Character: Badger",
+                "id": "cat-Badger",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 150,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": 0
+                    },
+                    "lastUpdatedAt": 1629427793912,
+                    "displayName": "Person: Badger",
+                    "id": "f9fcda4f-e99e-4aac-a81a-9ec1c662333d",
+                    "keys": [
+                        "/Badger/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ]\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1629475003084,
+                    "displayName": "New Lorebook Entry",
+                    "id": "fdbe5821-21e2-4b93-ba15-ddfcc15df3c2",
+                    "keys": [
+                        "/Badger/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Character: Book",
+                "id": "cat-Book",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 150,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": 0
+                    },
+                    "lastUpdatedAt": 1629427793912,
+                    "displayName": "Person: Book",
+                    "id": "9ae0580e-403a-4e03-8429-7416f473517d",
+                    "keys": [
+                        "/Book/",
+                        "/Shepherd/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ]\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1629475003084,
+                    "displayName": "New Lorebook Entry",
+                    "id": "a5f081bf-ff1c-43f5-b36a-5ba042ae6f34",
+                    "keys": [
+                        "/Book/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Character: Inara",
+                "id": "cat-Inara",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 150,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": 0
+                    },
+                    "lastUpdatedAt": 1629427793912,
+                    "displayName": "Person: Inara",
+                    "id": "d3387ff1-51f6-4dff-bb3d-7a6fd030a174",
+                    "keys": [
+                        "/Inara/",
+                        "companion",
+                        "whore"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ]\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1629475003084,
+                    "displayName": "New Lorebook Entry",
+                    "id": "f934c2da-bb72-4113-a8ae-b1b80684bf0d",
+                    "keys": [
+                        "/Inara/",
+                        "companion",
+                        "whore"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Character: Jayne",
+                "id": "cat-Jayne",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 150,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": 0
+                    },
+                    "lastUpdatedAt": 1629427793912,
+                    "displayName": "Person: Jayne",
+                    "id": "75c5f876-5b2e-4de8-992e-4805ef379dfa",
+                    "keys": [
+                        "/Jayne/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ]\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1629475003084,
+                    "displayName": "New Lorebook Entry",
+                    "id": "0c081bd8-1a31-4a15-b41b-3c2a6d83b4d1",
+                    "keys": [
+                        "/Jayne/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Character: Kaylee",
+                "id": "cat-Kaylee",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 150,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": 0
+                    },
+                    "lastUpdatedAt": 1629427793912,
+                    "displayName": "Person: Kaylee",
+                    "id": "e2cde5f7-6edb-4b58-af83-84aa2be3b9a9",
+                    "keys": [
+                        "/Kaylee/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ]\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1629475003084,
+                    "displayName": "New Lorebook Entry",
+                    "id": "b82b09e0-13ab-45b0-93c0-0d715338765e",
+                    "keys": [
+                        "/Kaylee/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Character: Mal",
+                "id": "cat-Mal",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 150,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": 0
+                    },
+                    "lastUpdatedAt": 1629427793912,
+                    "displayName": "Person: Mal",
+                    "id": "57ad276f-378c-40b1-93e2-e65924cbe3da",
+                    "keys": [
+                        "/Mal/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ]\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1629475003084,
+                    "displayName": "New Lorebook Entry",
+                    "id": "9365fa58-8e5c-40ee-8400-c8ea3584db86",
+                    "keys": [
+                        "/Mal/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Character: River",
+                "id": "cat-River",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 150,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": 0
+                    },
+                    "lastUpdatedAt": 1629427793912,
+                    "displayName": "Person: River",
+                    "id": "43088814-faf8-4876-a38f-f1e8a123e773",
+                    "keys": [
+                        "/River/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ]\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1629475003084,
+                    "displayName": "New Lorebook Entry",
+                    "id": "2379b47d-a790-48ef-99d5-d87df85ca950",
+                    "keys": [
+                        "/River/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Character: Simon",
+                "id": "cat-Simon",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 150,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": 0
+                    },
+                    "lastUpdatedAt": 1629427793912,
+                    "displayName": "Person: Simon",
+                    "id": "5c5a28a2-878f-41b4-b4e6-7a4d8de86d7b",
+                    "keys": [
+                        "/Simon/",
+                        "medic",
+                        "doctor"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ]\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1629475003084,
+                    "displayName": "New Lorebook Entry",
+                    "id": "ac941ff9-787d-49c4-9264-72c700e808d1",
+                    "keys": [
+                        "/Simon/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Character: Wash",
+                "id": "cat-Wash",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 150,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": 0
+                    },
+                    "lastUpdatedAt": 1629427793912,
+                    "displayName": "Person: Wash",
+                    "id": "edeacc85-ac5c-498f-a792-06bfcb5ace84",
+                    "keys": [
+                        "/Wash/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ]\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1629475003084,
+                    "displayName": "New Lorebook Entry",
+                    "id": "f545219f-d9f2-44eb-a20f-00824ec090cc",
+                    "keys": [
+                        "/Wash/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Character: Zoe",
+                "id": "cat-Zoe",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 150,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": 0
+                    },
+                    "lastUpdatedAt": 1629427793912,
+                    "displayName": "Person: Zoe",
+                    "id": "456f541b-f9a3-4441-be3c-db9b3ab40681",
+                    "keys": [
+                        "/Zoe/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ]\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1629475003084,
+                    "displayName": "New Lorebook Entry",
+                    "id": "56d8eb3a-4ee1-4eb6-ae0f-eee996c34dd3",
+                    "keys": [
+                        "/Zoe/"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Relationships",
+                "id": "cat-relationships",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 200,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1630381648950,
+                    "displayName": "New Lorebook Entry",
+                    "id": "f5d7ee0b-0bb0-4459-a647-2f0887034b3c",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ]\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 20,
+                        "budgetPriority": 400,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1630381648950,
+                    "displayName": "New Lorebook Entry",
+                    "id": "a240d78f-6557-4356-a1dd-ee585a694170",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Serenity",
+                "id": "cat-Serenity",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 150,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": 0
+                    },
+                    "lastUpdatedAt": 1629427793912,
+                    "displayName": "Serenity",
+                    "id": "1a3ed7e2-aa28-4039-9972-aca111bea3d5",
+                    "keys": [
+                        "/Serenity/",
+                        "/Firefly/",
+                        "crew"
+                    ],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1630381665043,
+                    "displayName": "New Lorebook Entry",
+                    "id": "a7e974e5-0784-4b8b-be6f-b692ab55afa0",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            }
+        ]
+    },
+    "author": "",
+    "storyContextConfig": {
+        "prefix": "",
+        "suffix": "",
+        "tokenBudget": 2048,
+        "reservedTokens": 512,
+        "budgetPriority": 0,
+        "trimDirection": "trimTop",
+        "insertionType": "newline",
+        "maximumTrimType": "sentence",
+        "insertionPosition": -1
+    },
+    "contextDefaults": {
+        "ephemeralDefaults": [
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 2048,
+                    "budgetPriority": -10000,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "newline",
+                    "insertionPosition": -2
+                },
+                "startingStep": 1,
+                "delay": 0,
+                "duration": 1,
+                "repeat": false,
+                "reverse": false
+            }
+        ],
+        "loreDefaults": [
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630381922567,
+                "displayName": "New Lorebook Entry",
+                "id": "115ce161-e100-4f70-8e46-438e82d31101",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            }
+        ]
+    }
+}

@@ -2,7 +2,7 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "Firefly-class freighter owned and captained by Malcolm Reynolds and piloted by Wash; Serenity is unarmed but has smuggling and passenger compartments",
+            "text": "Firefly-class freighter/ owned and captained by Malcolm Reynolds/ piloted by Wash/ Serenity unarmed/ smuggling passenger compartments",
             "contextConfig": {
                 "prefix": "[ about Serenity: ",
                 "suffix": " ]\n",
@@ -27,7 +27,7 @@
             "category": "cat-Serenity"
         },
         {
-            "text": "Captain Malcom \"Mal\" Reynolds, Second in command Zoe Washburn, Mechanic Kaylee Frye, Mercenary Jayne Cobb, Pilot Hoban \"Wash\" Washburn, Doctor Simon Tam, Companion Inara Serra, Crew Shepherd Derrial Book, Crew River Tam",
+            "text": "Captain Mal/ Second in command Zoe/ Mechanic Kaylee/ Mercenary Jayne/ Pilot Wash/ Doctor Simon/ Companion Inara/ Crew Shepherd Book/ Crew River",
             "contextConfig": {
                 "prefix": "[ Serenity crew: ",
                 "suffix": " ]\n",

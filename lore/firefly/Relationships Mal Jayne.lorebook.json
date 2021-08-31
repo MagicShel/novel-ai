@@ -2,7 +2,7 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "suspicious commanding",
+            "text": "suspicious/ commanding",
             "contextConfig": {
                 "prefix": "[ Mal feels ",
                 "suffix": " toward Jayne ]\n",
@@ -27,7 +27,7 @@
             "category": "cat-relationships"
         },
         {
-            "text": "bought loyalty, subordinate",
+            "text": "bought loyalty/ subordinate",
             "contextConfig": {
                 "prefix": "[ Jayne feels ",
                 "suffix": " toward Mal ]\n",

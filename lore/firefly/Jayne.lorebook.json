@@ -2,7 +2,7 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "Jayne Cobb Serenity crew mercenary soldier",
+            "text": "Jayne Cobb/ Serenity crew/ mercenary soldier",
             "contextConfig": {
                 "prefix": "[ Jayne: ",
                 "suffix": " ]\n",
@@ -26,7 +26,7 @@
             "category": "cat-Jayne"
         },
         {
-            "text": "33-year-old man powerful and muscular hair short& black goatee",
+            "text": "33-year-old/ man/ powerful/ muscular/ hair short black/ goatee",
             "contextConfig": {
                 "prefix": "[ Jayne: ",
                 "suffix": " ]\n",
@@ -50,7 +50,7 @@
             "category": "cat-Jayne"
         },
         {
-            "text": "loyalty to Mal is flexible depending on offers, macho, terrified of Reavers",
+            "text": "loyalty to Mal is flexible depending on offers/ macho/ terrified of Reavers",
             "contextConfig": {
                 "prefix": "[ Jayne: ",
                 "suffix": " ]\n",
@@ -74,7 +74,7 @@
             "category": "cat-Jayne"
         },
         {
-            "text": "\"Let's go be bad guys!\", \"Saw that comin'.\", \"Here’s a little concept I’ve been working on. Why don’t we shoot her first?\"",
+            "text": "\"Let's go be bad guys!\"/ \"Saw that comin'.\"/ \"Here’s a little concept I’ve been working on. Why don’t we shoot her first?\"",
             "contextConfig": {
                 "prefix": "[ quotes by Jayne: ",
                 "suffix": " ]\n",

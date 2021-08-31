@@ -2,7 +2,7 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "Kaylee Frye Serenity crew mechanic",
+            "text": "Kaylee Frye/ Serenity crew/ mechanic",
             "contextConfig": {
                 "prefix": "[ Kaylee: ",
                 "suffix": " ]\n",
@@ -26,7 +26,7 @@
             "category": "cat-Kaylee"
         },
         {
-            "text": "23-year-old woman beautiful yet curvy; Kaylee hair straight& long& sandy; dirty and greasy; wears greasy vest",
+            "text": "23-year-old/ woman/ beautiful/ curvy/ Kaylee hair straight long sandy/ dirty/ greasy/ greasy vest",
             "contextConfig": {
                 "prefix": "[ Kaylee: ",
                 "suffix": " ]\n",
@@ -50,7 +50,7 @@
             "category": "cat-Kaylee"
         },
         {
-            "text": "wholesome, sweet, optimistic",
+            "text": "wholesome/ sweet/ optimistic",
             "contextConfig": {
                 "prefix": "[ Kaylee: ",
                 "suffix": " ]\n",
@@ -74,7 +74,7 @@
             "category": "cat-Kaylee"
         },
         {
-            "text": "\"Everything's shiny, Captain. Not to fret.\"; \"Have faith, Captain!\"; \"Going on a year now, I ain't had nothing twixt my nethers weren't run on batteries.\"",
+            "text": "\"Everything's shiny, Captain. Not to fret.\"/ \"Have faith, Captain!\"/ \"Going on a year now, I ain't had nothing twixt my nethers weren't run on batteries.\"",
             "contextConfig": {
                 "prefix": "[ quotes by Kaylee: ",
                 "suffix": " ]\n",

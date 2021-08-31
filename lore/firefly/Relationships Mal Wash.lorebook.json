@@ -2,7 +2,7 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "respectful paternal",
+            "text": "respectful/ paternal",
             "contextConfig": {
                 "prefix": "[ Mal feels ",
                 "suffix": " toward Wash ]\n",
@@ -27,7 +27,7 @@
             "category": "cat-relationships"
         },
         {
-            "text": "wary respectful",
+            "text": "wary/ respectful",
             "contextConfig": {
                 "prefix": "[ Wash feels ",
                 "suffix": " toward Mal ]\n",

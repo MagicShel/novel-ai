@@ -2,7 +2,7 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "Zoe Washburn Serenity crew second in command wife of Wash",
+            "text": "Zoe Washburn/ Serenity crew/ second in command/ wife of Wash",
             "contextConfig": {
                 "prefix": "[ Zoe: ",
                 "suffix": " ]\n",
@@ -26,7 +26,7 @@
             "category": "cat-Zoe"
         },
         {
-            "text": "33-year-old woman skin dark hair long& black& curly",
+            "text": "33-year-old/ woman/ skin dark/ hair long black curly",
             "contextConfig": {
                 "prefix": "[ Zoe: ",
                 "suffix": " ]\n",
@@ -50,7 +50,7 @@
             "category": "cat-Zoe"
         },
         {
-            "text": "serious, unwavering loyalty to Mal, calm under pressure",
+            "text": "serious/ unwavering loyalty to Mal/ calm under pressure",
             "contextConfig": {
                 "prefix": "[ Zoe: ",
                 "suffix": " ]\n",
@@ -74,7 +74,7 @@
             "category": "cat-Zoe"
         },
         {
-            "text": "\"Do you know what the definition of a hero is? Someone who gets other people killed.\", \"You paid money for this, sir? On purpose?\"",
+            "text": "\"Do you know what the definition of a hero is? Someone who gets other people killed.\"/ \"You paid money for this, sir? On purpose?\"",
             "contextConfig": {
                 "prefix": "[ quotes by Zoe: ",
                 "suffix": " ]\n",

@@ -2,7 +2,7 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "love trust loyalty",
+            "text": "love/ trust/ loyalty",
             "contextConfig": {
                 "prefix": "[ Wash feels ",
                 "suffix": " toward Zoe ]\n",
@@ -27,7 +27,7 @@
             "category": "cat-relationships"
         },
         {
-            "text": "love protective",
+            "text": "love/ protective",
             "contextConfig": {
                 "prefix": "[ Zoe feels ",
                 "suffix": " toward Wash ]\n",

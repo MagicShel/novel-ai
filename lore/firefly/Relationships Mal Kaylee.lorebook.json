@@ -2,7 +2,7 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "paternal protective inspired",
+            "text": "paternal/ protective/ inspired",
             "contextConfig": {
                 "prefix": "[ Mal feels ",
                 "suffix": " toward Kaylee ]\n",
@@ -27,7 +27,7 @@
             "category": "cat-relationships"
         },
         {
-            "text": "loyal nurturing hopeful",
+            "text": "loyal/ nurturing/ hopeful",
             "contextConfig": {
                 "prefix": "[ Kaylee feels ",
                 "suffix": " toward Mal ]\n",

@@ -2,7 +2,7 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "Simon Tam Serenity crew neurosurgeon medic brother of River",
+            "text": "Simon Tam/ Serenity crew/ neurosurgeon/ medic/ brother of River",
             "contextConfig": {
                 "prefix": "[ Simon: ",
                 "suffix": " ]\n",
@@ -28,7 +28,7 @@
             "category": "cat-Simon"
         },
         {
-            "text": "28-year-old handsome man, thin, hair black& medium-length",
+            "text": "28-year-old/ handsome/ man/ thin/ hair black medium-length",
             "contextConfig": {
                 "prefix": "[ Simon: ",
                 "suffix": " ]\n",
@@ -54,7 +54,7 @@
             "category": "cat-Simon"
         },
         {
-            "text": "exceptionally smart, born to privilege but gave it up to rescue River",
+            "text": "exceptionally smart/ born to privilege but gave it up to rescue River",
             "contextConfig": {
                 "prefix": "[ Simon: ",
                 "suffix": " ]\n",

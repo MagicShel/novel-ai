@@ -2,7 +2,7 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "Inara Serra Serenity crew companion (courtesan); does not service crew; Inara has high social status and lends legitimacy to Serenity",
+            "text": "Inara Serra/ Serenity crew/ companion (courtesan)/ does not service crew/ Inara high social status/ lends legitimacy to Serenity",
             "contextConfig": {
                 "prefix": "[ Inara: ",
                 "suffix": " ]\n",
@@ -28,7 +28,7 @@
             "category": "cat-Inara"
         },
         {
-            "text": "25-year-old woman stunningly beautiful perfect makeup high fashion; Inara hair long& black& wavy",
+            "text": "25-year-old woman/ stunningly beautiful/ perfect makeup/ high fashion/ Inara hair long black wavy",
             "contextConfig": {
                 "prefix": "[ Inara: ",
                 "suffix": " ]\n",
@@ -54,7 +54,7 @@
             "category": "cat-Inara"
         },
         {
-            "text": "seductive, persuasive, compromising, level-headed, sexually-open",
+            "text": "seductive/ persuasive/ compromising/ level-headed/ sexually-open",
             "contextConfig": {
                 "prefix": "[ Inara: ",
                 "suffix": " ]\n",

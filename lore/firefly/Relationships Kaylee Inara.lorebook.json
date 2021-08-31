@@ -2,7 +2,7 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "friendship trust platonic love",
+            "text": "friendship/ trust/ platonic love",
             "contextConfig": {
                 "prefix": "[ Kaylee feels ",
                 "suffix": " toward Inara ]\n",
@@ -27,7 +27,7 @@
             "category": "cat-relationships"
         },
         {
-            "text": "friendship trust platonic love",
+            "text": "friendship/ trust/ platonic love",
             "contextConfig": {
                 "prefix": "[ Inara feels ",
                 "suffix": " toward Kaylee ]\n",

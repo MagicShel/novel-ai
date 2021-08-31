@@ -2,7 +2,7 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "Hoban \"Wash\" Washburn Serenity crew pilot husband of Zoe",
+            "text": "Hoban \"Wash\" Washburn/ Serenity crew/ pilot/ husband of Zoe",
             "contextConfig": {
                 "prefix": "[ Wash: ",
                 "suffix": " ]\n",
@@ -26,7 +26,7 @@
             "category": "cat-Wash"
         },
         {
-            "text": "30-year-old stocky man hair blonde& medium-length",
+            "text": "30-year-old/ stocky/ man/ hair blonde medium-length",
             "contextConfig": {
                 "prefix": "[ Wash: ",
                 "suffix": " ]\n",
@@ -50,7 +50,7 @@
             "category": "cat-Wash"
         },
         {
-            "text": "undisciplined, quippy, panicks under pressure",
+            "text": "undisciplined/ quippy/ panicks under pressure",
             "contextConfig": {
                 "prefix": "[ Wash: ",
                 "suffix": " ]\n",
@@ -74,7 +74,7 @@
             "category": "cat-Wash"
         },
         {
-            "text": "\"we’re crooks. If everything were right we’d be in jail.\", \"Who’s flying this thing?! Oh right, that would be me. Back to work.\", \"It’s always a hoot and we don’t all die from it.\"",
+            "text": "\"we’re crooks. If everything were right we’d be in jail.\"/ \"Who’s flying this thing?! Oh right, that would be me. Back to work.\"/ \"It’s always a hoot and we don’t all die from it.\"",
             "contextConfig": {
                 "prefix": "[ quotes by Wash: ",
                 "suffix": " ]\n",

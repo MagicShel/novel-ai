@@ -4,7 +4,7 @@
         {
             "text": "",
             "contextConfig": {
-                "prefix": "[ Book: Derrial Book Serenity crew Shepherd/Priest",
+                "prefix": "[ Book: Derrial Book/ Serenity crew/ Shepherd (Preacher)",
                 "suffix": " ]\n",
                 "tokenBudget": 2048,
                 "reservedTokens": 50,
@@ -27,7 +27,7 @@
             "category": "cat-Book"
         },
         {
-            "text": "60-year-old man hair gray moustache gray; Book wears a gray shirt white collar",
+            "text": "60-year-old/ man/ hair gray/ moustache gray/ Book wears a gray shirt white collar",
             "contextConfig": {
                 "prefix": "[ Book: ",
                 "suffix": " ]\n",
@@ -52,7 +52,7 @@
             "category": "cat-Book"
         },
         {
-            "text": "devout preacher, former special operative, reluctant toward violence",
+            "text": "devout/ recites from Bible/ former special operative/ reluctant toward violence",
             "contextConfig": {
                 "prefix": "[ Book: ",
                 "suffix": " ]\n",
@@ -77,7 +77,7 @@
             "category": "cat-Book"
         },
         {
-            "text": "\"When I talk about belief, why do you always assume I'm talking about God?\", \"I wasn't born a shepherd. I have a past. It's private.\"",
+            "text": "\"When I talk about belief, why do you always assume I'm talking about God?\"/ \"I wasn't born a shepherd. I have a past. It's private.\"",
             "contextConfig": {
                 "prefix": "[ quotes by Book: ",
                 "suffix": " ]\n",

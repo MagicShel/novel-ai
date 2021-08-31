@@ -1,0 +1,156 @@
+{
+    "scenarioVersion": 1,
+    "title": "New Story",
+    "description": "",
+    "prompt": "\n[ Song Title: ${title} ]\nSong Lyrics:\nVERSE 1:",
+    "tags": [],
+    "placeholders": [
+        {
+            "key": "theme",
+            "description": "Themes",
+            "defaultValue": "Travel, Nature, Love",
+            "order": 1
+        },
+        {
+            "key": "genre",
+            "description": "Music Genre",
+            "defaultValue": "Celtic folk",
+            "order": 2
+        },
+        {
+            "key": "title",
+            "description": "Title",
+            "defaultValue": "Lone Footprints in the Grass",
+            "order": 3
+        },
+        {
+            "key": "mood",
+            "description": "Mood",
+            "defaultValue": "heartfelt"
+        },
+        {
+            "key": "topic",
+            "description": "Topic",
+            "defaultValue": "exploring the countryside alone.",
+            "order": 4
+        }
+    ],
+    "context": [
+        {
+            "text": "[ Format: song lyrics. Writing style: rhyming ]\n[ Themes: ${theme} ]\n[ Music Genre: ${genre} ]\nThis is a ${mood} ballad about ${topic}",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 800,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": 0
+            }
+        },
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 2048,
+                "budgetPriority": -400,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -4
+            }
+        }
+    ],
+    "ephemeralContext": [],
+    "settings": {
+        "parameters": {
+            "temperature": 0.55,
+            "max_length": 40,
+            "min_length": 1,
+            "top_k": 140,
+            "top_p": 0.9,
+            "tail_free_sampling": 1,
+            "repetition_penalty": 3.5,
+            "repetition_penalty_range": 1024,
+            "repetition_penalty_slope": 6.57,
+            "bad_words_ids": []
+        },
+        "preset": "",
+        "trimResponses": true,
+        "banBrackets": true,
+        "prefix": "vanilla"
+    },
+    "lorebook": {
+        "lorebookVersion": 3,
+        "entries": [],
+        "settings": {
+            "orderByKeyLocations": false
+        },
+        "categories": []
+    },
+    "author": "",
+    "storyContextConfig": {
+        "prefix": "",
+        "suffix": "",
+        "tokenBudget": 2048,
+        "reservedTokens": 512,
+        "budgetPriority": 0,
+        "trimDirection": "trimTop",
+        "insertionType": "newline",
+        "maximumTrimType": "sentence",
+        "insertionPosition": -1
+    },
+    "contextDefaults": {
+        "ephemeralDefaults": [
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 2048,
+                    "budgetPriority": -10000,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "newline",
+                    "insertionPosition": -2
+                },
+                "startingStep": 1,
+                "delay": 0,
+                "duration": 1,
+                "repeat": false,
+                "reverse": false
+            }
+        ],
+        "loreDefaults": [
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630161803719,
+                "displayName": "New Lorebook Entry",
+                "id": "2e32931e-9ed1-4b09-8611-05a9067927b4",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            }
+        ]
+    }
+}

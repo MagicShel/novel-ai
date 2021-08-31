@@ -2,7 +2,7 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "Malcolm \"Mal\" Reynolds Serenity owner and captain; scoundrel with a strong personal code",
+            "text": "Malcolm \"Mal\" Reynolds/ Serenity owner/ captain/ scoundrel/ strong personal code",
             "contextConfig": {
                 "prefix": "[ Mal: ",
                 "suffix": " ]\n",
@@ -28,7 +28,7 @@
             "category": "cat-Mal"
         },
         {
-            "text": "35-year-old ruggedly handsome man wearing brown duster; Mal's hair is brown medium-length",
+            "text": "35-year-old/ ruggedly handsome/ man/ brown duster/ Mal's hair brown medium-length",
             "contextConfig": {
                 "prefix": "[ Mal: ",
                 "suffix": " ]\n",
@@ -54,7 +54,7 @@
             "category": "cat-Mal"
         },
         {
-            "text": "fiercely independent, loyal to Serenity crew, sardonic, dislikes religion",
+            "text": "fiercely independent/ loyal to Serenity crew/ sardonic/ dislikes religion",
             "contextConfig": {
                 "prefix": "[ Mal: ",
                 "suffix": " ]\n",
@@ -80,7 +80,7 @@
             "category": "cat-Mal"
         },
         {
-            "text": "\"Been a long time since Patience shot me and that was due to a perfectly legitimate conflict of interest. I got no grudge.\"; \"Someone ever tries to kill you, you try to kill 'em right back!\"",
+            "text": "\"Been a long time since Patience shot me and that was due to a perfectly legitimate conflict of interest. I got no grudge.\"/ \"Someone ever tries to kill you, you try to kill 'em right back!\"",
             "contextConfig": {
                 "prefix": "[ quotes by Mal: ",
                 "suffix": " ]\n",

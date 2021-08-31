@@ -2,7 +2,7 @@
     "lorebookVersion": 3,
     "entries": [
         {
-            "text": "romantic tension and insecurity",
+            "text": "romantic tension/ insecurity",
             "contextConfig": {
                 "prefix": "[ Mal feels ",
                 "suffix": " toward Inara ]\n",
@@ -27,7 +27,7 @@
             "category": "cat-relationships"
         },
         {
-            "text": "romantic tension and frustration",
+            "text": "romantic tension/ frustration",
             "contextConfig": {
                 "prefix": "[ Inara feels ",
                 "suffix": " toward Mal ]\n",
