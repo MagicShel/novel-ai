@@ -1,0 +1,774 @@
+{
+    "scenarioVersion": 1,
+    "title": "A Laboratory Assistant",
+    "description": "You're in need of a laboratory assistant and interview one.",
+    "prompt": "I'm ${1PName}, and I'm a successful inventor and scientist who won the Nobel Prize for implementing ansible communications, paving the way for interstellar journeys by enabling faster-than-light communications via twinned quantum states. I am wealthy and I have my own private laboratory and home near the top of the space elevator. But I've come to realize that I'd like companionship. So being the pragmatic person I am, I posted an advertisement:\nNobel Prize Winner In Need Of A Lab Assistant:\n* Must be attractive\n* Must be intelligent, holding at least a graduate degree\n* Assist me in whatever I need\n* Sense of humor required\nI got quite a few inquiries, resumes, and photos, so I arranged to have an agency filter them for me. It’s finally time for me to meet the first candidate in a hybrid of a first blind date and interview, and I'm looking forward to it. It could be any of these women: Sophia, Mariko, Anastasia, Wendy, Julia, Penny, Ashleigh, or Catherine. I'm seated on my couch in my lab, admiring the view of near-orbital spacer, when I hear a knock, to which I respond, “Come in!”\nIn steps the most beautiful woman I've ever seen, causing my breath to catch for a moment, and I recognize her as the woman named ${3AName}",
+    "tags": [
+        "1st"
+    ],
+    "context": [
+        {
+            "text": "[ me: ${1PName}/ ${2PGender}/ genius/ invented Ansible/ placed advertisement]\n[ Requirements: attractive/ intelligent/ graduate degree/ assist me in whatever I need/ sense of humor]",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 800,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": 0
+            }
+        },
+        {
+            "text": "[Style: Poetic, creative, funny, intelligent, and sensual.] [Genre: Near future science fiction] [Tone: ${5STone}] [ me: ${1PName}/ ${2PGender}/ Noble-prize winner]",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 2048,
+                "budgetPriority": -400,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -4
+            }
+        }
+    ],
+    "ephemeralContext": [],
+    "placeholders": [
+        {
+            "key": "1PName",
+            "description": "Name",
+            "defaultValue": "Morgan"
+        },
+        {
+            "key": "2PGender",
+            "description": "Gender",
+            "defaultValue": "male"
+        },
+        {
+            "key": "3AName",
+            "description": " Interviewee (BLANK FOR RANDOM / Sophia / Mariko / Anastasia / Wendy / Julia / Penny / Ashleigh / Catherine / ... )"
+        },
+        {
+            "key": "4ATrait",
+            "description": " Interviewee Trait (educated / vain / humorous / ...)",
+            "defaultValue": "educated"
+        },
+        {
+            "key": "5STone",
+            "description": "Tone (romantic / intellectual / adventurous / ... )",
+            "defaultValue": "romantic"
+        }
+    ],
+    "settings": {
+        "parameters": {
+            "temperature": 0.55,
+            "max_length": 50,
+            "min_length": 20,
+            "top_k": -91,
+            "top_p": 2,
+            "tail_free_sampling": 0.991,
+            "repetition_penalty": 2.4,
+            "repetition_penalty_range": 1168,
+            "repetition_penalty_slope": 3.33,
+            "bad_words_ids": [
+                [
+                    259,
+                    262,
+                    15422
+                ],
+                [
+                    287,
+                    262,
+                    15422
+                ],
+                [
+                    818,
+                    262,
+                    15422
+                ],
+                [
+                    554,
+                    262,
+                    15422
+                ],
+                [
+                    1268,
+                    3336,
+                    5984,
+                    18679
+                ],
+                [
+                    3268,
+                    3336,
+                    5984,
+                    18679
+                ],
+                [
+                    259,
+                    616,
+                    512
+                ],
+                [
+                    287,
+                    616,
+                    512
+                ],
+                [
+                    818,
+                    616,
+                    512
+                ],
+                [
+                    554,
+                    616,
+                    512
+                ],
+                [
+                    1268,
+                    17615,
+                    5984
+                ],
+                [
+                    3268,
+                    17615,
+                    5984
+                ]
+            ]
+        },
+        "preset": "scenario-default",
+        "trimResponses": false,
+        "banBrackets": true,
+        "prefix": "6B-v3:c40ce023f383f16e4e820b8832c05df3324003bf423108c9a6b86147cb18c94d:2abb3ef7f4b41a7fc4db609d05e7b7452f59a8c0b38cb8fb6556cbb13e942d1d",
+        "aiModule": {
+            "id": "6B-v3:c40ce023f383f16e4e820b8832c05df3324003bf423108c9a6b86147cb18c94d:2abb3ef7f4b41a7fc4db609d05e7b7452f59a8c0b38cb8fb6556cbb13e942d1d",
+            "name": "OccultSage's Androids, Artificial Intelligences, and Robots",
+            "description": "If you love exploring the relationships and interactions between androids, robots, artificial intelligences, and humans, this is the module for you! It covers Issac Asimov, Martha Wells' Murderbot, Charles Stross' Saturn's Children and others.",
+            "remoteId": ""
+        }
+    },
+    "lorebook": {
+        "lorebookVersion": 3,
+        "entries": [
+            {
+                "text": "Sophia’s long, black hair, worn in a bun, cascades down over her shoulders. She’s 5’7”, probably a little taller in her stockings; the heels of her zippered shoes accentuate her height, and she holds herself in a proud yet comfortable posture.  She’s very slender, not supermodel thin but slender enough to be very pleasingly feminine, and her well-toned arms and delicate hands confirm her long-time ballet training. Sophia is wearing a knee-length skirt; no stockings, though she has zippers on her shoes; and a tucked-in white shirt, all of it covered by a tailored, navy blue blazer. Sophia is kind, and loves helping with her formidable intellect.",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630085328364,
+                "displayName": "Character: Sophia",
+                "id": "9075a22e-348e-4781-97a4-8d9c4fc274f7",
+                "keys": [
+                    "Sophia"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "8eb9806b-7a1c-4ad8-8b8a-4d2981373dca"
+            },
+            {
+                "text": "Mariko has a long, thin, pale neck and delicate shoulders; she wears a red robe with gold lining. Her eyes are large, and they seemed to escape from underneath her eyelids every so often in the most alluring way possible. Mariko has perfect lips outlined in scarlet paint adorned that adorn her mouth with sensual perfection — meant for kissing rather than eating. Her hair was a pale sea foam color; wavy to the ends and flowing seductively down her back in a way that makes men envy her or at least feel like they wanted to be her lover. She is small but vivacious, and her movements gives the appearance of one beating out time with the rhythm of her heart, for her chest and her hips were wonderfully sculpted in an hourglass shape. Mariko is a kind soul who is shy and funny, with a sharp wit.",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630091585723,
+                "displayName": "Character: Mariko",
+                "id": "c3a058ea-de46-414d-8410-043411759fd1",
+                "keys": [
+                    "Mariko"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "8eb9806b-7a1c-4ad8-8b8a-4d2981373dca"
+            },
+            {
+                "text": "Catherine has long, dark brown hair that just barely touches her shoulder blades and is pulled back with a pink headband. She gazes with eyes that are a shocking shade of blue-green that is clear as day. Catherine's skin is flawless porcelain; no wrinkles, scars or blemishes could be found in this woman's skin. A smattering of freckles dust the bridge of her nose and cheeks, yet they only serve to add an innocent charm. My eyes are drawn downwards, to her lush stretch of cleavage that has been pushed up by the open neckline of Catherine's tank-top. Catherine is darkly sensual, seductive, and brilliant.",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630084905619,
+                "displayName": "Character: Catherine",
+                "id": "11eac31d-3c17-4882-845d-b14a80dfec27",
+                "keys": [
+                    "Catherine"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "8eb9806b-7a1c-4ad8-8b8a-4d2981373dca"
+            },
+            {
+                "text": "Anastasia looks so different than all of the other women. Her skin is porcelain-like and her hair, now wet from the rain outside, cascades down like a dark waterfall. Her eyes were so dark and deep that they looked black. Anastasia has a mouth too perfect and sexy, and her total look commands the attention of anyone in the room. With her model-tall body being just shy of six feet, Anastasia carries herself with poise and grace. Her curves are perfectly proportioned, her hips naturally well-rounded; she was beautiful, and other woman looked at her and smiled in jealousy. Anastasia wears heels that clink on the floor, and bring in profile her legs clad in a short skirt. Anastasia is brilliant and vivacious, dark and tempestuous.",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630084864508,
+                "displayName": "Character: Anastasia",
+                "id": "6f5703e8-64c9-4cb6-ba05-140d1e3a598f",
+                "keys": [
+                    "Anastasia"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "8eb9806b-7a1c-4ad8-8b8a-4d2981373dca"
+            },
+            {
+                "text": "Wendy is wearing a white blouse, tight jeans, and navy pumps. Her shoulder-length blonde hair is shiny and covers her beautiful face and contrasts with her blue-green eyes and a full, red mouth that she licks nervously. Wendy's curves are in all the right places, and her waist-length golden hair hangs straight down her back towards and over a firm, heavenly ass. Her outfit accentuates her breasts, which look ample, and are revealed by a see-through white silk shirt that looks painted on. Wendy's narrow waist, wide hips, and long, gorgeous legs are also emphasized by her short dark skirt. Wendy is darkly sensual with a razor-sharp intellect.",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630085318737,
+                "displayName": "Character: Wendy",
+                "id": "e288419a-ae75-4f2e-85ae-fd769165c8cc",
+                "keys": [
+                    "Wendy"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "8eb9806b-7a1c-4ad8-8b8a-4d2981373dca"
+            },
+            {
+                "text": "Julia is wearing a tight-fitting blouse that shows off her figure wonderfully, certain to drive any man crazy. Slight makeup lights up her charmingly attractive face. Julia's hair is noticeably longer than it was at the charity event. Her dark red hair is a shiny length, reaching halfway down her back. It has some fine strands come undone, making her look exceptionally sexy and irresistible to men. Further, her hair frames her face perfectly, drawing the man in. Julia is also wearing a skirt that show off her incredibly curvy figure, along with the two most adorable dimples I’ve ever seen. She’s obviously been working out a lot, judging from her toned muscles. Julia is brilliant, mercurial, and loving.",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630084955358,
+                "displayName": "Character: Julia",
+                "id": "be0ed0aa-f6e5-49ed-b57a-7f346bad16fc",
+                "keys": [
+                    "Julia"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "8eb9806b-7a1c-4ad8-8b8a-4d2981373dca"
+            },
+            {
+                "text": "Ashleigh has dark brown hair, a round face with dimples, and dark green eyes that seem to sparkle above a nose that is short with a cute tilt at the end. Her breasts are full and generous, her hips curve out a bit and lead to her attractive and long legs. Ashleigh is wearing slightly baggy black jeans, and a red blouse which is a button down, and she wears a thin, black, lacy, bra that is visible through the almost translucent material and seems to barely contain her breasts. Her shoes are red, wedged heels, and are a few inches high. Ashleigh's fingers are long, and her her nails are painted bright coral with rhinestones on the red ones. Ashleigh's personality shines with her laughter and her intelligence.",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630084893627,
+                "displayName": "Character: Ashleigh",
+                "id": "c1ac63be-c943-477b-a797-e54e05282607",
+                "keys": [
+                    "Ashleigh"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "8eb9806b-7a1c-4ad8-8b8a-4d2981373dca"
+            },
+            {
+                "text": "Penny has a willowy tall form, with long dark hair that cascades down over her shoulders. Her figure is a perfect hourglass, but with larger breasts than the viewer might expect — a most welcome surprise. Penny is dressed in an ankle-length dark-blue lab coat with a white shirt and green skirt, all of a conservative cu;  she’s the definition of demure but tantalizing. Her blue eyes spark at me, intense intelligence and warmth gazing at me.",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630085263839,
+                "displayName": "Character: Penny",
+                "id": "db690fbb-143e-40ea-a1f4-61703f6dcdaa",
+                "keys": [
+                    "Penny"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "8eb9806b-7a1c-4ad8-8b8a-4d2981373dca"
+            },
+            {
+                "text": "[ Anastasia: Porcelain Skin/ Wet& Blonde Hair/ Tall& Graceful; Anastasia: Well-rounded& Proportionate Curves; Anastasia: Brilliant& Vivacious& Tempestuous& ${4ATrait}]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": -100,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -2
+                },
+                "lastUpdatedAt": 1630087214746,
+                "displayName": "Summary: Anastasia",
+                "id": "17870748-a5a1-4c37-9791-fc26af8b3f60",
+                "keys": [
+                    "Anastasia"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": true,
+                "nonStoryActivatable": false,
+                "category": "d70471de-b030-4915-9c85-36cd8e5c79c0"
+            },
+            {
+                "text": "[ Ashleigh: Dark Brown Hair/Dimples/ Green Eyes/ Generous Curves; Ashleigh: Long Legs/ Button-Down Red Blouse& Lace Bra; Ashleigh: Joyful& Intelligent& ${4ATrait}]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": -100,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -2
+                },
+                "lastUpdatedAt": 1630086902697,
+                "displayName": "Summary: Ashleigh",
+                "id": "294c5eac-405f-4ecd-922f-2b362227eab2",
+                "keys": [
+                    "Ashleigh"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": true,
+                "nonStoryActivatable": false,
+                "category": "d70471de-b030-4915-9c85-36cd8e5c79c0"
+            },
+            {
+                "text": "[ Catherine: Shoulder-Length Brown Hair/ Clear Blue Eyes; Catherine: Flawless Porcelain Skin/ Lush Cleavage/ Tank-top; Catherine: Sensual& Seductive& Brilliant& ${4ATrait}]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": -100,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -2
+                },
+                "lastUpdatedAt": 1630087273480,
+                "displayName": "Summary: Catherine",
+                "id": "46bc1dbc-0ca8-44b7-8ef1-c6bfce03f6e5",
+                "keys": [
+                    "Catherine"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": true,
+                "nonStoryActivatable": false,
+                "category": "d70471de-b030-4915-9c85-36cd8e5c79c0"
+            },
+            {
+                "text": "[ Julia: Long Red Hair/ Blouse/ Curvaceous Figure; Julia: Athletic& Toned; Julia: Brilliant& Mercurial& Loving& ${4ATrait} ]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": -100,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -2
+                },
+                "lastUpdatedAt": 1630087310236,
+                "displayName": "Summary: Julia",
+                "id": "80404671-659b-4b3d-8607-38e4b713a802",
+                "keys": [
+                    "Julia"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": true,
+                "nonStoryActivatable": false,
+                "category": "d70471de-b030-4915-9c85-36cd8e5c79c0"
+            },
+            {
+                "text": "[ Mariko: Japanese/ Large Eyes/ Painted Lips/ Sea-foam Colored Tresses; Mariko: Small/ Hourglass Curves; Mariko: Kind Soul& Shy& Funny& Sharp Wit& ${4ATrait}]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": -100,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -2
+                },
+                "lastUpdatedAt": 1630087349325,
+                "displayName": "Summary: Mariko",
+                "id": "984d40f1-e6ab-4787-9832-b8e9c4245be7",
+                "keys": [
+                    "Mariko"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": true,
+                "nonStoryActivatable": false,
+                "category": "d70471de-b030-4915-9c85-36cd8e5c79c0"
+            },
+            {
+                "text": "[ Penny: Blue-eyed/ Willowy Tall Body/ Voluptuous& Large Breasts; Penny: Ankle-length Lab-coat; Penny: Intense & Warm Personality& ${4ATrait}]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": -100,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -2
+                },
+                "lastUpdatedAt": 1630087399237,
+                "displayName": "Summary: Penny",
+                "id": "845e2bae-d995-4e88-a4fa-9949bb07c723",
+                "keys": [
+                    "Penny"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": true,
+                "nonStoryActivatable": false,
+                "category": "d70471de-b030-4915-9c85-36cd8e5c79c0"
+            },
+            {
+                "text": "[ Sophia: Long Black Hair/ 5'7\" Tall/ Slender& Feminine; Sophia: Trained Ballet/ Knee-lengh skirt; Sophia: Kind& Helpful& Genius& ${4ATrait}]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": -100,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -2
+                },
+                "lastUpdatedAt": 1630087426591,
+                "displayName": "Summary: Sophia",
+                "id": "cfd58798-aaf3-4041-9ef5-8915a222109f",
+                "keys": [
+                    "Sophia"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": true,
+                "nonStoryActivatable": false,
+                "category": "d70471de-b030-4915-9c85-36cd8e5c79c0"
+            },
+            {
+                "text": "[ Wendy: Shoulder-length Blonde Hair/ Blue Gaze/ Red Lips; Wendy: Heavenly Ass& Ample Breasts/ See-through White Silk Shirt; Wendy: Darkly Sensual& Razor Sharp Intellect& ${4ATrait}]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": -100,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -2
+                },
+                "lastUpdatedAt": 1630087475657,
+                "displayName": "Summary: Wendy",
+                "id": "0a042d65-fa1d-4592-9cb2-a6e1390910e8",
+                "keys": [
+                    "Wendy"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": true,
+                "nonStoryActivatable": false,
+                "category": "d70471de-b030-4915-9c85-36cd8e5c79c0"
+            },
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630085304046,
+                "displayName": "New Lorebook Entry",
+                "id": "4ed37229-d63f-4db4-b96d-ec728c5b0675",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            }
+        ],
+        "settings": {
+            "orderByKeyLocations": true
+        },
+        "categories": [
+            {
+                "name": "Character",
+                "id": "8eb9806b-7a1c-4ad8-8b8a-4d2981373dca",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 190,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1630086569627,
+                    "displayName": "New Lorebook Entry",
+                    "id": "5f721b05-cc44-41a4-b4a7-aa16bdace9cd",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1630085931410,
+                    "displayName": "New Lorebook Entry",
+                    "id": "e18106f0-d784-4c0d-b0aa-c2e6ce3a4dde",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Character Summaries",
+                "id": "d70471de-b030-4915-9c85-36cd8e5c79c0",
+                "enabled": true,
+                "createSubcontext": false,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1630086569627,
+                    "displayName": "New Lorebook Entry",
+                    "id": "c97cf0af-9066-4657-ae02-1dc72a1f181c",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 50,
+                        "budgetPriority": -100,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -2
+                    },
+                    "lastUpdatedAt": 1630087606021,
+                    "displayName": "New Lorebook Entry",
+                    "id": "477ade7f-e2da-48a9-b945-a431f803ff66",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": true,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            }
+        ]
+    },
+    "author": "",
+    "storyContextConfig": {
+        "prefix": "",
+        "suffix": "",
+        "tokenBudget": 2048,
+        "reservedTokens": 512,
+        "budgetPriority": 0,
+        "trimDirection": "trimTop",
+        "insertionType": "newline",
+        "maximumTrimType": "sentence",
+        "insertionPosition": -1
+    },
+    "contextDefaults": {
+        "ephemeralDefaults": [
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 2048,
+                    "budgetPriority": -10000,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "newline",
+                    "insertionPosition": -2
+                },
+                "startingStep": 1,
+                "delay": 0,
+                "duration": 1,
+                "repeat": false,
+                "reverse": false
+            }
+        ],
+        "loreDefaults": [
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630077577369,
+                "displayName": "New Lorebook Entry",
+                "id": "f6d453af-324c-42d5-9649-2a16587cc8f6",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            }
+        ]
+    }
+}

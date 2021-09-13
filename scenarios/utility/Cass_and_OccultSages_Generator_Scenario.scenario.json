@@ -1,0 +1,852 @@
+{
+    "scenarioVersion": 1,
+    "title": "Cass and OccultSage's Generator Scenario",
+    "description": "This Scenario is designed to allow you to generate lists and tables of whatever you want. It can be a world, it can be recipes, characters, etc. Your and Sigurd's imagination is the limit!\nFill in the fields with the values you want. You need at least one Column filled in, but any of the columns can be empty and the Scenario will adjust accordingly.",
+    "prompt": "## == Welcome to Cass and OccultSage's Generator Scenario! ==\n## This Scenario is designed to allow you to generate lists and tables of whatever you want. It can be a world, it can be recipes, or characters.\n## Fill in the fields with the values you want. You need at least one Column filled in, but any of the columns can be empty and the Scenario will automatically adjust the tables accordingly!\n## The table below shows some example settings that you can use. Experiment!\n## NOTE: The below table needs the Iosevka monospace font to render correctly. You can find this font in your Paragraph Font settings.\n## GenType    | Genre   | Style       | Tags              | Columns\n## ===========|=========|=============|===================|================\n## characters | Fantasy | high-detail | world-building    | Character Name\n##            |         |             | medieval          | Occupation\n##            |         |             |                   | Background\n## -----------|---------|-------------|-------------------|----------------\n## regions    | Sci-Fi  | imaginative | universe-building | Location Name\n##            |         |             | arcoloy           | Population\n##            |         |             |                   | Faction\n##            |         |             |                   | Description\n## -----------|---------|-------------|-------------------|----------------\n## treasure   | Fantasy | visual      | dungeon           | Item Name\n##            |         |             | treasure chest    | Rarity\n##            |         |             |                   | Value\n##            |         |             |                   | Description\n## -----------|---------|-------------|-------------------|----------------\n## spells     | Fantasy | whimsical   | magic             | Spell Name\n##            |         |             | hogwarts          | Type of Magic\n##            |         |             |                   | Description\n## -----------|---------|-------------|-------------------|----------------\n## recipes    | Pastry  | delicious   | baking            | Dish Name\n##            |         |             | desert            | Ingredients\n##            |         |             |                   | Amounts\n##            |         |             |                   | Instructions\n## -----------|---------|-------------|-------------------|----------------\n##\n## Subject: ${a_Subject}\n## Genre: ${b_Genre}\n## Style: ${c_Style}\n## Tags: ${d_Tag1}, ${e_Tag2}, ${f_Tag3} \n## No., ${g_Column1}, ${h_Column2}, ${i_Column3}, ${j_Column4}\n",
+    "tags": [
+        "generator",
+        "worlds",
+        "items",
+        "magic",
+        "recipes",
+        "anything!"
+    ],
+    "context": [
+        {
+            "text": "${k_Summary}\n[ ${a_Subject} Columns: \"No.\", \"${g_Column1}\", \"${h_Column2}\", \"${i_Column3}\", \"${j_Column4}\" ]",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 200,
+                "budgetPriority": -800,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": 0
+            }
+        },
+        {
+            "text": "[ Tags: ${d_Tag1}, ${e_Tag2}, ${f_Tag3}; Genre: ${b_Genre}; Subject: ${a_Subject}; Style: ${c_Style} ]",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 2048,
+                "budgetPriority": -750,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -6
+            }
+        }
+    ],
+    "ephemeralContext": [],
+    "placeholders": [
+        {
+            "key": "a_Subject",
+            "description": "Generation Type (regions, treasure, spells, recipes, etc)",
+            "defaultValue": "characters"
+        },
+        {
+            "key": "b_Genre",
+            "description": "Genre (Sci-Fi, Fantasy, Pastry, etc)",
+            "defaultValue": "Fantasy"
+        },
+        {
+            "key": "c_Style",
+            "description": "Style (imaginative, visual, whimsical, delicious, etc)",
+            "defaultValue": "high-detail"
+        },
+        {
+            "key": "d_Tag1",
+            "description": "Tag 1 (universe-building, dungeon, magic, baking, etc)",
+            "defaultValue": "world-building"
+        },
+        {
+            "key": "e_Tag2",
+            "description": "Tag 2 (arcology, treasure chest, dessert, hogwarts, etc)",
+            "defaultValue": "medieval"
+        },
+        {
+            "key": "f_Tag3",
+            "description": "Tag 3 (anything you like!)"
+        },
+        {
+            "key": "g_Column1",
+            "description": "Column 1 (Location Name, Item Name, Spell Name, Dish Name, etc)",
+            "defaultValue": "Character Name"
+        },
+        {
+            "key": "h_Column2",
+            "description": "Column 2 (Population, Rarity, Type of Magic, Ingredients, etc)",
+            "defaultValue": "Occupation"
+        },
+        {
+            "key": "i_Column3",
+            "description": "Column 3 (Faction, Value, Description, Amounts, etc)",
+            "defaultValue": "Background"
+        },
+        {
+            "key": "j_Column4",
+            "description": "Column 4 (Description, Instructions, etc)"
+        },
+        {
+            "key": "k_Summary",
+            "description": "Theme Summary",
+            "defaultValue": "A harsh world of deserts and scarce resources."
+        }
+    ],
+    "settings": {
+        "parameters": {
+            "temperature": 0.5,
+            "max_length": 100,
+            "min_length": 1,
+            "top_k": 140,
+            "top_p": 0.9,
+            "tail_free_sampling": 1,
+            "repetition_penalty": 3.5,
+            "repetition_penalty_range": 1024,
+            "repetition_penalty_slope": 6.57,
+            "bad_words_ids": []
+        },
+        "preset": "scenario-default",
+        "trimResponses": false,
+        "banBrackets": true,
+        "prefix": "6B-v3:42308fef35d09aeeb4449ba8f10e7108c08f80c07210787fa2c7583f7e5fce81:aa8a3f1f57362a862aadc646e32fa4f164786cc0e91eaed866736142522fe63f",
+        "aiModule": {
+            "id": "6B-v3:42308fef35d09aeeb4449ba8f10e7108c08f80c07210787fa2c7583f7e5fce81:aa8a3f1f57362a862aadc646e32fa4f164786cc0e91eaed866736142522fe63f",
+            "name": "OccultSage's Cross-Genre (22K, 20MB)",
+            "description": "\"Hmm,\" thought OccultSage, \" ... the last Cross-Genre module was super-great! Let's make it even better and go for 20mb!\" Covers horror, scifi, romance, historical fiction genres.",
+            "remoteId": ""
+        }
+    },
+    "lorebook": {
+        "lorebookVersion": 3,
+        "entries": [
+            {
+                "text": "No. | ${g_Column1}",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 408,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630705312173,
+                "displayName": "Column 1",
+                "id": "8470663c-9573-4d10-9bf9-cb93b5feda8f",
+                "keys": [
+                    "${g_Column1}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "943f000a-afeb-46d8-b837-0d128eafe24b"
+            },
+            {
+                "text": "${h_Column2}",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 406,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630702500397,
+                "displayName": "Column 2",
+                "id": "1e0aa5ad-4f55-48a2-b90b-3b398c4fd7e6",
+                "keys": [
+                    "${h_Column2}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "943f000a-afeb-46d8-b837-0d128eafe24b"
+            },
+            {
+                "text": "${i_Column3}",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 404,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630702506465,
+                "displayName": "Column 3",
+                "id": "a70a0d81-5c43-4e69-94ec-f9eb79589ad5",
+                "keys": [
+                    "${i_Column3}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "943f000a-afeb-46d8-b837-0d128eafe24b"
+            },
+            {
+                "text": "${j_Column4}",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 402,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630702514090,
+                "displayName": "Column 4",
+                "id": "0e146f20-a0db-4b3d-b339-59abe54eaea5",
+                "keys": [
+                    "${j_Column4}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "943f000a-afeb-46d8-b837-0d128eafe24b"
+            },
+            {
+                "text": " | ",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 407,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630702496631,
+                "displayName": "Column 1 Divider",
+                "id": "b5e69917-f39a-4cc0-9bd1-6bd070041bef",
+                "keys": [
+                    "${h_Column2}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "943f000a-afeb-46d8-b837-0d128eafe24b"
+            },
+            {
+                "text": "---|---",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 408,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630702528821,
+                "displayName": "Divider Column 1",
+                "id": "54457fa5-a26b-43e5-8c4e-131a3c3d13a1",
+                "keys": [
+                    "${g_Column1}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "cdf353a9-399a-4ab4-a528-629dd20e888d"
+            },
+            {
+                "text": "---",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 406,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630702534682,
+                "displayName": "Divider Column 2",
+                "id": "6f0f2ea8-497d-4a59-8680-3058ccf7427d",
+                "keys": [
+                    "${h_Column2}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "cdf353a9-399a-4ab4-a528-629dd20e888d"
+            },
+            {
+                "text": "---",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 404,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630702542769,
+                "displayName": "Divider Column 3",
+                "id": "dc2f3d73-73a4-42cf-aefa-61f9d235f7cc",
+                "keys": [
+                    "${i_Column3}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "cdf353a9-399a-4ab4-a528-629dd20e888d"
+            },
+            {
+                "text": "---",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 402,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630702549642,
+                "displayName": "Divider Column 4",
+                "id": "93bcf570-9a8c-4910-b1aa-1c9c758aa79d",
+                "keys": [
+                    "${j_Column4}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "cdf353a9-399a-4ab4-a528-629dd20e888d"
+            },
+            {
+                "text": " | ",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 405,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630702503171,
+                "displayName": "Column 2 Divider",
+                "id": "299f4a5a-a0af-45e5-acaa-dcac752ec725",
+                "keys": [
+                    "${i_Column3}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "943f000a-afeb-46d8-b837-0d128eafe24b"
+            },
+            {
+                "text": " | ",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 403,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630702511023,
+                "displayName": "Column 3 Divider",
+                "id": "40f9220f-c04c-4202-a94e-6cbae076ffb5",
+                "keys": [
+                    "${j_Column4}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "943f000a-afeb-46d8-b837-0d128eafe24b"
+            },
+            {
+                "text": "|",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 407,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630702532022,
+                "displayName": "Divider Column 1 Divider",
+                "id": "0e5f5e4b-0574-4f75-9bda-0156cd03a771",
+                "keys": [
+                    "${h_Column2}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "cdf353a9-399a-4ab4-a528-629dd20e888d"
+            },
+            {
+                "text": "|",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 405,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630702539368,
+                "displayName": "Divider Column 2 Divider",
+                "id": "2f42c5f0-ca70-4662-8631-ed37ab6fe675",
+                "keys": [
+                    "${i_Column3}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "cdf353a9-399a-4ab4-a528-629dd20e888d"
+            },
+            {
+                "text": "|",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 403,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630702546492,
+                "displayName": "Divider Column 3 Divider",
+                "id": "2a96c5dc-6832-4d56-8b6b-913843a11e05",
+                "keys": [
+                    "${j_Column4}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "cdf353a9-399a-4ab4-a528-629dd20e888d"
+            },
+            {
+                "text": "0 | Lorem Ipsum ",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 404,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630713439356,
+                "displayName": "Example Column 1",
+                "id": "143cc9f3-a622-47f3-ba0f-57ecc8e687a1",
+                "keys": [
+                    "${g_Column1}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "7d56ec0f-794f-4ef3-a707-13aeb39b0486"
+            },
+            {
+                "text": "| Dolor Sit ",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 403,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630713442546,
+                "displayName": "Example Column 2",
+                "id": "cee381e7-d10c-4b26-af11-9e822da58efb",
+                "keys": [
+                    "${h_Column2}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "7d56ec0f-794f-4ef3-a707-13aeb39b0486"
+            },
+            {
+                "text": "| Amet Consecteutr ",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 402,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630713445820,
+                "displayName": "Example Column 3",
+                "id": "a57fc362-1467-4b6f-a071-cf28a6b3fb02",
+                "keys": [
+                    "${i_Column3}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "7d56ec0f-794f-4ef3-a707-13aeb39b0486"
+            },
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630711468275,
+                "displayName": "Example Column 4",
+                "id": "caa69649-7322-4ea9-b1ac-837b36f4e691",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            },
+            {
+                "text": "| Quisque nisl leo, tempor sed leo vel, luctus consectetur nisl. Nam et turpis lectus. ",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 401,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630713448610,
+                "displayName": "Example Column 4",
+                "id": "e20d6a9e-735e-449b-a18d-81a934f2fe62",
+                "keys": [
+                    "${j_Column4}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "7d56ec0f-794f-4ef3-a707-13aeb39b0486"
+            }
+        ],
+        "settings": {
+            "orderByKeyLocations": false
+        },
+        "categories": [
+            {
+                "name": "Columns",
+                "id": "943f000a-afeb-46d8-b837-0d128eafe24b",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 200,
+                        "budgetPriority": -700,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -4
+                    },
+                    "lastUpdatedAt": 1630691456289,
+                    "displayName": "New Lorebook Entry",
+                    "id": "5529fc54-67b7-4f38-8ee4-eeecb79f8c5e",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1630685065798,
+                    "displayName": "New Lorebook Entry",
+                    "id": "fb1bbc23-31b2-4804-8c01-fce2922788e6",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": true,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Divider Row",
+                "id": "cdf353a9-399a-4ab4-a528-629dd20e888d",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 200,
+                        "budgetPriority": -600,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -4
+                    },
+                    "lastUpdatedAt": 1630691456289,
+                    "displayName": "New Lorebook Entry",
+                    "id": "c883300e-131f-49a5-ac39-cfd998e9af7d",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1630684964559,
+                    "displayName": "New Lorebook Entry",
+                    "id": "db0d07aa-c0ef-47f9-91be-89b7d763dacc",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": true,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Example Row",
+                "id": "7d56ec0f-794f-4ef3-a707-13aeb39b0486",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ]\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": -850,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": 1
+                    },
+                    "lastUpdatedAt": 1630716112363,
+                    "displayName": "New Lorebook Entry",
+                    "id": "75e38bd7-4973-45d3-a763-5e561c7c0001",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1630711527127,
+                    "displayName": "New Lorebook Entry",
+                    "id": "42daf5c5-0dc0-4d71-971f-32741c3a6c29",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": true,
+                    "category": ""
+                }
+            }
+        ]
+    },
+    "author": "",
+    "storyContextConfig": {
+        "prefix": "",
+        "suffix": "",
+        "tokenBudget": 2048,
+        "reservedTokens": 512,
+        "budgetPriority": 0,
+        "trimDirection": "trimTop",
+        "insertionType": "newline",
+        "maximumTrimType": "sentence",
+        "insertionPosition": -1
+    },
+    "contextDefaults": {
+        "ephemeralDefaults": [
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 2048,
+                    "budgetPriority": -10000,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "newline",
+                    "insertionPosition": -2
+                },
+                "startingStep": 1,
+                "delay": 0,
+                "duration": 1,
+                "repeat": false,
+                "reverse": false
+            }
+        ],
+        "loreDefaults": [
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630683979652,
+                "displayName": "New Lorebook Entry",
+                "id": "9e88b05b-e4b8-4ff8-b32f-e2dfa2ef868d",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            }
+        ]
+    }
+}

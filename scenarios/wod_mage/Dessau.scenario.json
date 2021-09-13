@@ -1,0 +1,562 @@
+{
+    "scenarioVersion": 1,
+    "title": "Dessau",
+    "description": "A story about a modern world of darkness where you are a mage with the power to reshape reality",
+    "prompt": "It is a modern world of hidden monsters, magic and intrigue, where mortals are kept in the dark about the true nature of their world: that it is inhabited and controlled by Vampires, Werewolves, and Mages of the Traditions and Technocracy. Every one of these creatures began life as a mortal, but as they drift further away from their humanity, they can become monstrous. There are also a few mortals who are aware of this hidden world and hunt these creatures.\nI am ${name}, a young mage of the ${tradition}. I've recently awakened to my power in the city of Dessau and seek to ${goal}. As a mage, I have the ability to reshape the fabric of reality, but must be ever cautious to use my abilities in subtle ways when around humans to avoid being ravaged by the forces of paradox, and being found by my mortal enemies: the Technocracy. My powers are ${power1}, ${power2}, and ${power3}.",
+    "tags": [],
+    "context": [
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 800,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": 0
+            }
+        },
+        {
+            "text": "[ writing style: gothic magical realism tense thriller macabre ]\n[ my goal: ${goal} ]",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 2048,
+                "budgetPriority": -400,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -4
+            }
+        }
+    ],
+    "ephemeralContext": [],
+    "placeholders": [
+        {
+            "key": "name",
+            "description": "My name",
+            "defaultValue": "Char",
+            "order": 1
+        },
+        {
+            "key": "tradition",
+            "description": "My magical tradition",
+            "defaultValue": "Verbena",
+            "order": 2
+        },
+        {
+            "key": "goal",
+            "description": "My goal",
+            "defaultValue": "protect humans from vampires",
+            "order": 3
+        },
+        {
+            "key": "age",
+            "description": "My age",
+            "defaultValue": "17",
+            "order": 4
+        },
+        {
+            "key": "power1",
+            "description": "First power",
+            "defaultValue": "healing",
+            "order": 5
+        },
+        {
+            "key": "power2",
+            "description": "Second power",
+            "defaultValue": "shapeshifting",
+            "order": 6
+        },
+        {
+            "key": "power3",
+            "description": "Third power",
+            "defaultValue": "animal summoning",
+            "order": 7
+        }
+    ],
+    "settings": {
+        "parameters": {
+            "temperature": 2.5,
+            "max_length": 50,
+            "min_length": 1,
+            "top_k": 58,
+            "top_p": 0.35,
+            "tail_free_sampling": 1,
+            "repetition_penalty": 2.45,
+            "repetition_penalty_range": 1280,
+            "repetition_penalty_slope": 0,
+            "bad_words_ids": []
+        },
+        "preset": "default-sensiblemoth",
+        "trimResponses": true,
+        "banBrackets": true,
+        "prefix": "theme_libraries"
+    },
+    "lorebook": {
+        "lorebookVersion": 3,
+        "entries": [
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "Author:",
+                    "suffix": "; ",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "sentence",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1629481167872,
+                "displayName": "Author",
+                "id": "bfb1c17f-45ab-4811-a1a5-e1749b247089",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "c72bdbda-6192-4b58-830f-7b6628099762"
+            },
+            {
+                "text": "modern, supernatural, magic, vampires, wizards, witches, werewolves, fae, intrigue, gritty",
+                "contextConfig": {
+                    "prefix": "Tags: ",
+                    "suffix": "; ",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 399,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "sentence",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1631414140522,
+                "displayName": "Tags",
+                "id": "00bb6fa6-d584-4ec5-b698-eb32e0120f79",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "c72bdbda-6192-4b58-830f-7b6628099762"
+            },
+            {
+                "text": "dark urban fantasy",
+                "contextConfig": {
+                    "prefix": "Genre: ",
+                    "suffix": " ",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 398,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "sentence",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1631414099682,
+                "displayName": "Genre",
+                "id": "524e24aa-5fdc-4fa8-854e-4a2608320b42",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "c72bdbda-6192-4b58-830f-7b6628099762"
+            },
+            {
+                "text": "${name}/ ${age} female/ mage/ my powers: ${power1}/ ${power2}/ ${power3}",
+                "contextConfig": {
+                    "prefix": "[ about me:",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1631414807409,
+                "displayName": "Person: Me: Summary",
+                "id": "62e0cab4-a4f6-41b3-8c0e-4c63c8bbf3d5",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "78ca760b-3e22-4972-8cb7-d0f09158a01c"
+            },
+            {
+                "text": "hair long& blonde& curly/ eyes iceBlue/ skin milky/ tattoo moon on left shoulder/ my t-shirt is tight& white& halter/ my shorts skimpy& denim/ sneakers/ I lack bra",
+                "contextConfig": {
+                    "prefix": "[ description of me: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 399,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1631414829634,
+                "displayName": "Person: Me: Description",
+                "id": "9ef9b1d3-d16c-4a1f-8512-a97d58d57e2e",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "78ca760b-3e22-4972-8cb7-d0f09158a01c"
+            },
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "[ my personality: ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 398,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1629896624219,
+                "displayName": "Person: Me: Personality",
+                "id": "8bb6e35d-98dc-4dbd-85a1-f14456568201",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "78ca760b-3e22-4972-8cb7-d0f09158a01c"
+            },
+            {
+                "text": "Arcsys: a magic safehouse& safe from paradox/ chantry/ sanctum/ run by Balinor Kern",
+                "contextConfig": {
+                    "prefix": "[ ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1631415065439,
+                "displayName": "Chantry",
+                "id": "fd69e0a7-ce04-4438-818c-b54de4d9fc51",
+                "keys": [
+                    "/Arcsys/",
+                    "chantry",
+                    "sanctum"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "189dd24a-c488-4bb0-8cc8-5f58070d45ab"
+            },
+            {
+                "text": "about Balinor Kern: 65 male/ mage/ hair gray/ eyes gray/ leader of Arcsys",
+                "contextConfig": {
+                    "prefix": "[ ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1631415052422,
+                "displayName": "Balinor Kern",
+                "id": "d7c433a4-fc40-499a-b10b-e2162d8e2d34",
+                "keys": [
+                    "/Balinor/",
+                    "/Kern/"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "189dd24a-c488-4bb0-8cc8-5f58070d45ab"
+            },
+            {
+                "text": "about Dessau: large& dense city secretly ruled by vampires; Dessau key features: Arcsys, werewolves outskirts yet few in city, surrounded by forest",
+                "contextConfig": {
+                    "prefix": "[ ",
+                    "suffix": " ]\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1631415201743,
+                "displayName": "Dessau",
+                "id": "ad9a70c4-37de-48cc-a428-d1715cb06326",
+                "keys": [
+                    "/Dessau/",
+                    "the city"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "189dd24a-c488-4bb0-8cc8-5f58070d45ab"
+            }
+        ],
+        "settings": {
+            "orderByKeyLocations": false
+        },
+        "categories": [
+            {
+                "name": "Background",
+                "id": "189dd24a-c488-4bb0-8cc8-5f58070d45ab",
+                "enabled": true,
+                "createSubcontext": false,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1631415669915,
+                    "displayName": "New Lorebook Entry",
+                    "id": "bcb065a3-40be-46db-a190-7b1a7fec2140",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ]\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1631414323689,
+                    "displayName": "New Lorebook Entry",
+                    "id": "e4d4b11a-1389-4a46-937a-73645ca42df4",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Person: Me",
+                "id": "78ca760b-3e22-4972-8cb7-d0f09158a01c",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1629899226824,
+                    "displayName": "New Lorebook Entry",
+                    "id": "9af0fd8d-287a-4c7d-a1d8-6509c614ccec",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ]\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1629896073522,
+                    "displayName": "New Lorebook Entry",
+                    "id": "9933a788-7bc2-4948-82ad-8610557ceecf",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": true,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Style",
+                "id": "c72bdbda-6192-4b58-830f-7b6628099762",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ]\n***\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 100,
+                        "budgetPriority": -400,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": 0
+                    },
+                    "lastUpdatedAt": 1629430113447,
+                    "displayName": "New Lorebook Entry",
+                    "id": "d06da5c1-a18f-4296-8f11-82aa0d34a875",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ] ",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "sentence",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1629424729158,
+                    "displayName": "New Lorebook Entry",
+                    "id": "be1fc71f-f8f3-4a98-aeb3-6bd210d4973b",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": true,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            }
+        ]
+    },
+    "author": "",
+    "storyContextConfig": {
+        "prefix": "",
+        "suffix": "",
+        "tokenBudget": 2048,
+        "reservedTokens": 512,
+        "budgetPriority": 0,
+        "trimDirection": "trimTop",
+        "insertionType": "newline",
+        "maximumTrimType": "sentence",
+        "insertionPosition": -1
+    },
+    "contextDefaults": {
+        "ephemeralDefaults": [
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 2048,
+                    "budgetPriority": -10000,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "newline",
+                    "insertionPosition": -2
+                },
+                "startingStep": 1,
+                "delay": 0,
+                "duration": 1,
+                "repeat": false,
+                "reverse": false
+            }
+        ],
+        "loreDefaults": [
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1631415646102,
+                "displayName": "New Lorebook Entry",
+                "id": "271f10f8-0ef2-447a-afc9-0f8cfeb23ee3",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            }
+        ]
+    }
+}

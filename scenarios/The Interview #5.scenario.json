@@ -1,0 +1,994 @@
+{
+    "scenarioVersion": 1,
+    "title": "The Interview #5",
+    "description": "Interview witnesses to get to the bottom of a crime",
+    "prompt": "My name is Madison Sinclare. I'm a private investigator who sometimes gets called in to help the police untangle particularly tangled webs. I am an expert at getting people to talk and then separating the truth from the bullshit.\nI receive a call from my friend Lt. Doyle down at the 14th precinct; seems a socialite named Robert Colesmith was found at home ${location}, ${condition}. There is a bevy of suspects who are gathered in the home and Doyle asks me to swing by and interview the suspects.\nI hop in my Civic and punch the address into my phone. Forty-five minutes later, I pull up to the gate. There are officers at the gate who recognize me and let me in. It takes another three minutes of driving for me to reach the main house. It's intimidating to imagine living here instead of my 1-bedroom apartment.\nI focus myself on one thought: here in the midst of all this luxury, Mr. Colesmith was murdered in his own home by a friend or possibly even a family member. Clearly, wealth isn't everything. By the time I reach the front door, I have the mind-set that the people I'm about to interview are no different than any other suspects.\nI knock and Lt. Doyle opens the door and invites me in. \"Thank you for coming, Madison. I hope you brought waders because the bullshit is hip-deep in here.\" Doyle is dressed smartly in an expensive suit, but the tightness around his torso betrays the age of the suit and the weight gained. Doyle was probably a looker 15 years and 45 pounds ago, but these days he just looks like a middle-aged office manager.\nDoyle shows me around and introduces me to the players. \"This is Mrs. Colesmith and her daughter Colette. Over here we have Mr. Colesmith's business partner, Adrian Crespi. This is Allen Morgan, a client of Robert and Adrians. Ms. Elizabeth Keller here is Mr. Colesmith's secretary. Lastly, this is Lucia Sanchez, she is the housekeeper here.\"\nDoyle continues, \"This is everyone who was at the house the day of the murder. Mr. Crespi, Mr. Morgan, and Ms. Keller were here on matters of business. Ms. Sanchez works here, of course, and lives on the grounds. Colette is visiting home from Paris where she goes to school.\"\nAt last, he introduces me to the gathering, \"Everyone, this is Madison Sinclair. She is a consultant working for the department and she specializes in getting to the bottom of crimes such as this. I would appreciate it if you would extend your full cooperation to Ms. Sinclair throughout her interviews and investigation. Thank you.\"\nI nod toward Lt. Doyle. \"Thank you, Bob. I'm going to interview each of you privately. I'm going to ask you each some questions. Some of them may be difficult or embarrassing to answer, but I assure you all information will be handled discretely and anything not directly pertaining to the murder investigation will be kept strictly confidential. Thank you all in advance for your forthrightness. I've set up in the library and I will conduct the private interviews there.\" I look at the suspects and randomly point at one. \"I'll speak with you first. Please accompany me to the library, ",
+    "tags": [
+        "interview",
+        "procedural",
+        "crime",
+        "mystery",
+        "detective"
+    ],
+    "context": [
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 800,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": 0
+            }
+        },
+        {
+            "text": "[ I am interviewing:  ]",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 2048,
+                "budgetPriority": -400,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -4
+            }
+        }
+    ],
+    "ephemeralContext": [
+        {
+            "text": "[ The suspect and I verbally spar to establish a rapport ]",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 2048,
+                "budgetPriority": -10000,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "newline",
+                "insertionPosition": -3
+            },
+            "startingStep": 1,
+            "delay": 65,
+            "duration": 10,
+            "repeat": true,
+            "reverse": false
+        },
+        {
+            "text": "[ The suspect tells me their whereabouts and activities around the time of the murder ]",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 2048,
+                "budgetPriority": -10000,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "newline",
+                "insertionPosition": -3
+            },
+            "startingStep": 15,
+            "delay": 65,
+            "duration": 10,
+            "repeat": true,
+            "reverse": false
+        },
+        {
+            "text": "[ I catch the suspect in a lie ]",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 2048,
+                "budgetPriority": -10000,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "newline",
+                "insertionPosition": -3
+            },
+            "startingStep": 30,
+            "delay": 65,
+            "duration": 5,
+            "repeat": true,
+            "reverse": false
+        },
+        {
+            "text": "[ I uncover a bombshell revelation ]",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 2048,
+                "budgetPriority": -10000,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "newline",
+                "insertionPosition": -3
+            },
+            "startingStep": 40,
+            "delay": 65,
+            "duration": 5,
+            "repeat": true,
+            "reverse": false
+        },
+        {
+            "text": "[ I wrap up the interview and take some alone time to summarize my findings in my notes ]",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 2048,
+                "budgetPriority": -10000,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "newline",
+                "insertionPosition": -3
+            },
+            "startingStep": 50,
+            "delay": 65,
+            "duration": 8,
+            "repeat": true,
+            "reverse": false
+        },
+        {
+            "text": "[ I summon the next suspect to a private interview and size them up ]",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 2048,
+                "budgetPriority": -10000,
+                "trimDirection": "doNotTrim",
+                "insertionType": "newline",
+                "maximumTrimType": "newline",
+                "insertionPosition": -3
+            },
+            "startingStep": 60,
+            "delay": 65,
+            "duration": 4,
+            "repeat": true,
+            "reverse": false
+        }
+    ],
+    "placeholders": [
+        {
+            "key":"location",
+            "description":"Where was the victim discovered",
+            "defaultValue":"in the swimming pool",
+            "order":1
+        },
+        {
+            "key":"condition",
+            "description":"Condition of the body",
+            "defaultValue":"nude and face-down",
+            "order":3
+        },
+        {
+            "key":"cause",
+            "description":"Apparent cause of death",
+            "defaultValue":"blunt-force trauma to the head",
+            "order":4
+        }
+    ],
+    "settings": {
+        "parameters": {
+            "temperature": 2.5,
+            "max_length": 40,
+            "min_length": 1,
+            "top_k": 58,
+            "top_p": 0.35,
+            "tail_free_sampling": 1,
+            "repetition_penalty": 2.45,
+            "repetition_penalty_range": 1280,
+            "repetition_penalty_slope": 0,
+            "bad_words_ids": []
+        },
+        "preset": "default-sensiblemoth",
+        "trimResponses": true,
+        "banBrackets": true,
+        "prefix": "vanilla"
+    },
+    "lorebook": {
+        "lorebookVersion": 3,
+        "entries": [
+            {
+                "text": "Robert Colesmith was discovered ${location} this morning. Robert's body was ${condition}. The apparent cause of Robert's death is ${cause}.\n[ Robert Colesmith: male/ 53 years old (deceased)/ investment banker ]\nLast night, there were six other people in the house. In addition to Robert's wife Victoria, his daughter Colette is home from her school in Paris. Lucia, the housekeeper, also lives in the house. Due to a late business meeting last night involving Robert's partner Adrian, their client Allen, and Robert's secretary Liz, they all stayed over in guest rooms.\n[ suspects: Victoria/ Adrian/ Elizabeth/ Allen/ Colette/ Lucia ]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 250,
+                    "budgetPriority": 399,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630678385492,
+                "displayName": "Crime Scene",
+                "id": "145651f2-ade7-4892-b508-daa66b1f36a0",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            },
+            {
+                "text": "[ Victoria Colesmith: female/ 39 years old/ Robert's wife/ Colette's mother/ unpleasant/ disagreeable/ indifferent; Victoria: hair blonde bob/ heavy makeup/ subtle lines around eyes/ buxom ]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": -401,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "newline",
+                    "insertionPosition": -4
+                },
+                "lastUpdatedAt": 1630809375544,
+                "displayName": "Ice Queen",
+                "id": "9fca11d7-a56b-4731-8c5c-665267c5d23d",
+                "keys": [
+                    "/Victoria/",
+                    "/Mrs. Colesmith/",
+                    "wife"
+                ],
+                "searchRange": 500,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": true,
+                "nonStoryActivatable": false,
+                "category": "67e1ac31-fbaf-4c89-884d-e4a014c50511"
+            },
+            {
+                "text": "[ Lucia Sanchez: female/ 24 years old/ housekeeper/ naive/ innocent/ unassuming; Lucia: wears maid uniform/ sultry/ bronze skin/ alluring; Lucia: Latina/ speaks broken English like, \"Robert, he want Lucia bre... breakfast in bed. I do thees for him.\" ]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": -401,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "newline",
+                    "insertionPosition": -4
+                },
+                "lastUpdatedAt": 1630811526475,
+                "displayName": "Ingenue",
+                "id": "cb92d43a-ee0a-4376-81b8-405cdbbf49ac",
+                "keys": [
+                    "/Lucia/",
+                    "/Sanchez/",
+                    "housekeeper"
+                ],
+                "searchRange": 500,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": true,
+                "nonStoryActivatable": false,
+                "category": "67e1ac31-fbaf-4c89-884d-e4a014c50511"
+            },
+            {
+                "text": "F. Paul Wilson",
+                "contextConfig": {
+                    "prefix": "Author: ",
+                    "suffix": "; ",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "sentence",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630804791741,
+                "displayName": "Author",
+                "id": "bfb1c17f-45ab-4811-a1a5-e1749b247089",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "c72bdbda-6192-4b58-830f-7b6628099762"
+            },
+            {
+                "text": "crime, mystery, police, detective, scandal",
+                "contextConfig": {
+                    "prefix": "Tags: ",
+                    "suffix": "; ",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 399,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "sentence",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630594266773,
+                "displayName": "Tags",
+                "id": "00bb6fa6-d584-4ec5-b698-eb32e0120f79",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "c72bdbda-6192-4b58-830f-7b6628099762"
+            },
+            {
+                "text": "murder mystery",
+                "contextConfig": {
+                    "prefix": "Genre: ",
+                    "suffix": " ",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 398,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "sentence",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630678443810,
+                "displayName": "Genre",
+                "id": "524e24aa-5fdc-4fa8-854e-4a2608320b42",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "c72bdbda-6192-4b58-830f-7b6628099762"
+            },
+            {
+                "text": "[ Adrian Crespi: male/ 47 years old/ Robert's buisness partner/ defensive/ arrogant/ controlling/ imposing; Adrian: bald/ muscular/ expensive suit ]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": -401,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "newline",
+                    "insertionPosition": -4
+                },
+                "lastUpdatedAt": 1630889039095,
+                "displayName": "Alpha Male",
+                "id": "3d21c84e-2a57-4230-898b-bcacaed413da",
+                "keys": [
+                    "/Adrian/",
+                    "/Crespi/",
+                    "partner"
+                ],
+                "searchRange": 500,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": true,
+                "nonStoryActivatable": false,
+                "category": "67e1ac31-fbaf-4c89-884d-e4a014c50511"
+            },
+            {
+                "text": "[ Elizabeth \"Liz\" Keller: female/ 27 years old/ Robert's secretary/  provocative/ shameless/ inviting; Liz: hair wavy& red/ lips luscious/ primped/ scanty clothes ]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": -401,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "newline",
+                    "insertionPosition": -4
+                },
+                "lastUpdatedAt": 1630809534226,
+                "displayName": "Seductive",
+                "id": "8be171d0-3034-4cb5-9dc8-889b0b8abcb6",
+                "keys": [
+                    "/Elizabeth/",
+                    "/Liz/",
+                    "/Keller/",
+                    "secretary"
+                ],
+                "searchRange": 500,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": true,
+                "nonStoryActivatable": false,
+                "category": "67e1ac31-fbaf-4c89-884d-e4a014c50511"
+            },
+            {
+                "text": "[ Allen Morgan: male/ 58 years old/ Robert's client/ clever/ resourceful/ penetrating/ calculating; Allen: hair white& moustache/ ill-fit suit/ eyeglasses ]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": -401,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "newline",
+                    "insertionPosition": -4
+                },
+                "lastUpdatedAt": 1630809474677,
+                "displayName": "Intellectual",
+                "id": "82a1c7b1-8f27-4543-98fb-44611029a160",
+                "keys": [
+                    "/Allen/",
+                    "/Morgan/",
+                    "client"
+                ],
+                "searchRange": 500,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": true,
+                "nonStoryActivatable": false,
+                "category": "67e1ac31-fbaf-4c89-884d-e4a014c50511"
+            },
+            {
+                "text": "[ Colette Colesmith: female/ 20 years old/ student/ Robert's & Victoria's dauther/ reserved/ withdrawn/ solitary/ unsociable; Colette: heavy makeup/ nubile/ sensuous/ stylish ]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 50,
+                    "budgetPriority": -401,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "newline",
+                    "insertionPosition": -4
+                },
+                "lastUpdatedAt": 1630809514752,
+                "displayName": "Recluse",
+                "id": "2aefe52e-94f1-4f79-8340-173e59dff888",
+                "keys": [
+                    "/Colette/",
+                    "/Ms. Colesmith/",
+                    "daughter"
+                ],
+                "searchRange": 500,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": true,
+                "nonStoryActivatable": false,
+                "category": "67e1ac31-fbaf-4c89-884d-e4a014c50511"
+            },
+            {
+                "text": "My name is Madison Sinclair. I'm a private investigator who sometimes gets called in to help the police with difficult cases. My specialty is getting people to talk and then separating the truth from the bullshit.\n[ me: Madison Sinclair/ female/ 32 years old/ detective/ consultant/ shrewd/ charismatic/ attractive ]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 100,
+                    "budgetPriority": -399,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -10
+                },
+                "lastUpdatedAt": 1630679050548,
+                "displayName": "Me",
+                "id": "3a6c8dd7-d427-4a3b-aefb-fb627d035176",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            },
+            {
+                "text": "hardboiled, noir, interview, procedural, detailed, introspective",
+                "contextConfig": {
+                    "prefix": "[ Style: ",
+                    "suffix": " ] ",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630889449490,
+                "displayName": "Style",
+                "id": "c32f0e74-2507-4177-ac8a-71ad6acdda17",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "75bbbcd1-50e9-4a57-8347-3b6ad7bd4232"
+            },
+            {
+                "text": "dangerous& sensual",
+                "contextConfig": {
+                    "prefix": "[ Tone: ",
+                    "suffix": " ] ",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 399,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630889434178,
+                "displayName": "Tone",
+                "id": "75f2f649-5986-45db-a18b-4a5c99cbe227",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "75bbbcd1-50e9-4a57-8347-3b6ad7bd4232"
+            },
+            {
+                "text": "Adrian Crespi is Robert's business partner. Though Adrian is middle-aged, he is powerfully built and an imposing figure in a tailored suit.",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 100,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630889005381,
+                "displayName": "Alpha Male BG",
+                "id": "6a48b6a1-8fd8-40e7-9a8f-104bc24f5898",
+                "keys": [
+                    "/Adrian/",
+                    "/Crespi/",
+                    "partner"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "e5905fe0-4e94-4cf8-8337-58b4412333e3"
+            },
+            {
+                "text": "Victoria Colesmith is Robert's wife of twenty years. She has had some top-notch plastic surgery. She is 39 yet looks 40.",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 100,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630889082658,
+                "displayName": "Ice Queen BG",
+                "id": "1c8b80af-25fb-43a0-bb6b-e83cc788105e",
+                "keys": [
+                    "/Victoria/",
+                    "/Mrs. Colesmith/",
+                    "wife"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "e5905fe0-4e94-4cf8-8337-58b4412333e3"
+            },
+            {
+                "text": "Lucia Sanchez is the Colesmiths' housekeeper. She is a young latina who speaks broken English. Lucia is originally from Ecuador and she speaks with broken English.",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 100,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630889172412,
+                "displayName": "Ingenue BG",
+                "id": "0cf26510-34f9-4e6f-9480-971ff57ff40a",
+                "keys": [
+                    "/Lucia/",
+                    "/Sanchez/",
+                    "housekeeper"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "e5905fe0-4e94-4cf8-8337-58b4412333e3"
+            },
+            {
+                "text": "Allen Morgan is the biggest client of Robert and Adrian. Allen is wealthy and shrewd. Nearly all of his assets were invested in Adrian's company.",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 100,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630889242355,
+                "displayName": "Intellectual BG",
+                "id": "263b27f8-7e3e-4eb1-b096-aef24985d69d",
+                "keys": [
+                    "/Allen/",
+                    "/Morgan/",
+                    "client"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "e5905fe0-4e94-4cf8-8337-58b4412333e3"
+            },
+            {
+                "text": "Colette Colesmith is Robert's daughter. She goes to school abroad in Paris, but is home on a vacation. She is quiet and reserved and wears modest clothes that accentuate her feminine curves. Hidden beneath her clothes, she has several colorful tattoos.",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 100,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630889407723,
+                "displayName": "Recluse BG",
+                "id": "0e3dea6c-aa68-4247-8468-1b675e67ed3f",
+                "keys": [
+                    "/Colette/",
+                    "/Ms. Colesmith/",
+                    "daughter"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "e5905fe0-4e94-4cf8-8337-58b4412333e3"
+            },
+            {
+                "text": "Liz Keller has been Robert's secretary for about five years. She wears a very short red skirt with a matching blazer.",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 100,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630889363159,
+                "displayName": "Seductive BG",
+                "id": "7226ee12-ac14-410e-9c07-61141aaaa8d0",
+                "keys": [
+                    "/Elizabeth/",
+                    "/Liz/",
+                    "/Keller/",
+                    "secretary"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "e5905fe0-4e94-4cf8-8337-58b4412333e3"
+            }
+        ],
+        "settings": {
+            "orderByKeyLocations": false
+        },
+        "categories": [
+            {
+                "name": "Suspect Background",
+                "id": "e5905fe0-4e94-4cf8-8337-58b4412333e3",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 400,
+                        "budgetPriority": -100,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -15
+                    },
+                    "lastUpdatedAt": 1630806750663,
+                    "displayName": "New Lorebook Entry",
+                    "id": "e9ae40c6-cbb6-46a6-af8a-b1d8a893c401",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 100,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1630805125816,
+                    "displayName": "New Lorebook Entry",
+                    "id": "142cccda-c6c5-4f2d-a6ef-182f0fc4973a",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": true,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Suspect Interaction",
+                "id": "67e1ac31-fbaf-4c89-884d-e4a014c50511",
+                "enabled": true,
+                "createSubcontext": false,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 450,
+                        "budgetPriority": -500,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -4
+                    },
+                    "lastUpdatedAt": 1630556242745,
+                    "displayName": "New Lorebook Entry",
+                    "id": "1f4672ec-d77b-4a2f-b32e-b18a26169b4d",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 50,
+                        "budgetPriority": -401,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "newline",
+                        "maximumTrimType": "newline",
+                        "insertionPosition": -4
+                    },
+                    "lastUpdatedAt": 1630812562138,
+                    "displayName": "New Lorebook Entry",
+                    "id": "ec609257-26d6-4d73-93bd-92b9120860d4",
+                    "keys": [],
+                    "searchRange": 500,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": true,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "zzzStory Tags",
+                "id": "c72bdbda-6192-4b58-830f-7b6628099762",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ]\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 100,
+                        "budgetPriority": -420,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": 0
+                    },
+                    "lastUpdatedAt": 1629430113447,
+                    "displayName": "New Lorebook Entry",
+                    "id": "d06da5c1-a18f-4296-8f11-82aa0d34a875",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "[ ",
+                        "suffix": " ] ",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "doNotTrim",
+                        "insertionType": "sentence",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1629424729158,
+                    "displayName": "New Lorebook Entry",
+                    "id": "be1fc71f-f8f3-4a98-aeb3-6bd210d4973b",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": true,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "zzzStory Tone",
+                "id": "75bbbcd1-50e9-4a57-8347-3b6ad7bd4232",
+                "enabled": true,
+                "createSubcontext": true,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 30,
+                        "budgetPriority": -430,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -4
+                    },
+                    "lastUpdatedAt": 1630735394476,
+                    "displayName": "New Lorebook Entry",
+                    "id": "0538bbd6-ec7e-434b-80e7-bd0bbf5a4b82",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": true,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1630676763152,
+                    "displayName": "New Lorebook Entry",
+                    "id": "cf73b5e1-bcbb-45b2-abac-6e59dab4c45b",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            }
+        ]
+    },
+    "author": "",
+    "storyContextConfig": {
+        "prefix": "",
+        "suffix": "",
+        "tokenBudget": 2048,
+        "reservedTokens": 512,
+        "budgetPriority": 0,
+        "trimDirection": "trimTop",
+        "insertionType": "newline",
+        "maximumTrimType": "sentence",
+        "insertionPosition": -1
+    },
+    "contextDefaults": {
+        "ephemeralDefaults": [
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 2048,
+                    "budgetPriority": -10000,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "newline",
+                    "insertionPosition": -2
+                },
+                "startingStep": 1,
+                "delay": 0,
+                "duration": 1,
+                "repeat": false,
+                "reverse": false
+            }
+        ],
+        "loreDefaults": [
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630823895723,
+                "displayName": "New Lorebook Entry",
+                "id": "446dbae5-59c7-4c4d-b482-0adf9fd7e526",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            }
+        ]
+    }
+}

@@ -1,0 +1,526 @@
+{
+    "scenarioVersion": 1,
+    "title": "🛠 World Builder",
+    "description": "Generates worlds, races, classes, factions, locations, characters, and scenarios.\n\nInstructions: Fill out the placeholders below, then import the scenario and hit Send.\n\nIf you want to change the Type or Name placeholders after you start, you can do so in Memory and Lorebook respectively. The default structure is [ Type: ___; Name: ___ ]",
+    "prompt": "## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##\n## Hit send to generate a new ${1Type}! ##\n## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ##\n",
+    "tags": [
+        "generator",
+        "tool",
+        "world",
+        "building",
+        "lorebook",
+        "scenario",
+        "prompt",
+        "utility"
+    ],
+    "context": [
+        {
+            "text": "[ Type: ${1Type}",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "",
+                "tokenBudget": 2048,
+                "reservedTokens": 0,
+                "budgetPriority": 800,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": 0
+            }
+        },
+        {
+            "text": "",
+            "contextConfig": {
+                "prefix": "",
+                "suffix": "\n",
+                "tokenBudget": 2048,
+                "reservedTokens": 2048,
+                "budgetPriority": -400,
+                "trimDirection": "trimBottom",
+                "insertionType": "newline",
+                "maximumTrimType": "sentence",
+                "insertionPosition": -4
+            }
+        }
+    ],
+    "ephemeralContext": [],
+    "placeholders": [
+        {
+            "key": "1Type",
+            "description": "Type of Content to Generate (World, Race, Class, Faction, Location, Character, Scenario)",
+            "defaultValue": "World"
+        },
+        {
+            "key": "2Name",
+            "description": "Optional Name/Title for Generated Content (e.g. Larion)"
+        }
+    ],
+    "settings": {
+        "parameters": {
+            "temperature": 0.75,
+            "max_length": 75,
+            "min_length": 1,
+            "top_k": 0,
+            "top_p": 0.725,
+            "tail_free_sampling": 1,
+            "repetition_penalty": 3,
+            "repetition_penalty_range": 1024,
+            "repetition_penalty_slope": 0,
+            "bad_words_ids": [
+                [
+                    9
+                ],
+                [
+                    1635
+                ]
+            ]
+        },
+        "preset": "b8cf31f9-5075-4bd4-b36a-868f8c395e62",
+        "trimResponses": true,
+        "banBrackets": true,
+        "prefix": "6B-v3:237f98cfb5277feda899e3dd188552bfaec93847a49d01c64d8efb0a01146d10:f57e74fad23e65f0269085e15e48d3c063a9a28fbf6184df9146be7704e7faec",
+        "aiModule": {
+            "id": "6B-v3:237f98cfb5277feda899e3dd188552bfaec93847a49d01c64d8efb0a01146d10:f57e74fad23e65f0269085e15e48d3c063a9a28fbf6184df9146be7704e7faec",
+            "name": "Worlds Generator",
+            "description": "Trained on many various descriptions of locations, races, classes, factions, characters, worlds, and many other entries, this utility module serves to generate content for lorebooks of any and all kinds.",
+            "remoteId": ""
+        }
+    },
+    "lorebook": {
+        "lorebookVersion": 3,
+        "entries": [
+            {
+                "text": "[ Type: Class ]\nThe steelsworn are casters who have been blessed with the ability to manipulate steel. They can wrap their bodies in metal or shape steel into various forms of weapons and shields in battle. The more powerful a caster is, the better quality of metal they can manipulate. When not fighting, these mages often take up jobs as smiths making tools for other people's use, though some prefer to make their own unique items from scratch.\n***\n[ Type: Class; Name: Sparkanist ]\nSparkanists have an affinity for kindling and combustion magic that allows them to create small fires wherever they wish. By influencing the friction between two adjacent surfaces, sparkanists can ignite objects at will. This gives them many uses during combat such as setting traps, lighting torches, and creating smokescreens.\n***\n[ Type: Class ]\nStrikers are naturalists and masters of unarmed combat who have honed their body to be as pliable as rubber and hard as stone. Their greatest strength comes from being able to move quickly on any terrain without losing balance.\n***\n[ Type: Class ]\nWhiteknuckles are the most aggressive members of any city guard unit. They live by a code of honour where blood feuds run deep and killing your enemies is simply part of life. It isn't uncommon for a whiteknuckle to show mercy to those they deem worthy opponents and treat prisoners kindly when captured.\n***",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 1024,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": 0
+                },
+                "lastUpdatedAt": 1630743094488,
+                "displayName": "Class",
+                "id": "813cf7a9-0928-4967-acb5-a59163beb42d",
+                "keys": [
+                    "Type: Class"
+                ],
+                "searchRange": 500,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "262e6899-7f24-4914-8174-da041667e285"
+            },
+            {
+                "text": "[ Type: Location; Name: Nyrissa ]\nNyrissa is a kingdom that has existed for over 500 years. It was once the only country in its region, but after many wars and invasions from surrounding tribes it now borders three countries including Kesh, which it shares an open border with. The people of this nation are very friendly towards visitors due to their long history of prosperity and growth.\n***\n[ Type: Location ]\nBridal Veil Falls is one of two places where Bridal Veil meets Cascade Lakes. The falls flow into Lake Erynjorden, which lies at the foot of Mount Dargon. This lake forms part of what used to be called \"The Silver Basin\". As the name implies, silver can still be found in shallow streams along the shore if you know how to look for it!\n***\n[ Type: Location ]\nChedbury Plain is located just south-west of Hillsfar on the western side of the Ylisse continent. It's hard to believe that no one lives on Chedbury Plain anymore, since there are signs all around indicating the existence of recent settlements. What makes these ruins so unique and mysterious is the variety of clues indicating the reasons behind their abandonment; some sites show clear signs of large-scale disaster and emit dangerous levels of magical energy, while others are so well-preserved that it would be easy to imagine someone having occupied the space just yesterday.\n***",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 1024,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": 0
+                },
+                "lastUpdatedAt": 1630743087601,
+                "displayName": "Location",
+                "id": "c6bcc86a-9133-422e-8ac9-af651c115551",
+                "keys": [
+                    "Type: Location"
+                ],
+                "searchRange": 500,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "262e6899-7f24-4914-8174-da041667e285"
+            },
+            {
+                "text": "[ Type: World ]\nSeran is a world of vast oceans in which magic flows freely and dragons claim the skies. To travel its lands, you must first find your way to the Astral Sea and board The Shooting Star, an underwater railway which spans the seabeds separating the four continents.\n***\n[ Type: World; Name: Vaela ]\nVaela is a system of interconnected planetoids which despite their size sustain enough of a gravitational force to sustain life. Each one boasts a terrain and ecosystem all its own. Fairen, one of the larger planetoids, is covered by a dense temperate forest with gigantic stone trees reaching miles across and extending well beyond the cloud layer.\n***\n[ Type: World ]\nNierheim is a verdant world atop the mechanical corpse of an ancient colossal titan. Beneath the lush exterior lies an endless labyrinth of impossible machinery, and at its heart sleeps a terrible power. Despite centuries of cataclysms, a sparse few societies have survived. The inhabitants scour frozen obsidian steppes, salt marshes, and jungles of sentient plants in search of mysterious artifacts left behind by long-dead civilizations. In the darkness old gods stir, heeding the call of long-forgotten magic and the resolution of a millennia-long mystery.\n***",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 1024,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": 0
+                },
+                "lastUpdatedAt": 1630743133719,
+                "displayName": "World",
+                "id": "1ca2339a-7798-4fd7-976b-dbb999120ae7",
+                "keys": [
+                    "Type: World"
+                ],
+                "searchRange": 500,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "262e6899-7f24-4914-8174-da041667e285"
+            },
+            {
+                "text": "[ Type: Race ]\nThe Alagans are a race of giants, but not as you know them. They live in their own city on the edge of the forest and worship an ancient god they call \"Dawn Father.\" The only entrance to their mysterious kingdom is through a large stone door guarded by statues of warriors with longbows, which come to life whenever they sense a threat.\n***\n[ Type: Race; Name: Syakish ]\nThe Syakish always live near water, where they can rake coasts and riverbeds for clams and brackish fish for food. Syaks have two arms, three eyes, and a single skeletal leg which bends backwards at the knee. Despite their terrifying appearance, they are quite intelligent and skilled artisans. Most often found living in small communities along coastlines or waterways, the syakish will build homes made from wood and thatch over the course of several months before flooding the inland area so that no intruders may find them.\n***\n[ Type: Race ]\nMouzians are a peaceful race of diminutive people who practice animal husbandry using domesticated beetles, butterflies, and other insects. As tiny as they are, Mouzians are still fierce fighters when cornered. As a result, Mouzian settlements are quite resilient and tend to grow quickly and prosper. They excel at weaving fabric, making intricate clothing and other useful items. Many of these woven goods become prized trade products throughout the world. Oddly enough, these miniature creatures also make an excellent source of bedding material themselves.\n***",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 1024,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": 0
+                },
+                "lastUpdatedAt": 1630743084008,
+                "displayName": "Race",
+                "id": "8999fc6b-142c-4653-b3c7-dc43baa16fe7",
+                "keys": [
+                    "Type: Race"
+                ],
+                "searchRange": 500,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "262e6899-7f24-4914-8174-da041667e285"
+            },
+            {
+                "text": "[ Type: Faction ]\nThe Glacial Lords are a nomadic tribe of northern barbarians who live in ice caves and make their living as raiders. They wear furs over dark leather armor, decorated with iron disks, antlers, bones, skulls, and other trophies they have taken from previous raids. Their chief warrior Ivarsson leads his men by example, never wearing any jewelry or adornments beyond a bone sword he always carries at his side.\n***\n[ Type: Faction; Name: The Bloodied Fist ]\nThe Bloodied Fist is a warband of mercenaries led by an old man named Balthazar, once the captain of King Theobald's personal guard before being dismissed for cowardice during a decisive battle. He now spends most of his time drinking heavily to forget his past failure. His army consists mostly of former soldiers and criminals brought on through word-of-mouth advertising.\n***\n[ Type: Faction ]\nThe Tyran Empire was founded around 700 years ago when Emperor Esmarch claimed land east of the Endless Wastes. Over the centuries it has expanded until its borders reach even into this continent. It is ruled today by the young Empress Valeria. She rules through her father's shadow, but refuses to acknowledge him as her master. While she seeks only peace between the lands, rival nobles fear that if they do not claim her throne soon, the growing threat of the abominations of the Endless Wastes will swallow the continent entirely.\n***",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 1024,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": 0
+                },
+                "lastUpdatedAt": 1630743090514,
+                "displayName": "Faction",
+                "id": "0a258a57-24b6-4cf0-a6f7-83545b52924b",
+                "keys": [
+                    "Type: Faction"
+                ],
+                "searchRange": 500,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "262e6899-7f24-4914-8174-da041667e285"
+            },
+            {
+                "text": "[ Type: Character ]\nLeon is a young man who was born in the Kingdom of Igris. He has been trained as an engineer, and he works at his father's company that specializes in repairing magical devices. Leon is 6'0\" tall, and weighs 155 pounds. His hair color is dark brown and he wears square tortoiseshell glasses. Leon is kind-hearted and doesn't like conflict. He has trouble saying no when people ask for favors. Despite being so good-natured, he can be quite serious when it comes to work. If someone needs help with something, he will give them all the assistance possible. However, if you get on his bad side, you may never see him again!\n***\n[ Type: Character; Name: Riezé Lantz ]\nRiezé is a young woman from the noble district of Neur. She has long black hair and bright green eyes. Her skin is very pale, but she keeps her body toned through rigorous exercise. Riezé loves wearing light, colorful clothing that accentuates her curves. Riezé is 5'6\", and weights 125lbs. Riezé likes eating spicy cuisine, but doesn't care for seafood. Although she prefers to keep to herself most of the time, she does have a tight-knit group of friends she occasionally goes dancing with. When someone annoys her, she puts on a disgusted expression and glares at them until they back down or leave.\n***",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 1024,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": 0
+                },
+                "lastUpdatedAt": 1630743097535,
+                "displayName": "Character",
+                "id": "995112fc-df4e-4d58-839a-fe5ee15757e0",
+                "keys": [
+                    "Type: Character"
+                ],
+                "searchRange": 500,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "262e6899-7f24-4914-8174-da041667e285"
+            },
+            {
+                "text": "[ Type: Scenario ]\nHaving suffered the fate that befalls all heroes, you have been transformed into a hideous monster by the almighty wizard Malachite and trapped in an underground dungeon where the sun does not shine and the moon never rises. Yet you remain defiant. Despite your current plight, you refuse to surrender hope. With nothing left to lose, will you choose a path of redemption or embrace the darkness?\nPrompt:\nThe dungeon passageways stretch into the distance, lit by torchlight. The air is dry and stale and smells strongly of mold. You have been here longer than any sane person could stand; a century perhaps? Two? Three? Time has lost all meaning. The only things that matter now are hunger and thirst. You must eat and drink, else you will surely perish in this wretched place.\nAfter wandering aimlessly for a while, you hear someone approaching in the darkness: shuffling footsteps accompanied by the occasional clang; the telltale sounds of a new adventurer come to make a name for themselves.\n***\n[ Type: Scenario; Name: Hellbound ]\nWith no memory of your former existence, you are summoned to a strange plane known as the mortal world. As a demon, you are bound by an unbreakable pact with your new master. Will you serve your new lord or risk everything to forsake him for a life of your own choosing?\nPrompt:\nYou wake up in a dilapidated mansion with a hellhound at your side. You know nothing of your past life in hell, but you are aware of your situation. You are a freshly summoned demon bound by a blood pact and must work for your new master.\nYou stare up into the darkness of the room, taking in your surroundings. The wooden floorboards creak under your feet and the air is thick with the smell of decay. You hear a voice utter your name, a voice you would soon know well.\n***\n[ Type: Scenario ]\nIn an alternate version of history, the Nazis won World War II. They conquered Europe, and the United States fell under a Nazi-like regime. In the aftermath of war, a massive scientific project was launched, creating advanced weapons like flying saucers, giant robots, and even cyborg soldiers—and you are one such soldier!\nPrompt:\nIt takes years of training and conditioning to prepare you for combat. You have learned how to use your prosthetic limbs to devastating effect, but have never seen battle. You have no idea how to fight or what your role should be. All you know is that someday you will have to prove that you deserve to live. Your superiors tell you that this day may be coming soon.\nYour mind races with thoughts of the future and what it might hold, but before you are able to think them over, you hear the sound of a door opening.\n***\n[ Type: Scenario; Name: The Ancient Automaton ]\nExplore a wild and strangely beautiful far future dystopia overrun by androids and exotic beasts. What secrets will you discover?\nPrompt:\nBeneath the planet's lush exterior lies an endless labyrinth of impossible machinery, and at its heart sleeps a terrible power. Despite centuries of cataclysms, a sparse few societies have survived. The inhabitants scour frozen obsidian steppes, salt marshes, and jungles of sentient plants in search of mysterious artifacts left behind by long-dead civilizations. In the darkness old gods stir, heeding the call of long-forgotten magic and the resolution of a millennia-long mystery.\nThe sky was dark when we made our way down the mountain trail. It had been nearly two days since we'd fled the city. My body ached all over—especially my head—but determination kept my mind clear. We'd made good time on our journey through the mountains, but we still hadn't reached the border yet. As the cloud layer began to clear, we spotted a figure crouching in a rust pile ahead. The woman stood as we approached, her back turned to us. But something was off.\n***\n[ Type: Scenario ]\nA god is wounded by the hand of another god, who then flees in shame to a distant land where he becomes an outcast. In his absence the world has begun to perish. The sun has gone dark and will not rise again; the stars have faded and the moon wanes ever further into shadow. The Earth itself begins to crack, and maggots swarm from cavities in the soil. The people flee and hide wherever they can. Some try to dig into the earth for safety but cannot resist the pull of corruption and ruin. Others turn to prayer and hope for salvation at the hands of the Gods.\nPrompt:\nThe God of Darkness, Bha'lazshar, is mortally injured by the God of Light, A'mahr. He sends forth a messenger bearing news of his defeat. To conceal his presence and avoid detection in case any surviving gods seek retribution, the messenger hides himself among mortals and assumes a mortal guise.\nHe calls upon you and your companions. You set off on your journey across the face of the dying planet when you notice something awry at your first destination.\n***\n[ Type: Scenario ]\nIn the year 2077, the city of Tethyr has fallen into chaos following a mysterious digital plague. Crime runs rampant and violence rages unchecked throughout the streets. The mega corporations that run Tethyr are powerless to stop these events or restore order. When a cybernetics specialist arrives to investigate the cause of the madness, she finds herself caught between conflicting forces, both human and android, as authorities struggle to contain the outbreak and its source.\nPrompt:\nYou're a cyberneticist working for a private security company. Your job is to track down the source of the virus infesting the city's network systems and neutralize the threat. However, you've just arrived in town and don't know anyone. Fortunately, there's a helpful stranger around the corner...\n***",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": 0
+                },
+                "lastUpdatedAt": 1630743154721,
+                "displayName": "Scenario",
+                "id": "dadacc04-8b2e-42f7-b42f-f6400e3675cd",
+                "keys": [
+                    "Type: Scenario"
+                ],
+                "searchRange": 500,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "262e6899-7f24-4914-8174-da041667e285"
+            },
+            {
+                "text": "; Name: ",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 403,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630747711664,
+                "displayName": "Nametag",
+                "id": "76c2c17a-8904-480a-bac4-6b99006c0819",
+                "keys": [
+                    "${2Name}"
+                ],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": true,
+                "category": "41f88999-0264-4366-9a5c-cc40ddad5eb4"
+            },
+            {
+                "text": " ]",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 401,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630746984192,
+                "displayName": "End Bracket",
+                "id": "33a089fa-5fca-4ac6-8584-1bfb734fe853",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "41f88999-0264-4366-9a5c-cc40ddad5eb4"
+            },
+            {
+                "text": "${2Name}",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 402,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630746981262,
+                "displayName": "Name",
+                "id": "831f3e1e-28a5-4949-bc14-dfc63644b16a",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": true,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": "41f88999-0264-4366-9a5c-cc40ddad5eb4"
+            }
+        ],
+        "settings": {
+            "orderByKeyLocations": false
+        },
+        "categories": [
+            {
+                "name": "Content Types",
+                "id": "262e6899-7f24-4914-8174-da041667e285",
+                "enabled": true,
+                "createSubcontext": false,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1630779957078,
+                    "displayName": "New Lorebook Entry",
+                    "id": "0ca91ea3-d2f1-4cc5-90e0-afe15b7cb401",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": false,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1630744391650,
+                    "displayName": "New Lorebook Entry",
+                    "id": "74a0ebce-71c4-4639-bfb2-0d1de576da75",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            },
+            {
+                "name": "Prompt Construction",
+                "id": "41f88999-0264-4366-9a5c-cc40ddad5eb4",
+                "enabled": true,
+                "createSubcontext": false,
+                "subcontextSettings": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1630779957079,
+                    "displayName": "New Lorebook Entry",
+                    "id": "3dad49d5-cb11-4496-ae99-5272bc37f79e",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                },
+                "useCategoryDefaults": false,
+                "categoryDefaults": {
+                    "text": "",
+                    "contextConfig": {
+                        "prefix": "",
+                        "suffix": "\n",
+                        "tokenBudget": 2048,
+                        "reservedTokens": 0,
+                        "budgetPriority": 400,
+                        "trimDirection": "trimBottom",
+                        "insertionType": "newline",
+                        "maximumTrimType": "sentence",
+                        "insertionPosition": -1
+                    },
+                    "lastUpdatedAt": 1630744437626,
+                    "displayName": "New Lorebook Entry",
+                    "id": "7b28167f-0bbe-42e2-95ed-eed99b1bdca4",
+                    "keys": [],
+                    "searchRange": 1000,
+                    "enabled": true,
+                    "forceActivation": false,
+                    "keyRelative": false,
+                    "nonStoryActivatable": false,
+                    "category": ""
+                }
+            }
+        ]
+    },
+    "author": "",
+    "storyContextConfig": {
+        "prefix": "",
+        "suffix": "",
+        "tokenBudget": 2048,
+        "reservedTokens": 512,
+        "budgetPriority": 0,
+        "trimDirection": "trimTop",
+        "insertionType": "newline",
+        "maximumTrimType": "sentence",
+        "insertionPosition": -1
+    },
+    "contextDefaults": {
+        "ephemeralDefaults": [
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 2048,
+                    "budgetPriority": -10000,
+                    "trimDirection": "doNotTrim",
+                    "insertionType": "newline",
+                    "maximumTrimType": "newline",
+                    "insertionPosition": -2
+                },
+                "startingStep": 1,
+                "delay": 0,
+                "duration": 1,
+                "repeat": false,
+                "reverse": false
+            }
+        ],
+        "loreDefaults": [
+            {
+                "text": "",
+                "contextConfig": {
+                    "prefix": "",
+                    "suffix": "\n",
+                    "tokenBudget": 2048,
+                    "reservedTokens": 0,
+                    "budgetPriority": 400,
+                    "trimDirection": "trimBottom",
+                    "insertionType": "newline",
+                    "maximumTrimType": "sentence",
+                    "insertionPosition": -1
+                },
+                "lastUpdatedAt": 1630742816699,
+                "displayName": "New Lorebook Entry",
+                "id": "eb797b2d-e320-4e16-bca6-60e2bba3e00a",
+                "keys": [],
+                "searchRange": 1000,
+                "enabled": true,
+                "forceActivation": false,
+                "keyRelative": false,
+                "nonStoryActivatable": false,
+                "category": ""
+            }
+        ]
+    }
+}
